@@ -10,8 +10,7 @@ Temos como objetivo o desenvolvimento do sistema que facilite a contatação de 
 
 | Requisitos funcionais             |  Código |              Descrição                                                                                                                                     |Prioridade|
 | ----------------------------------|---------| ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
-|Interface              |RF01     |Criar interface de submissão de currículos que recebam, de forma padronizada e
-adequada ao processo, os candidatos|    1     |
+|Interface              |RF01     |Criar interface de submissão de currículos|    1     |
 |Ler arquivo                  |RF02     |Ler arquivo enviado pelo cliente e armazenar os dados em nosso banco de dados|    2     |
 |Sistema de busca         |RF03     |Busca de candidatos por vagas                                           |    3     |   
 |Filtros configurais                     |RF04     |Utilizar filtros configuráveis nas buscas de cada vaga                                                              |    4     |            
