@@ -1,9 +1,9 @@
 # TecnoCode
 
-##Quem somos?
+#####Quem somos?
 Somos um time formado por alunos do 4° semestre do curso de Banco de Dados da FATEC de São José dos Campos. Somos amigos e colegas que se juntaram a fim de desenvolver o Projeto Integrador, no qual nossos professores e uma empresa se organizaram para propor um desafio.
 
-##Proposta Comercial
+#####Proposta Comercial
 Temos como objetivo o desenvolvimento do sistema que facilite a contatação de novos colaboradores dados seus requerimentos, localização e conhecimentos que atendem aos requisitos da vaga, visando a agilidade e qualidade.
 
 ##### Requisitos Funcionais
