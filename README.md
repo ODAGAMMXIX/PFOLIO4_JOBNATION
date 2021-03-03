@@ -6,7 +6,7 @@ Somos um time formado por alunos do 4° semestre do curso de Banco de Dados da F
 ## Proposta Comercial
 Temos como objetivo o desenvolvimento do sistema que facilite a contatação de novos colaboradores dados seus requerimentos, localização e conhecimentos que atendem aos requisitos da vaga, visando a agilidade e qualidade.
 
-##### Requisitos Funcionais
+## Requisitos Funcionais
 
 | Requisitos funcionais             |  Código |              Descrição                                                                                                                                     |Prioridade|
 | ----------------------------------|---------| -----------------------------------------------------------------------------------------------------------------------------------------------------------|----------|
@@ -16,7 +16,7 @@ adequada ao processo, os candidatos|    1     |
 |Sistema de busca         |RF03     |Busca de candidatos por vagas                                           |    3     |   
 |Filtros configurais                     |RF04     |Utilizar filtros configuráveis nas buscas de cada vaga                                                              |    4     |            
 
-##### Requisitos Não Funcionais
+## Requisitos Não Funcionais
 
 | Requisitos funcionais             |  Código |                                                                                                                                    
 | ----------------------------------|---------|
