@@ -26,21 +26,58 @@ Temos como objetivo o desenvolvimento do sistema que facilite a contatação de 
 
 ## Contribuintes
 
-- Gabriela Momilli
-gitlab: https://gitlab.com/gabsmomilli
-Linkedin: https://www.linkedin.com/in/gabriela-momilli-105b1a184/
-RA: 1460281923058
+- Carolina Paz de Sousa
+
+gitlab:
+
+linkedin: https://www.linkedin.com/in/caroline-sousa-53a27972/
+
+RA: 1460281923049
+
 
 - Felipe Santos Carvalho
+
 gitlab: https://gitlab.com/felipefsc
+
 Linkedin: https://www.linkedin.com/in/felipe-santos-carvalho-454060187/
+
 RA: 1460281923011
 
-- Rafael Estevam de Oliveira
+
+- Gabriela Momilli
+
+gitlab: https://gitlab.com/gabsmomilli
+
+Linkedin: https://www.linkedin.com/in/gabriela-momilli-105b1a184/
+
+RA: 1460281923058
+
+
+- Nathan Augusto Bugni Naressi
+
 gitlab:
+
+linkedin: https://www.linkedin.com/in/nathan-naressi-b529081b2
+
+RA: 1460281923027
+
+
+- Rafael Estevam de Oliveira
+
+gitlab:
+
 Linkdin: https://www.linkedin.com/in/rafael-estevam-de-oliveira/
+
 RA: 1460281823040
 
+
+- Wilson Amore Vieira Filho
+
+gitlab: https://gitlab.com/ZVIEWIL
+
+Linkedin: www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183
+
+RA: 1460281923041
 
 
 
