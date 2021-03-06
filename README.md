@@ -1,5 +1,7 @@
 <h1 align="center">TecnoCode</h1>
 
+##oi
+
 ## Quem somos?
 Somos um time formado por alunos do 4° semestre do curso de Banco de Dados da FATEC de São José dos Campos. Somos amigos e colegas que se juntaram a fim de desenvolver o Projeto Integrador, no qual nossos professores e uma empresa se organizaram para propor um desafio.
 
