@@ -1,3 +1,5 @@
+# PROJETO INTEGRADOR 2021.1 - FATEC
+
 <h1 align="center">TecnoCode</h1>
 
 ## Quem somos?
@@ -24,11 +26,33 @@ Temos como objetivo o desenvolvimento do sistema que facilite a contatação de 
 |Segurança (Safety)         |RF03     |
 |Documentação específica                     |RF04     |  
 
+## DIAGRAMA DE CASO DE USO
+
+## ALCANCE DA FERRAMENTA
+
+## MODELO-RELACIONAL DO BANCO DE DADOS
+
+## DIAGRAMA DE CLASSES DO BANCO DE DADOS
+
+## Tecnologias e Metodologias aplicadas
+
+## Cronograma e Backlog do Projeto (Em Ordem de Prioridade).
+
+#### Sprint 00
+
+#### Sprint 01
+
+#### Sprint 02
+
+#### Sprint 03
+
+#### Sprint 04
+
 ## Contribuintes
 
-- Carolina Paz de Sousa
+- Caroline Paz de Sousa
 
-    gitlab:
+    gitlab: https://gitlab.com/CarolPaz
 
     linkedin: https://www.linkedin.com/in/caroline-sousa-53a27972/
 
