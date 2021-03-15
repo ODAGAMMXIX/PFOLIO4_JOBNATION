@@ -111,7 +111,6 @@ function Login() {
                 )
               }}
             </Formik>
-            <CustomFormLink onClick={() => handleStep(1)} label="Esqueceu sua senha ou é o primeiro acesso?" color='danger_color' />
           </div>
       </div>
   );
