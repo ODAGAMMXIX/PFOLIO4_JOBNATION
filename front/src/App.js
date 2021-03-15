@@ -17,28 +17,27 @@ function App() {
 
   const { enqueueSnackbar } = useSnackbar();
 
-  const [loaded, setLoaded] = useState(true);
+  const [loaded, setLoaded] = useState(false);
   const [domain] = useState(window.location.origin);
-  const [defaultTheme, setDefaultTheme] = useState(false);
+  const [defaultTheme, setDefaultTheme] = useState(true);
   const [themeContextValue, setThemeContextValue] = useState(undefined);
   const [themeStyles, setThemeStyles] = useState(false);
 
-  useEffect(() => {
-    const data = {domain: domain};
-    if(!themeContextValue){
-      API.post('/config/get', data ).then((response) => {
-        setThemeContextValue(response.data);
-        setLoaded(false);
-      }).catch((err) => {
-        setLoaded(false);
-        setDefaultTheme(true);
-        enqueueSnackbar(Messages.error.not_config_erro, {variant: 'error'});
-      })
-    }else{
-      setLoaded(false);
-    }
-    
-  }, [])
+  // useEffect(() => {
+  //   const data = {domain: domain};
+  //   if(!themeContextValue){
+  //     API.post('/config/get', data ).then((response) => {
+  //       setThemeContextValue(response.data);
+  //       setLoaded(false);
+  //     }).catch((err) => {
+  //       setLoaded(false);
+  //       setDefaultTheme(true);
+  //       enqueueSnackbar(Messages.error.not_config_erro, {variant: 'error'});
+  //     })
+  //   }else{
+  //     setLoaded(false);
+  //   }
+  // }, [])
 
   return (loaded) ? <CircularProgress />
   : 

@@ -46,17 +46,17 @@ function TemplateAuth({children}) {
   return (
     <MainWrapper>
       <Grid container>
-        <LoginWrapper item md={3} xs={12} className="default_light_background">
+        <LoginWrapper item md={12} xs={12} className="default_light_background">
           <CardContent>
             {children}
           </CardContent>
         </LoginWrapper>
-        <LoginWrapperImg item md={9} className="hide-mobile  hide-tablet">
+        {/* <LoginWrapperImg item md={9} className="hide-mobile  hide-tablet">
           <img src={loginImage} />
-        </LoginWrapperImg>
+        </LoginWrapperImg> */}
       </Grid>
       <FooterWrapper className="main_background">
-        <p className="default_light_color">Feito pela TOTHUS.</p>
+        <p className="default_light_color">Feito pela TECNOCODE</p>
       </FooterWrapper>
     </MainWrapper>
   );

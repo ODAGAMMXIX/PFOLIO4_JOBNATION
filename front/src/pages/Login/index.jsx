@@ -52,13 +52,10 @@ function Login() {
   return (
     
       <div>
-
         <LoginTitleWrapper>
-          <Logo />
-          <CustomTypography variant="h6" className="dark_color" bold="true" label="Seja bem vindo!"/>
+          {/* <Logo /> */}
+          <CustomTypography variant="h5" className="dark_color" bold="true" label="Seja bem vindo!"/>
         </LoginTitleWrapper>
-
-        <CustomCarousel activeIndex={step}>
           <div>
             <Formik
               initialValues={{email:email, password:password}}
@@ -116,65 +113,6 @@ function Login() {
             </Formik>
             <CustomFormLink onClick={() => handleStep(1)} label="Esqueceu sua senha ou é o primeiro acesso?" color='danger_color' />
           </div>
-
-          <div>
-            <Formik
-              initialValues={{ doc: doc, username: username}}
-              validationSchema={FirsAccessValidation}
-              onSubmit={(values) => handleSubmit(values)}
-              enableReinitialize={refreshFirstAccessForm}
-            >
-              {(props) => {
-                const { values, touched, errors, handleChange, handleBlur, handleSubmit, handleReset} = props;
-
-                return(
-                  <form onSubmit={handleSubmit}>
-                    <Typography variant="subtitle1" align="center" className="default_gray_color">
-                      Insira os dados abaixo:
-                    </Typography>
-                    <CustomInput
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      fullWidth
-                      label="CPF/CNPJ"
-                      type="text"
-                      size="small"
-                      name="doc"
-                      id="doc"
-                      helperText={(errors.doc && touched.doc) && errors.doc}
-                      error={errors.doc && touched.doc}
-                      value={values.doc}
-                    />
-
-                    <CustomInput
-                      onChange={handleChange}
-                      onBlur={handleBlur}
-                      fullWidth
-                      label="username"
-                      type="text"
-                      size="small"
-                      name="username"
-                      id="username"
-                      helperText={(errors.username && errors.username) && errors.username}
-                      error={errors.username && touched.username}
-                      value={values.username}
-                    />
-                    
-                    <CustomButton
-                      type="submit"
-                      label={'Acessar'}
-                      bg={'main_background'}
-                      color={'light_color'}
-                      fullwidth
-                      size="small"
-                    />
-                  </form>
-                )
-              }}
-            </Formik>
-            <CustomFormLink onClick={() => handleStep(0)} label="Lembrei a senha" color='danger_color' />
-          </div>
-        </CustomCarousel>
       </div>
   );
 }

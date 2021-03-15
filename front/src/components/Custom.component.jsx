@@ -15,11 +15,11 @@ const CustomStyledTextField = styled(TextValidator)`
 `
 
 const CustonTextField = styled(TextField)`
-    margin-bottom: 15px;
+    margin-bottom: 15px !important;
 `
 
 const CustomStyledTypography = styled(Typography)`
-    font-weight: ${props => props.bold && 'bold'};
+    font-weight: ${props => props.bold && 'bold !important'};
 `
 
 const CustonStyledLink = styled('a')`
