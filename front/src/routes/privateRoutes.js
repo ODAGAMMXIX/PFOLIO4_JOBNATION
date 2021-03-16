@@ -5,7 +5,7 @@ import DefaultTemplate from '../templates/default';
 
 export default function PrivateRoute({component: Component, isPrivate = false, ...attrs}){
 
-    const signed = false; 
+    const signed = true; 
 
     if(!signed && isPrivate){
         return <Redirect to="/" />

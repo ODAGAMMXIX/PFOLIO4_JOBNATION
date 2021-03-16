@@ -48,7 +48,7 @@ export default createGlobalStyle`
         --default-light-color: #F4F6F8;
         --default-white-color: #FFF;
         --default-gray-color: #666;
-        --default-menu-color: #2196F3;
+        --default-menu-color: #2c3f4e;
         --default-submenu-color: #00BCD4;
         --default-header-color: #FFF;
         --default-text-color: #333;

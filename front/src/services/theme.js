@@ -10,7 +10,7 @@ export function GetDefaultTheme(){
         dark_color: "#333",
         light_color: "#fff",
         white_color: "#fff",
-        menu_color: "#2196F3",
+        menu_color: "#2c3f4e",
         submenu_color: "#00BCD4",
         header_color: "#FFF",
         text_color: "#333",

@@ -1,5 +1,5 @@
 import React, {useEffect, useState, useRef} from 'react';
-import {Typography, Button, TextField} from '@material-ui/core';
+import {Typography, Button, TextField, Card, CardContent} from '@material-ui/core';
 import {CustomInput, CustomButton} from '../../components/Custom.component';
 import {CustomTypography, CustomFormLink} from '../../components/Custom.component';
 import {CustomCarousel} from '../../components/Carousel.component';
@@ -51,11 +51,12 @@ function Login() {
 
   return (
     
-      <div>
-        <LoginTitleWrapper>
-          {/* <Logo /> */}
-          <CustomTypography variant="h5" className="dark_color" bold="true" label="Seja bem vindo!"/>
-        </LoginTitleWrapper>
+      <Card>
+        <CardContent>
+          <LoginTitleWrapper>
+            {/* <Logo /> */}
+            <CustomTypography variant="h5" className="dark_color" bold="true" label="Seja bem vindo!"/>
+          </LoginTitleWrapper>
           <div>
             <Formik
               initialValues={{email:email, password:password}}
@@ -112,7 +113,8 @@ function Login() {
               }}
             </Formik>
           </div>
-      </div>
+        </CardContent>
+      </Card>
   );
 }
 
