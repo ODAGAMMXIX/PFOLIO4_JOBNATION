@@ -49,7 +49,7 @@ function Login() {
     let list = [];
     setListCandidates([]);
     mockCandidates.map((item)=>{
-      if(parseInt(item.distance, 10) <= parseInt(searchKM, 10) && parseInt(item.experience, 10) >= parseInt(experience, 10)){
+      if(parseInt(item.distance, 10) <= parseInt(searchKM, 10) || parseInt(item.experience, 10) >= parseInt(experience, 10)){
         console.log(item);
         list.push(item);
         setListCandidates([...list]);
