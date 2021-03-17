@@ -34,6 +34,8 @@ function Login() {
     {id: '12', name: 'Felipe', resume: 'Breve descrição da experiência', experience:'2', distance: '3'},
   ]
 
+
+
   const handleLoginSubmit = (values) =>{
     console.log(values);
   }
@@ -43,11 +45,11 @@ function Login() {
     enqueueSnackbar(Messages.error.registration_failed, {variant: 'error'});
   }
 
-  const handleSearch = ({searchKM}) =>{
+  const handleSearch = ({searchKM, experience}) =>{
     let list = [];
     setListCandidates([]);
     mockCandidates.map((item)=>{
-      if(parseInt(item.distance, 10) <= parseInt(searchKM, 10)){
+      if(parseInt(item.distance, 10) <= parseInt(searchKM, 10) && parseInt(item.experience, 10) >= parseInt(experience, 10)){
         console.log(item);
         list.push(item);
         setListCandidates([...list]);
@@ -127,7 +129,7 @@ function Login() {
                 <CardContent>
                     <CustomButton
                       type="submit"
-                      label={'Buscar'}
+                      label={'Ver candidato'}
                       bg={'main_background'}
                       color={'light_color'}
                       fullwidth

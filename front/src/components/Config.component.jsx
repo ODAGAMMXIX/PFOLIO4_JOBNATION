@@ -15,7 +15,8 @@ const CustonDrawerConfig = styled('div')`
 function ConfigComponent({handleSearch}) {
 
   const initialValues = {
-    searchKM: ""
+    searchKM: "",
+    experience: "",
   }
 
   return (
@@ -43,6 +44,20 @@ function ConfigComponent({handleSearch}) {
                       helperText={(errors.searchKM && touched.searchKM) && errors.searchKM}
                       error={errors.searchKM && touched.searchKM}
                       value={values.searchKM}
+                    />
+
+                    <CustomInput
+                      onChange={handleChange}
+                      onBlur={handleBlur}
+                      fullWidth
+                      size="small"
+                      label="Experiência"
+                      type="text"
+                      name="experience"
+                      id="experience"
+                      helperText={(errors.experience && touched.experience) && errors.experience}
+                      error={errors.experience && touched.experience}
+                      value={values.experience}
                     />
 
                     <CustomButton
