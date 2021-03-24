@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 # Install Node and Dependencies
 
-To start this project in local environment, is necessary install Node JS and run command above 
+To start this project in local environment, is necessary install Node JS and run command bellow 
 on project directory to install the dependencies.
 
 ### npm install
