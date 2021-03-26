@@ -1,4 +1,4 @@
-> LOGO TECNO CODE
+![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
 
 <h1 align="center">Job Nation</h1>
 
