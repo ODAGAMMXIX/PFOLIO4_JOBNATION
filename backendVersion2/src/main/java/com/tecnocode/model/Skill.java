@@ -6,10 +6,6 @@ import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import javax.persistence.Table;
-import java.util.Objects;
-
-import static java.lang.Boolean.FALSE;
-import static java.lang.Boolean.TRUE;
 
 @Entity
 @Table(name = "skill")
@@ -17,8 +13,7 @@ import static java.lang.Boolean.TRUE;
 @Builder
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
-@AllArgsConstructor
-
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class Skill {
     @Id
     @Column(name = "ski_id")
@@ -32,9 +27,4 @@ public class Skill {
 
     @Column(name = "ski_others")
     private String others;
-
-    public void test() {
-        Vacancy vacancy = new Vacancy();
-        vacancy.getUser().getName();
-    }
 }

@@ -3,10 +3,7 @@ package com.tecnocode.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "company")
@@ -21,8 +18,8 @@ public class Company {
     @Column(name = "cpy_id")
     private Integer id;
 
-    @Column(name = "cpy_address_id")
-    private Address addressId;
+    @ManyToOne
+    private Address address;
 
     @Column(name = "cpy_name" )
     private String name;

@@ -1,0 +1,653 @@
+--------------------------------------------------------
+--  Arquivo criado - Sexta-feira-Março-26-2021
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Table ADDRESS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."ADDRESS"
+   (	"ADR_ID" NUMBER(10,0),
+	"ADR_CEP_PCZC" VARCHAR2(255 CHAR),
+	"ADR_CITY" VARCHAR2(255 CHAR),
+	"ADR_COUNTRY" VARCHAR2(255 CHAR),
+	"ADR_DETAIL" VARCHAR2(255 CHAR),
+	"ADR_HOOD" VARCHAR2(255 CHAR),
+	"ADR_LAT" NUMBER(10,0),
+	"ADR_LONG" NUMBER(10,0),
+	"ADR_NUM" NUMBER(10,0),
+	"ADR_OTHERS" VARCHAR2(255 CHAR),
+	"ADR_ST_NAME" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table BENEFITS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."BENEFITS"
+   (	"BEN_ID" NUMBER(10,0),
+	"COLUMN2" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE"
+   (	"CDT_ID" NUMBER(10,0),
+	"EXP_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_LANGUAGE"
+   (	"CDT_ID" NUMBER(10,0),
+	"LAN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_PROFILE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_PROFILE"
+   (	"CDT_ID" NUMBER(10,0),
+	"CDT_DT_BIRTH" DATE,
+	"CDT_CPF" VARCHAR2(255 CHAR),
+	"CDT_EMAIL" VARCHAR2(255 CHAR),
+	"CDT_FIRST_NAME" VARCHAR2(255 CHAR),
+	"CDT_GENDER" VARCHAR2(255 CHAR),
+	"CDT_JOINED" DATE,
+	"CDT_MARITAL" VARCHAR2(255 CHAR),
+	"CDT_MIDDLE_NAME" VARCHAR2(255 CHAR),
+	"CDT_MOBILE" NUMBER(10,0),
+	"CDT_PHONE" NUMBER(10,0),
+	"CDT_SURNAME" VARCHAR2(255 CHAR),
+	"ADDRESS_ADR_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION"
+   (	"CDT_ID" NUMBER(10,0),
+	"QUA_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_SKILL"
+   (	"CDT_ID" NUMBER(10,0),
+	"SKI_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table COMPANY
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."COMPANY"
+   (	"CPY_ID" NUMBER(10,0),
+	"CPY_CNPJ" VARCHAR2(255 CHAR),
+	"CPY_NAME" VARCHAR2(255 CHAR),
+	"ADDRESS_ADR_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."EXPERIENCE"
+   (	"EXP_ID" NUMBER(10,0),
+	"EXP_ACHIEV" VARCHAR2(255 CHAR),
+	"EXP_CITY" VARCHAR2(255 CHAR),
+	"EXP_COMPANY" VARCHAR2(255 CHAR),
+	"EXP_END" DATE,
+	"EXP_STAR" DATE,
+	"EXP_TITLE" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."LANGUAGE"
+   (	"LAN_ID" NUMBER(10,0),
+	"LAN_LEVEL" VARCHAR2(255 CHAR),
+	"LAN_NAME" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."QUALIFICATION"
+   (	"QUA_ID" NUMBER(10,0),
+	"QUA_CORSE_PRG" VARCHAR2(255 CHAR),
+	"QUA_END" DATE,
+	"QUA_INSTITUTION" VARCHAR2(255 CHAR),
+	"QUA_LEVEL_DEGR" VARCHAR2(255 CHAR),
+	"QUA_NAME" VARCHAR2(255 CHAR),
+	"QUA_START" DATE,
+	"QUA_STATUS" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."SKILL"
+   (	"SKI_ID" NUMBER(10,0),
+	"SKI_LEVEL" VARCHAR2(255 CHAR),
+	"SKI_NAME" VARCHAR2(255 CHAR),
+	"SKI_OTHERS" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY"
+   (	"VCY_ID" NUMBER(10,0),
+	"VCY_CLOSIN" DATE,
+	"VCY_CONTRACT" NUMBER(10,0),
+	"VCY_DESCRIPTION" VARCHAR2(20 CHAR),
+	"VCY__SAL_MAX" FLOAT(126),
+	"VCY_SAL_MIN" FLOAT(126),
+	"VCY_OPENN" DATE,
+	"VCY_TITLE" VARCHAR2(20 CHAR),
+	"ADDRESS_ADR_ID" NUMBER(10,0),
+	"COMPANY_CPY_ID" NUMBER(10,0),
+	"ID_USER" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_BENEFITS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_BENEFITS"
+   (	"VCY_ID" NUMBER(10,0),
+	"BEN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_EXPERIENCE"
+   (	"VCY_ID" NUMBER(10,0),
+	"EXP_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_LANGUAGE"
+   (	"VCY_ID" NUMBER(10,0),
+	"LAN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_QUALIFICATION"
+   (	"VCY_ID" NUMBER(10,0),
+	"QUA_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_SKILL"
+   (	"VCY_ID" NUMBER(10,0),
+	"SKI_ID" NUMBER(10,0)
+   ) SEGMENT CREATION DEFERRED
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255
+ NOCOMPRESS LOGGING
+  TABLESPACE "USERS" ;
+REM INSERTING into TECNOCODE.ADDRESS
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.BENEFITS
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.CANDIDATE_EXPERIENCE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.CANDIDATE_LANGUAGE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.CANDIDATE_PROFILE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.CANDIDATE_QUALIFICATION
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.CANDIDATE_SKILL
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.COMPANY
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.EXPERIENCE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.LANGUAGE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.QUALIFICATION
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.SKILL
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY_BENEFITS
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY_EXPERIENCE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY_LANGUAGE
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY_QUALIFICATION
+SET DEFINE OFF;
+REM INSERTING into TECNOCODE.VACANCY_SKILL
+SET DEFINE OFF;
+--------------------------------------------------------
+--  DDL for Index SYS_C007594
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007594" ON "TECNOCODE"."ADDRESS" ("ADR_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007596
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007596" ON "TECNOCODE"."BENEFITS" ("BEN_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007599
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007599" ON "TECNOCODE"."CANDIDATE_EXPERIENCE" ("CDT_ID", "EXP_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007602
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007602" ON "TECNOCODE"."CANDIDATE_LANGUAGE" ("CDT_ID", "LAN_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007604
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007604" ON "TECNOCODE"."CANDIDATE_PROFILE" ("CDT_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007607
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007607" ON "TECNOCODE"."CANDIDATE_QUALIFICATION" ("CDT_ID", "QUA_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007610
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007610" ON "TECNOCODE"."CANDIDATE_SKILL" ("CDT_ID", "SKI_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007612
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007612" ON "TECNOCODE"."COMPANY" ("CPY_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007614
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007614" ON "TECNOCODE"."EXPERIENCE" ("EXP_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007616
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007616" ON "TECNOCODE"."LANGUAGE" ("LAN_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007618
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007618" ON "TECNOCODE"."QUALIFICATION" ("QUA_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007620
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007620" ON "TECNOCODE"."SKILL" ("SKI_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007622
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007622" ON "TECNOCODE"."VACANCY" ("VCY_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007625
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007625" ON "TECNOCODE"."VACANCY_BENEFITS" ("VCY_ID", "BEN_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007628
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007628" ON "TECNOCODE"."VACANCY_EXPERIENCE" ("VCY_ID", "EXP_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007631
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007631" ON "TECNOCODE"."VACANCY_LANGUAGE" ("VCY_ID", "LAN_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007634
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007634" ON "TECNOCODE"."VACANCY_QUALIFICATION" ("VCY_ID", "QUA_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  DDL for Index SYS_C007637
+--------------------------------------------------------
+
+  CREATE UNIQUE INDEX "TECNOCODE"."SYS_C007637" ON "TECNOCODE"."VACANCY_SKILL" ("VCY_ID", "SKI_ID")
+  PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS" ;
+--------------------------------------------------------
+--  Constraints for Table ADDRESS
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."ADDRESS" MODIFY ("ADR_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."ADDRESS" ADD PRIMARY KEY ("ADR_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table BENEFITS
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."BENEFITS" MODIFY ("BEN_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."BENEFITS" ADD PRIMARY KEY ("BEN_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CANDIDATE_EXPERIENCE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" MODIFY ("CDT_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" MODIFY ("EXP_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" ADD PRIMARY KEY ("CDT_ID", "EXP_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CANDIDATE_LANGUAGE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" MODIFY ("CDT_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" MODIFY ("LAN_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" ADD PRIMARY KEY ("CDT_ID", "LAN_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CANDIDATE_PROFILE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_PROFILE" MODIFY ("CDT_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_PROFILE" ADD PRIMARY KEY ("CDT_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CANDIDATE_QUALIFICATION
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" MODIFY ("CDT_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" MODIFY ("QUA_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" ADD PRIMARY KEY ("CDT_ID", "QUA_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table CANDIDATE_SKILL
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_SKILL" MODIFY ("CDT_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_SKILL" MODIFY ("SKI_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."CANDIDATE_SKILL" ADD PRIMARY KEY ("CDT_ID", "SKI_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table COMPANY
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."COMPANY" MODIFY ("CPY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."COMPANY" ADD PRIMARY KEY ("CPY_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table EXPERIENCE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."EXPERIENCE" MODIFY ("EXP_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."EXPERIENCE" ADD PRIMARY KEY ("EXP_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table LANGUAGE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."LANGUAGE" MODIFY ("LAN_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."LANGUAGE" ADD PRIMARY KEY ("LAN_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table QUALIFICATION
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."QUALIFICATION" MODIFY ("QUA_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."QUALIFICATION" ADD PRIMARY KEY ("QUA_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table SKILL
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."SKILL" MODIFY ("SKI_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."SKILL" ADD PRIMARY KEY ("SKI_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY" ADD PRIMARY KEY ("VCY_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY_BENEFITS
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_BENEFITS" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_BENEFITS" MODIFY ("BEN_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_BENEFITS" ADD PRIMARY KEY ("VCY_ID", "BEN_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY_EXPERIENCE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_EXPERIENCE" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_EXPERIENCE" MODIFY ("EXP_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_EXPERIENCE" ADD PRIMARY KEY ("VCY_ID", "EXP_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY_LANGUAGE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_LANGUAGE" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_LANGUAGE" MODIFY ("LAN_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_LANGUAGE" ADD PRIMARY KEY ("VCY_ID", "LAN_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY_QUALIFICATION
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_QUALIFICATION" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_QUALIFICATION" MODIFY ("QUA_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_QUALIFICATION" ADD PRIMARY KEY ("VCY_ID", "QUA_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Constraints for Table VACANCY_SKILL
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_SKILL" MODIFY ("VCY_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_SKILL" MODIFY ("SKI_ID" NOT NULL ENABLE);
+  ALTER TABLE "TECNOCODE"."VACANCY_SKILL" ADD PRIMARY KEY ("VCY_ID", "SKI_ID")
+  USING INDEX PCTFREE 10 INITRANS 2 MAXTRANS 255
+  TABLESPACE "USERS"  ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CANDIDATE_EXPERIENCE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" ADD CONSTRAINT "FKNUMTE73WCMPAVI1087SLQKUDJ" FOREIGN KEY ("EXP_ID")
+	  REFERENCES "TECNOCODE"."EXPERIENCE" ("EXP_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" ADD CONSTRAINT "FKQAPRY42LL8SV2TVWXH2BRHGAY" FOREIGN KEY ("CDT_ID")
+	  REFERENCES "TECNOCODE"."CANDIDATE_PROFILE" ("CDT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CANDIDATE_LANGUAGE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" ADD CONSTRAINT "FKVN746A7PY628BXO3YM4Y2U0N" FOREIGN KEY ("LAN_ID")
+	  REFERENCES "TECNOCODE"."LANGUAGE" ("LAN_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" ADD CONSTRAINT "FKT05Q35K6RHMYQE95N7S9O1V0L" FOREIGN KEY ("CDT_ID")
+	  REFERENCES "TECNOCODE"."CANDIDATE_PROFILE" ("CDT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CANDIDATE_PROFILE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_PROFILE" ADD CONSTRAINT "FKA3I9CYNXH0LYN7C02PDX5VD7M" FOREIGN KEY ("ADDRESS_ADR_ID")
+	  REFERENCES "TECNOCODE"."ADDRESS" ("ADR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CANDIDATE_QUALIFICATION
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" ADD CONSTRAINT "FKN2SHYWAJ1G2TM3FQ5D6CCUX3R" FOREIGN KEY ("QUA_ID")
+	  REFERENCES "TECNOCODE"."QUALIFICATION" ("QUA_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" ADD CONSTRAINT "FK7QQSQK546HGX1LK1LJGH793MI" FOREIGN KEY ("CDT_ID")
+	  REFERENCES "TECNOCODE"."CANDIDATE_PROFILE" ("CDT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table CANDIDATE_SKILL
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."CANDIDATE_SKILL" ADD CONSTRAINT "FKOPV9DH5LIGKXHUWU5036G4L2R" FOREIGN KEY ("SKI_ID")
+	  REFERENCES "TECNOCODE"."SKILL" ("SKI_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."CANDIDATE_SKILL" ADD CONSTRAINT "FKNBHG2CYYVMCB4RATAOG2AHQVG" FOREIGN KEY ("CDT_ID")
+	  REFERENCES "TECNOCODE"."CANDIDATE_PROFILE" ("CDT_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table COMPANY
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."COMPANY" ADD CONSTRAINT "FKDGXQEFTVTX8G9JLGQ8URQDM40" FOREIGN KEY ("ADDRESS_ADR_ID")
+	  REFERENCES "TECNOCODE"."ADDRESS" ("ADR_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY" ADD CONSTRAINT "FKOFQRQRT7PJHPGYXESOM85Y33R" FOREIGN KEY ("ADDRESS_ADR_ID")
+	  REFERENCES "TECNOCODE"."ADDRESS" ("ADR_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY" ADD CONSTRAINT "FK6L2M370XI9PB9COU2YPEHPGHI" FOREIGN KEY ("COMPANY_CPY_ID")
+	  REFERENCES "TECNOCODE"."COMPANY" ("CPY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY_BENEFITS
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_BENEFITS" ADD CONSTRAINT "FK5TRCQJ1LOICHJW96IMLVVOH4V" FOREIGN KEY ("BEN_ID")
+	  REFERENCES "TECNOCODE"."BENEFITS" ("BEN_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY_BENEFITS" ADD CONSTRAINT "FK3W1GK34QYW5QGMMSWGDH03UGQ" FOREIGN KEY ("VCY_ID")
+	  REFERENCES "TECNOCODE"."VACANCY" ("VCY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY_EXPERIENCE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_EXPERIENCE" ADD CONSTRAINT "FKFR515J4970E8X30XNVH77WQLK" FOREIGN KEY ("EXP_ID")
+	  REFERENCES "TECNOCODE"."EXPERIENCE" ("EXP_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY_EXPERIENCE" ADD CONSTRAINT "FK1GBYLD6JE4YF5NS2ABGQ5JTFS" FOREIGN KEY ("VCY_ID")
+	  REFERENCES "TECNOCODE"."VACANCY" ("VCY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY_LANGUAGE
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_LANGUAGE" ADD CONSTRAINT "FKN5P9H7QFH617QVJKAQ08KKFR1" FOREIGN KEY ("LAN_ID")
+	  REFERENCES "TECNOCODE"."LANGUAGE" ("LAN_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY_LANGUAGE" ADD CONSTRAINT "FKL7N7KTPN9Y9BPD36B19BG144N" FOREIGN KEY ("VCY_ID")
+	  REFERENCES "TECNOCODE"."VACANCY" ("VCY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY_QUALIFICATION
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_QUALIFICATION" ADD CONSTRAINT "FKN00N955IQAFENPP4YIALCDGH8" FOREIGN KEY ("QUA_ID")
+	  REFERENCES "TECNOCODE"."QUALIFICATION" ("QUA_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY_QUALIFICATION" ADD CONSTRAINT "FK6MXTT9PU05B1GX81689Q48J1C" FOREIGN KEY ("VCY_ID")
+	  REFERENCES "TECNOCODE"."VACANCY" ("VCY_ID") ENABLE;
+--------------------------------------------------------
+--  Ref Constraints for Table VACANCY_SKILL
+--------------------------------------------------------
+
+  ALTER TABLE "TECNOCODE"."VACANCY_SKILL" ADD CONSTRAINT "FKNM7VX9B0XHJUGAISIT41PPX97" FOREIGN KEY ("SKI_ID")
+	  REFERENCES "TECNOCODE"."SKILL" ("SKI_ID") ENABLE;
+  ALTER TABLE "TECNOCODE"."VACANCY_SKILL" ADD CONSTRAINT "FKBPIF33DYVAU30NG79KM68D4QH" FOREIGN KEY ("VCY_ID")
+	  REFERENCES "TECNOCODE"."VACANCY" ("VCY_ID") ENABLE;

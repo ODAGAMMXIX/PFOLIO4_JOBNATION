@@ -14,7 +14,6 @@ import javax.persistence.Table;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Language {
     @Id
     @Column(name = "lan_id")

@@ -1,6 +1,5 @@
 package com.tecnocode.model;
 
-import jdk.internal.org.jline.reader.Candidate;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -16,17 +15,13 @@ import java.time.LocalDate;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Qualification {
     @Id
     @Column(name = "qua_id")
     private Integer id;
 
-    @Column(name = "column2")
+    @Column(name = "qua_name")
     private String name;
-
-    @Column(name = "cdt_id")
-    private Candidate candidateId;
 
     @Column(name = "qua_level_degr")
     private String level;

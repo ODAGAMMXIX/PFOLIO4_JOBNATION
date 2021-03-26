@@ -20,9 +20,6 @@ public class Address {
     @Column(name = "adr_id")
     private Integer id;
 
-    @Column(name = "vac_id")
-    private Vacancy vacancyId;
-
     @Column(name = "adr_cep_pczc")
     private String cep;
 

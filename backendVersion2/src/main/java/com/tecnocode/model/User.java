@@ -1,12 +1,11 @@
 package com.tecnocode.model;
 
 
+import lombok.Getter;
+import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
-import java.util.Objects;
-
-import lombok.*;
 
 @Entity
 @RequiredArgsConstructor

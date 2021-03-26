@@ -4,7 +4,6 @@ import lombok.*;
 
 import javax.persistence.*;
 import java.time.LocalDate;
-import java.util.List;
 import java.util.Set;
 
 @Entity
@@ -20,13 +19,14 @@ public class Vacancy {
     @Column(name = "vcy_id")
     private Integer id;
 
-    @Column(name = "cpy_id")
-    private Company companyId;
+    @ManyToOne
+    private Company company;
 
-    @Column(name = "usr_id")
-    private User user;
+    @ManyToOne
+    @JoinColumn(name = "id_user", referencedColumnName = "id_user")
+    private User recruiter;
 
-    @Column(name = "adr_id")
+    @ManyToOne
     private Address address;
 
     @Column(name = "vcy_title", length = 20)
@@ -50,7 +50,7 @@ public class Vacancy {
     @ManyToMany
     @JoinTable(name = "vacancy_experience",
     joinColumns = @JoinColumn(name = "vcy_id"),
-    inverseJoinColumns = @JoinColumn(name = "qexp_id"))
+    inverseJoinColumns = @JoinColumn(name = "exp_id"))
     private Set<Experience> experiences;
 
     @ManyToMany

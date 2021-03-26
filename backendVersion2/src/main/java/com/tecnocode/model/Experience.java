@@ -1,7 +1,5 @@
 package com.tecnocode.model;
 
-import jdk.internal.org.jline.reader.Candidate;
-import jdk.vm.ci.meta.Local;
 import lombok.*;
 
 import javax.persistence.Column;
@@ -17,17 +15,10 @@ import java.time.LocalDate;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Experience {
     @Id
     @Column(name = "exp_id")
     private Integer id;
-
-    @Column(name = "cdt_id")
-    private Candidate candidateId;
-
-    @Column(name = "vcy_id")
-    private Vacancy vacancyId;
 
     @Column(name = "exp_company")
     private String company;

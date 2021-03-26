@@ -13,13 +13,12 @@ import java.util.Set;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Candidate {
     @Id
     @Column(name = "cdt_id")
     private Integer id;
 
-    @Column(name = "add_id")
+    @ManyToOne
     private Address address;
 
     @ManyToMany
@@ -76,7 +75,7 @@ public class Candidate {
     @Column(name = "cdt_mobile")
     private Integer mobile;
 
-    @Column(name = "phone")
+    @Column(name = "cdt_phone")
     private Integer phone;
 
 }
