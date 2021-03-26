@@ -21,5 +21,5 @@ public class Benefit {
     private Integer id;
 
     @Column(name = "column2")
-    private String benefits;
+    private String benefit;
 }

@@ -2,11 +2,10 @@ package com.tecnocode.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.List;
+import java.util.Set;
 
 @Entity
 @Table(name = "vacancy")
@@ -25,10 +24,10 @@ public class Vacancy {
     private Company companyId;
 
     @Column(name = "usr_id")
-    private User userId;
+    private User user;
 
     @Column(name = "adr_id")
-    private Address addressId;
+    private Address address;
 
     @Column(name = "vcy_title", length = 20)
     private String title;
@@ -37,10 +36,10 @@ public class Vacancy {
     private String description;
 
     @Column(name = "vcy_sal_min")
-    private Integer minSalary;
+    private Double minSalary;
 
     @Column(name = "vcy__sal_max", length = 20)
-    private String maxSalary;
+    private Double maxSalary;
 
     @Column(name = "vcy_openn")
     private LocalDate openDate;
@@ -48,21 +47,37 @@ public class Vacancy {
     @Column(name = "vcy_closin")
     private LocalDate closeDate;
 
-    @Column(name = "vcy_exp")
-    private LocalDate expiration;
+    @ManyToMany
+    @JoinTable(name = "vacancy_experience",
+    joinColumns = @JoinColumn(name = "vcy_id"),
+    inverseJoinColumns = @JoinColumn(name = "qexp_id"))
+    private Set<Experience> experiences;
 
-    @Column(name = "vcy_qualif")
-    private Qualification qualificationId;
+    @ManyToMany
+    @JoinTable(name = "vacancy_qualification",
+    joinColumns = @JoinColumn(name = "vcy_id"),
+    inverseJoinColumns = @JoinColumn(name = "qua_id"))
+    private Set<Qualification> qualifications;
 
-    @Column(name = "vcy_skills")
-    private Skill skillId;
+    @ManyToMany
+    @JoinTable(name = "vacancy_skill",
+    joinColumns = @JoinColumn(name = "vcy_id"),
+    inverseJoinColumns = @JoinColumn(name = "ski_id"))
+    private Set<Skill> skills;
 
-    @Column(name = "vcy_languages")
-    private Language languageId;
+    @ManyToMany
+    @JoinTable(name = "vacancy_language",
+    joinColumns = @JoinColumn(name = "vcy_id"),
+    inverseJoinColumns = @JoinColumn(name = "lan_id"))
+    private Set<Language> languages;
 
     @Column(name = "vcy_contract", length = 20)
     private Integer contract;
 
-    @Column(name = "vcy_benefits")
-    private Benefit benefitId;
+    @ManyToMany
+    @JoinTable(name = "vacancy_benefits",
+    joinColumns = @JoinColumn(name = "vcy_id"),
+    inverseJoinColumns = @JoinColumn(name = "ben_id"))
+    private Set<Benefit> benefits;
+
 }

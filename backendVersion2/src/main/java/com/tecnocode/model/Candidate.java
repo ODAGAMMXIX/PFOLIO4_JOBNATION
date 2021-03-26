@@ -2,11 +2,9 @@ package com.tecnocode.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 import java.time.LocalDate;
+import java.util.Set;
 
 @Entity
 @Table(name = "candidate_profile")
@@ -22,19 +20,31 @@ public class Candidate {
     private Integer id;
 
     @Column(name = "add_id")
-    private Address addressId;
+    private Address address;
 
-    @Column(name = "exp_id")
-    private Experience experienceId;
+    @ManyToMany
+    @JoinTable(name = "candidate_experience",
+    joinColumns = @JoinColumn(name = "cdt_id"),
+    inverseJoinColumns = @JoinColumn(name = "exp_id"))
+    private Set<Experience> experiences;
 
-    @Column(name = "gra_id")
-    private String naoSei;
+    @ManyToMany
+    @JoinTable(name = "candidate_qualification",
+    joinColumns = @JoinColumn(name = "cdt_id"),
+    inverseJoinColumns = @JoinColumn(name = "qua_id"))
+    private Set<Qualification> qualifications;
 
-    @Column(name = "ski_id")
-    private Skill skillId;
+    @ManyToMany
+    @JoinTable(name = "candidate_skill",
+    joinColumns = @JoinColumn(name = "cdt_id"),
+    inverseJoinColumns = @JoinColumn(name = "ski_id"))
+    private Set<Skill> skills;
 
-    @Column(name = "lan_id")
-    private Language languageId;
+    @ManyToMany
+    @JoinTable(name = "candidate_language",
+    joinColumns = @JoinColumn(name = "cdt_id"),
+    inverseJoinColumns = @JoinColumn(name = "lan_id"))
+    private Set<Language> languages;
 
     @Column(name = "cdt_cpf")
     private String cpf;

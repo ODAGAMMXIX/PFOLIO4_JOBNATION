@@ -22,7 +22,7 @@ public class Qualification {
     @Column(name = "qua_id")
     private Integer id;
 
-    @Column(name = "name")
+    @Column(name = "column2")
     private String name;
 
     @Column(name = "cdt_id")
