@@ -1,4 +1,4 @@
-import React, {useEffect, useState, useRef} from 'react';
+import React, {useEffect, useState} from 'react';
 import {Typography, Button, TextField, Card, CardContent, Grid, CardHeader, Divider} from '@material-ui/core';
 import {CustomInput, CustomButton} from '../../components/Custom.component';
 import {CustomTypography, CustomFormLink} from '../../components/Custom.component';
@@ -33,8 +33,6 @@ function Login() {
     {id: '789', name: 'Gabriela', resume: 'Breve descrição da experiência', experience:'3', distance: '6'},
     {id: '12', name: 'Felipe', resume: 'Breve descrição da experiência', experience:'2', distance: '3'},
   ]
-
-
 
   const handleLoginSubmit = (values) =>{
     console.log(values);
