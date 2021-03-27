@@ -1,0 +1,11 @@
+export const primaryColor = '#0088d2';
+export const infoColor = '#0dcaf0';
+export const successColor = '#198754';
+export const warningColor = '#ffc107';
+export const dangerColor = '#dc3545';
+export const darkColor = '#000';
+export const whiteColor = '#fff';
+export const transparentColor = 'transparent';
+export const secondaryColor = '#adb5bd';
+export const lightColor = '#f8f9fa';
+export const inverseColor = '#fd7e14';
