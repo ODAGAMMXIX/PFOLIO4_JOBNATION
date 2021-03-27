@@ -55,19 +55,19 @@ Navegue entre as seções
 - [X] Filtrar candidatos por proximidade do local de trabalho
 > Imagem do figma
 - [ ] Formulário de cadastro de vaga
-> Imagem do figma
+![figma2](/uploads/5d57de90e82864e5f0b307f4b0a4adb9/figma2.jpg)
 - [ ] Listagem de vagas cadastradas via sistema CRUD
-> Imagem do figma
+![figma3](/uploads/20723bc1d3ae179eabdb02d39782c881/figma3.jpg)
 - [ ] Interface com informações do candidato
-> Imagem do figma
+![figma4](/uploads/5c99d0adf0aeca650acd8532bf664db5/figma4.jpg)
 - [ ] Buscar candidatos de acordo com critérios selecionados pelo empregador
-> Imagem do figma
+![figma5](/uploads/ed118893145eb1b1584a1e09814e544e/figma5.jpg)
 - [ ] Dashboard com informações para o empregador
 > Imagem do figma
 - [ ] Apresentar o quão relevante é a candidatura do concorrente a vaga
 > Imagem do figma
 - [ ] Formulário de cadastro para candidatos
-> Imagem do figma
+![figma8](/uploads/df46efa432618da1ddfff9ed3ba41db2/figma8.jpg)
 
 ## Entregas
 
