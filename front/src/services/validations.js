@@ -22,3 +22,8 @@ export const ConfigValidation = Yup.object().shape({
     darkColor: Yup.string().required(Messages.error.required),
     lightColor: Yup.string().required(Messages.error.required),
 });
+
+export const NewEditJobValidation = Yup.object().shape({
+    title: Yup.string().required(Messages.error.required),
+    description: Yup.string().required(Messages.error.required)
+})

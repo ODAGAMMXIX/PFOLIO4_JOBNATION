@@ -25,7 +25,7 @@ export default function HeaderComponent(){
 
     return (
         <>
-            <HeaderWrapper className="header_background">
+            <HeaderWrapper className="default_main_background">
                 {/* <div>
                     <ul>
                         <Link to='/dashboard'>Dashboard</Link>

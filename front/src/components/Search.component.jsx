@@ -8,7 +8,7 @@ import SearchIcon from '@material-ui/icons/Search';
 import ConfigComponent from './Config.component';
 
 
-export default function Search({handleSearch}){
+export default function Search({HandleSetSearchByDistance, handleSearch}){
 
     const [openDrawer, setOpenDrawer] = useState(false);
     const [themeConfig, setThemeConfig] = useState();
@@ -25,7 +25,10 @@ export default function Search({handleSearch}){
         <>
             <Button color="secondary" variant="contained" onClick={() => handleDrawer(true)}><SearchIcon /> Filtrar</Button>
             <Drawer open={openDrawer} anchor={"left"} onClose={() => handleDrawer(false)}>
-                <ConfigComponent handleSearch={handleSearch} />
+                <ConfigComponent 
+                    HandleSetSearchByDistance={HandleSetSearchByDistance}
+                    handleSearch={handleSearch}
+                />
             </Drawer>
         </>
     )

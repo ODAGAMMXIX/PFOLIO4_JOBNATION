@@ -15,19 +15,22 @@ const MainWrapper = styled('div')`
 `;
 
 const ContentWrapper = styled('div')`
-  padding: 15px;
+  // padding: 15px;
   height: 100%;
 `;
 
 const MenuWrapper = styled('div')`
   width: 15%;
   min-height: 100%;
+  box-shadow:0px 0px 10px rgba(0,0,0,0.05);
+  position: relative;
+  z-index: 2;
 `;
 
 function TemplateDefault({children}) {
   return (
     <Wrapper>
-        <MenuWrapper className="menu_background">
+        <MenuWrapper className="default_white_background">
           menu
         </MenuWrapper>
         <MainWrapper>

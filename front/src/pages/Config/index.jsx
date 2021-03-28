@@ -1,7 +1,7 @@
 import React, {useEffect, useState, useRef} from 'react';
 import {Typography, Button, TextField, Grid, CardContent, CardHeader, Divider} from '@material-ui/core';
 import {CustomInput, CustomButton} from '../../components/Custom.component';
-import {CustomTypography, CustomFormLink, CustomBreadcrumb, CustomCard, CustonCardHeader} from '../../components/Custom.component';
+import {CustomTypography, CustomFormLink, CustomBreadcrumb, CustomCard, CustomCardHeader} from '../../components/Custom.component';
 import {CustomCarousel} from '../../components/Carousel.component';
 import { useSnackbar } from 'notistack';
 import { Messages } from '../../services/messages';
@@ -60,7 +60,7 @@ function Config() {
         <Grid container spacing={3}>
           <Grid item md={3} xs={12}>
             <CustomCard>
-              <CustonCardHeader
+              <CustomCardHeader
                 boldTitle
                 variantTitle="h6"
                 variantSubtitle="p"
@@ -77,7 +77,7 @@ function Config() {
           </Grid>
           <Grid item md={9} xs={12}>
             <CustomCard>
-              <CustonCardHeader
+              <CustomCardHeader
                 variantTitle="h5"
                 variantSubtitle="p"
                 title="Configurações"

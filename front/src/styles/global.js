@@ -37,7 +37,7 @@ export default createGlobalStyle`
         --text-color: ${props => props.theme?.text_color || defaultTheme.text_color};
         --title-color: ${props => props.theme?.title_color || defaultTheme.title_color};
         --link-color: ${props => props.theme?.link_color || defaultTheme.link_color};
-        --default-main-color: #2196F3;
+        --default-main-color: #3f51b5;
         --default-second-color: #9C27B0;
         --default-success-color: #4CAF50;
         --default-danger-color: #F44336;

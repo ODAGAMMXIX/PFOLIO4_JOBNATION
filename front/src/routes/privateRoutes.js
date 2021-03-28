@@ -12,7 +12,7 @@ export default function PrivateRoute({component: Component, isPrivate = false, .
     }
 
     if(signed && !isPrivate){
-        return <Redirect to ="/jobs" />
+        return <Redirect to ="/dashboard" />
     }
 
     const Layout = signed ? DefaultTemplate : AuthTemplate;
