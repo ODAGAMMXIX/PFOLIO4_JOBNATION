@@ -53,7 +53,7 @@ Navegue entre as seções
 ## Features
 
 - [X] Filtrar candidatos por proximidade do local de trabalho
-> Imagem do figma
+![Figma1](/uploads/8b0acb7b26c517482ddf0932d49d0456/Figma1.gif)
 - [ ] Formulário de cadastro de vaga
 ![figma2](/uploads/5d57de90e82864e5f0b307f4b0a4adb9/figma2.jpg)
 - [ ] Listagem de vagas cadastradas via sistema CRUD
@@ -63,9 +63,9 @@ Navegue entre as seções
 - [ ] Buscar candidatos de acordo com critérios selecionados pelo empregador
 ![figma5](/uploads/ed118893145eb1b1584a1e09814e544e/figma5.jpg)
 - [ ] Dashboard com informações para o empregador
-> Imagem do figma
+> Soon...
 - [ ] Apresentar o quão relevante é a candidatura do concorrente a vaga
-> Imagem do figma
+> Soon...
 - [ ] Formulário de cadastro para candidatos
 ![figma8](/uploads/df46efa432618da1ddfff9ed3ba41db2/figma8.jpg)
 
@@ -105,7 +105,7 @@ Navegue entre as seções
 | Design intuitivo                                     | RNF04  |
 | Documentação baseada em processo de metodologia ágil | RNF05  |
 
-## User Stories (talvez seja diagrama de caso de uso)
+## User Stories
 
 | Quem? | O que? | Por que? |
 |-------|--------|----------|
@@ -114,10 +114,11 @@ Navegue entre as seções
 | Equipe Tecno Code | Entregar ao contratante do serviço um sistema de qualidade que contenha os recursos que foram solicitados pelo mesmo | Para aplicar na prática os conhecimentos de programação adquiridos, além de adquirir experiência profissional em desenvolvimento de projetos |
 
 ## Banco de dados: Modelo relacional
-> Imagem DER
+![bd-mer.jfif](/uploads/981554c0608105fa88c415f10d45449c/bd-mer.jfif)
 
 ## Banco de dados: Diagrama de classes
-> Imagem DER
+![bd-dclass1.jfif](/uploads/73eb3212f5b044942fda78d906891fa9/bd-dclass1.jfif)
+![bd-dclass2.jfif](/uploads/50ddb4f183565b8b1fae0f1f4b729690/bd-dclass2.jfif)
 
 ## Backlog do Projeto
 Aba dedicada a organizar as atividades desenvolvidas em cada sprint, além de definir o nível de prioridade das mesmas.
