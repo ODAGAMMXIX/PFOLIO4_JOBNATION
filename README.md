@@ -151,7 +151,7 @@ Aba dedicada a organizar as atividades desenvolvidas em cada sprint, além de de
 * [Linkedin](https://www.linkedin.com/in/caroline-sousa-53a27972/)
 * RA: 1460281923049
 
-#### Fábio Odaguiri (Scrum master e database developer)
+#### Fabio Odaguiri (Scrum master e database developer)
 * [Git Lab](https://gitlab.com/ODAGAMMXIX)
 * [Linkedin]()
 * RA: 1460281923008
@@ -195,5 +195,5 @@ As seguintes ferramentas foram usadas na construção do projeto:
 - Css
 - Javascript
 - React
-- Sql
+- Sql developer (Oracle)
 - Java
