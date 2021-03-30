@@ -185,7 +185,7 @@ Aba dedicada a organizar as atividades desenvolvidas em cada sprint, além de de
 
 - Selecione uma pasta de sua preferência, através do comando "cd Pasta Escolhida"
 - Abra o terminal clicando dentro de uma pasta com o botão direito e selecione a opção git bash here
-- Utilize a função git clone https://gitlab.com/tecno-code/dashboard-spc para instalar os arquivos no seu computador
+- Utilize a função git clone https://gitlab.com/gabsmomilli/tecnocode para instalar os arquivos no seu computador
 
 ## 💻 Tecnologias
 
