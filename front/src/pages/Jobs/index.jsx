@@ -76,14 +76,14 @@ function Login() {
       distance: km * 1000,
     }
 
-    console.log(km);
+    // console.log(km);
 
     // testDebounce();
 
 
-    // await API.get("/search", {params:params}).then((response) => {
-    //   setSearchCandidates(response.data.devs)
-    // })
+    await API.get("/search", {params:params}).then((response) => {
+      setSearchCandidates(response.data.devs)
+    })
   }
 
   const HandleSetSearchByDistance = (km) => {

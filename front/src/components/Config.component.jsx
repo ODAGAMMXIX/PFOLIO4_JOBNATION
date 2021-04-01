@@ -58,10 +58,11 @@ function ConfigComponent({HandleSetSearchByDistance, handleSearch}) {
                     max={200}
                     onChange={(e) => {
                       setKm(e.target.value);
-                    }}
-                    onBlur={(e) =>{
                       HandleSetSearchByDistance(e.target.value);
                     }}
+                    // onBlur={(e) =>{
+                    //   HandleSetSearchByDistance(e.target.value);
+                    // }}
                   />
                   <br/>
                   <Typography align="center">{km} quilómetros</Typography>
