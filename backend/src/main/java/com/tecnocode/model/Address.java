@@ -27,7 +27,7 @@ public class Address {
     private String street;
 
     @Column(name = "adr_num")
-    private Integer number;
+    private String number;
 
     @Column(name = "adr_detail")
     private String detail;
@@ -41,8 +41,8 @@ public class Address {
     @Column(name = "adr_country")
     private String country;
 
-    @Column(name = "adr_others")
-    private String others;
+    @Column(name = "adr_state")
+    private String state;
 
     @Column(name = "adr_lat")
     private Integer latitude;
