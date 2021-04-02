@@ -20,6 +20,6 @@ public class Benefit {
     @Column(name = "ben_id")
     private Integer id;
 
-    @Column(name = "column2")
+    @Column(name = "ben_ben")
     private String benefit;
 }

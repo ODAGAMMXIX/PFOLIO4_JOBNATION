@@ -1,10 +1,7 @@
 package com.tecnocode.controller;
 
-import com.tecnocode.converter.AddressToDtoConverter;
 import com.tecnocode.converter.CompanyToDtoConverter;
-import com.tecnocode.converter.DtoToAddressConverter;
 import com.tecnocode.converter.DtoToCompanyConverter;
-import com.tecnocode.model.Address;
 import com.tecnocode.model.Company;
 import com.tecnocode.payload.CompanyDTO;
 import com.tecnocode.service.CompanyService;
