@@ -5,7 +5,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BenefitValidator implements AbstractValidator<Benefit> {
-
     @Override
     public void validate(Benefit benefit){
         if(benefit.getBenefit().isEmpty()){

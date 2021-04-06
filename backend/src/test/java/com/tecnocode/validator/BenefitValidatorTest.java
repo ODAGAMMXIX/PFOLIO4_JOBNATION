@@ -15,10 +15,10 @@ public class BenefitValidatorTest {
 
     @Test
     public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
-        Benefit company = Benefit.builder()
+        Benefit benefit = Benefit.builder()
                 .benefit("Vale Refeição")
                 .build();
-        assertDoesNotThrow(() -> validator.validate(company));
+        assertDoesNotThrow(() -> validator.validate(benefit));
     }
 
     @Test

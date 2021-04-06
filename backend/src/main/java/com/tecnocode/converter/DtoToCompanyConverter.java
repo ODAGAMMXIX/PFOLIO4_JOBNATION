@@ -14,6 +14,4 @@ public class DtoToCompanyConverter implements Converter<CompanyDTO, Company> {
                 .name(companyDTO.getName())
                 .build();
     }
-
-
 }
