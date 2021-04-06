@@ -1,0 +1,22 @@
+package com.tecnocode.payload;
+
+import lombok.*;
+
+import javax.persistence.Column;
+import java.io.Serializable;
+
+@Getter
+@Builder
+@NoArgsConstructor(access = AccessLevel.PRIVATE)
+@AllArgsConstructor(access = AccessLevel.PRIVATE)
+public class  SkillDTO implements Serializable {
+    private Integer id;
+
+    private String name;
+
+    private String level;
+
+    private String others;
+
+}
+
