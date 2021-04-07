@@ -13,7 +13,6 @@ public class DtoToQualificationConverter implements Converter<QualificationDTO, 
                 .name(qualificationDTO.getName())
                 .level(qualificationDTO.getLevel())
                 .institution(qualificationDTO.getInstitution())
-                .couse(qualificationDTO.getCouse())
                 .start(qualificationDTO.getStart())
                 .end(qualificationDTO.getEnd())
                 .status(qualificationDTO.getStatus())
