@@ -15,7 +15,7 @@ public class VacancyValidatorTest {
     private VacancyValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidVacancyData_whenTryToValidate_thenShouldSuccess() {
         Vacancy vacancy = Vacancy.builder()
                 .title("Java Pleno")
                 .description("Neste trabalho será realizado a criação e manutenção de sistemas em Java.")
@@ -23,7 +23,7 @@ public class VacancyValidatorTest {
         assertDoesNotThrow(() -> validator.validate(vacancy));
     }
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidVacancyData_whenTryToValidate_thenThrowsException() {
         Vacancy vacancy1 = Vacancy.builder()
                 .title("")
                 .description("Neste trabalho será realizado a criação e manutenção de sistemas em Java.")

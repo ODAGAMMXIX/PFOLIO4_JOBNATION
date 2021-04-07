@@ -15,7 +15,7 @@ public class SkillValidatorTest {
     private SkillValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidSkillData_whenTryToValidate_thenShouldSuccess() {
         Skill skill = Skill.builder()
                 .name("Curso de Java no Alura")
                 .level("Iniciante")
@@ -25,7 +25,7 @@ public class SkillValidatorTest {
     }
 
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidSkillData_whenTryToValidate_thenThrowsException() {
         Skill skill1 = Skill.builder()
                 .name("")
                 .level("Iniciante")

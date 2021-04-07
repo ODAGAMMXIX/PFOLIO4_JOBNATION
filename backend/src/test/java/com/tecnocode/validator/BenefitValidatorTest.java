@@ -4,7 +4,6 @@ import com.tecnocode.model.Benefit;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -14,7 +13,7 @@ public class BenefitValidatorTest {
     private BenefitValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidBenefitData_whenTryToValidate_thenShouldSuccess() {
         Benefit benefit = Benefit.builder()
                 .benefit("Vale Refeição")
                 .build();
@@ -22,7 +21,7 @@ public class BenefitValidatorTest {
     }
 
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidBenefitData_whenTryToValidate_thenThrowsException() {
         Benefit benefit1 = Benefit.builder()
                 .benefit("")
                 .build();

@@ -13,7 +13,7 @@ public class QualificationValidatorTest {
     private QualificationValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidQualificationData_whenTryToValidate_thenShouldSuccess() {
         Qualification qualification = Qualification.builder()
                 .name("Professor de Ingles")
                 .level("Intermediario - Ensino medio")
@@ -24,7 +24,7 @@ public class QualificationValidatorTest {
     }
 
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidQualificationData_whenTryToValidate_thenThrowsException() {
         Qualification qualification1 = Qualification.builder()
                 .name("")
                 .level("Intermediario - Ensino medio")

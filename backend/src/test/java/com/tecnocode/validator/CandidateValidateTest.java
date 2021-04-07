@@ -15,7 +15,7 @@ public class CandidateValidateTest {
     private CandidateValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidCandidateData_whenTryToValidate_thenShouldSuccess() {
         Candidate candidate = Candidate.builder()
                 .cpf("491.884.788-92")
                 .firstName("Gabriela")
@@ -32,7 +32,7 @@ public class CandidateValidateTest {
     }
 
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidCandidateData_whenTryToValidate_thenThrowsException() {
         Candidate candidate1 = Candidate.builder()
                 .cpf("")
                 .firstName("Gabriela")

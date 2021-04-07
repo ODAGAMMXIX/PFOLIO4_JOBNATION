@@ -14,7 +14,7 @@ public class AddressValidatorTest {
     private AddressValidator validator;
 
     @Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidAddressData_whenTryToValidate_thenShouldSuccess() {
         Address address = Address.builder()
                 .cep("12235-625")
                 .street("Rua dos Geronimos")
@@ -29,7 +29,7 @@ public class AddressValidatorTest {
     }
 
     @Test
-    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+    public void givenAnInvalidAddressData_whenTryToValidate_thenThrowsException() {
         Address address1 = Address.builder()
                 .cep("")
                 .street("Rua dos Geronimos")

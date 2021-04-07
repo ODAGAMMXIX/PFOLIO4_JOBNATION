@@ -13,7 +13,7 @@ public class LanguageValidatorTest {
 	private LanguageValidator validator;
 	
 	@Test
-    public void givenAValidCompanyData_whenTryToValidate_thenShouldSuccess() {
+    public void givenAValidLanguageData_whenTryToValidate_thenShouldSuccess() {
         Language language = Language.builder()
                 .name("Spanish")
                 .level("Basic")
@@ -22,7 +22,7 @@ public class LanguageValidatorTest {
     }
 
 	 @Test
-	public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+	public void givenAnInvalidLanguageData_whenTryToValidate_thenThrowsException() {
 		Language language1 = Language.builder()
 				.name("")
 				.level("Basic")
