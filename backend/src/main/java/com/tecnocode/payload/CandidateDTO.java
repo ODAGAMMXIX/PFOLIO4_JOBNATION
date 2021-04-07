@@ -7,6 +7,7 @@ import javax.persistence.JoinColumn;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -14,7 +15,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class CandidateDTO {
+public class CandidateDTO implements Serializable {
     private Address address;
 
     private Set<Experience> experiences;

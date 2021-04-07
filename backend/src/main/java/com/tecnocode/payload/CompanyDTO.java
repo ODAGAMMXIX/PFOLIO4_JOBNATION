@@ -11,7 +11,7 @@ import java.io.Serializable;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class CompanyDTO implements Serializable{
+public class CompanyDTO implements Serializable {
     private Address address;
 
     private String name;

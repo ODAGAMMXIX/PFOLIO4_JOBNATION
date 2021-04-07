@@ -10,8 +10,6 @@ import java.io.Serializable;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class  SkillDTO implements Serializable {
-    private Integer id;
-
     private String name;
 
     private String level;

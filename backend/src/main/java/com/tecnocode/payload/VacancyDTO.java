@@ -3,6 +3,7 @@ package com.tecnocode.payload;
 import com.tecnocode.model.*;
 import lombok.*;
 
+import java.io.Serializable;
 import java.time.LocalDate;
 import java.util.Set;
 
@@ -10,7 +11,7 @@ import java.util.Set;
 @Builder
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
-public class VacancyDTO {
+public class VacancyDTO implements Serializable {
     private Company company;
 
     private Address address;
