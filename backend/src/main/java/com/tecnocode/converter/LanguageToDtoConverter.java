@@ -6,7 +6,7 @@ import com.tecnocode.model.Language;
 import com.tecnocode.payload.LanguageDTO;
 
 @Component
-public class LanguageToDtoConverter implements Converter <Language, LanguageDTO> {
+public class LanguageToDtoConverter implements Converter<Language, LanguageDTO> {
 	@Override
 	public LanguageDTO convert(Language language) {
 		return LanguageDTO.builder()

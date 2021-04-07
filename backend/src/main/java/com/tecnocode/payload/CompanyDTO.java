@@ -2,9 +2,6 @@ package com.tecnocode.payload;
 
 import com.tecnocode.model.Address;
 import lombok.*;
-
-import javax.persistence.Column;
-import javax.persistence.ManyToOne;
 import java.io.Serializable;
 
 @Getter

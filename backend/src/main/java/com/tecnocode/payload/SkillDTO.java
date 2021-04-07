@@ -1,8 +1,6 @@
 package com.tecnocode.payload;
 
 import lombok.*;
-
-import javax.persistence.Column;
 import java.io.Serializable;
 
 @Getter

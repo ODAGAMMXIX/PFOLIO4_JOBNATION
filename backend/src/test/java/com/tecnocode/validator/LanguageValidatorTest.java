@@ -22,12 +22,35 @@ public class LanguageValidatorTest {
     }
 
 	 @Test
-	    public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
-	        Language language1 = Language.builder()
-	                .name("")
-	                .level("")
-	                .build();
-	        assertThrows(RuntimeException.class, () -> validator.validate(language1));
-	    }
+	public void givenAnInvalidCompanyData_whenTryToValidate_thenThrowsException() {
+		Language language1 = Language.builder()
+				.name("")
+				.level("Basic")
+				.build();
+		assertThrows(RuntimeException.class, () -> validator.validate(language1));
+
+		 Language language2 = Language.builder()
+				 .name("Spanish")
+				 .level("")
+				 .build();
+		 assertThrows(RuntimeException.class, () -> validator.validate(language2));
+
+		 Language language3 = Language.builder()
+				 .name("")
+				 .level("")
+				 .build();
+		 assertThrows(RuntimeException.class, () -> validator.validate(language3));
+
+		 Language language4 = Language.builder()
+				 .level("")
+				 .build();
+		 assertThrows(RuntimeException.class, () -> validator.validate(language4));
+
+		 Language language5 = Language.builder()
+				 .name("")
+				 .build();
+		 assertThrows(RuntimeException.class, () -> validator.validate(language5));
+
+	}
 
 }

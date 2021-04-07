@@ -7,7 +7,6 @@ import org.springframework.stereotype.Component;
 
 @Component
 public class BenefitToDtoConverter implements Converter<Benefit, BenefitDTO> {
-
     @Override
     public BenefitDTO convert(Benefit benefit){
         return BenefitDTO.builder()
