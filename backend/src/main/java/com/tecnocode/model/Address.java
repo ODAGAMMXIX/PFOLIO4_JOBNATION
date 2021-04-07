@@ -14,7 +14,6 @@ import javax.persistence.Table;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Address {
     @Id
     @Column(name = "adr_id")

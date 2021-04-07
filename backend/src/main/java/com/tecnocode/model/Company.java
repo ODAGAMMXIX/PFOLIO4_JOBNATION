@@ -12,7 +12,6 @@ import javax.persistence.*;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Company {
     @Id
     @Column(name = "cpy_id")

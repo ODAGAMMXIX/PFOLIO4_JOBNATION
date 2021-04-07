@@ -3,8 +3,6 @@ package com.tecnocode.validator;
 import com.tecnocode.model.Address;
 import org.springframework.stereotype.Component;
 
-import java.util.InputMismatchException;
-
 @Component
 public class AddressValidator implements AbstractValidator<Address> {
 

@@ -1,7 +1,6 @@
 package com.tecnocode.payload;
 
 import lombok.*;
-
 import java.io.Serializable;
 
 @Getter

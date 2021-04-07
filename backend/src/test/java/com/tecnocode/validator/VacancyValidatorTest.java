@@ -1,6 +1,5 @@
 package com.tecnocode.validator;
 
-import com.tecnocode.model.Address;
 import com.tecnocode.model.Vacancy;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;

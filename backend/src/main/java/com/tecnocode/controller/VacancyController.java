@@ -1,11 +1,8 @@
 package com.tecnocode.controller;
 
-
-
 import com.tecnocode.converter.DtoToVacancyConverter;
 import com.tecnocode.converter.VacancyToDtoConverter;
 import com.tecnocode.model.Vacancy;
-import com.tecnocode.payload.SkillDTO;
 import com.tecnocode.payload.VacancyDTO;
 import com.tecnocode.service.VacancyService;
 import lombok.RequiredArgsConstructor;

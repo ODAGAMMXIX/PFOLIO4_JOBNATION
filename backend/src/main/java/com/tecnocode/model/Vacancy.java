@@ -13,7 +13,6 @@ import java.util.Set;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Vacancy {
     @Id
     @Column(name = "vcy_id")

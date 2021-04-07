@@ -1,6 +1,5 @@
 package com.tecnocode.validator;
 
-import com.tecnocode.model.Benefit;
 import com.tecnocode.model.Vacancy;
 import org.springframework.stereotype.Component;
 
