@@ -7,6 +7,8 @@ import com.tecnocode.validator.BenefitValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class BenefitServiceImpl implements BenefitService {
@@ -18,4 +20,16 @@ public class BenefitServiceImpl implements BenefitService {
         validator.validate(benefit);
         return repository.saveAndFlush(benefit);
     }
+
+    @Override
+    public void delete(Integer id) {
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<Benefit> buscarTodosComEsteBeneficio(String benefit) {
+        return repository.findAllByBenefit(benefit);
+    }
+
+
 }

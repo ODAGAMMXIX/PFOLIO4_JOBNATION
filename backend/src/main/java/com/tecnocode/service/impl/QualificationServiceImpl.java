@@ -18,4 +18,9 @@ public class QualificationServiceImpl implements QualificationService {
         validator.validate(qualification);
         return repository.saveAndFlush(qualification);
     }
+
+    @Override
+    public void delete(Integer id) {
+
+    }
 }

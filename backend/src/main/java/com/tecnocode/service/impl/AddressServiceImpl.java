@@ -18,4 +18,9 @@ public class AddressServiceImpl implements AddressService {
         validator.validate(address);
         return repository.saveAndFlush(address);
     }
+
+    @Override
+    public void delete(Integer id) {
+
+    }
 }

@@ -18,4 +18,9 @@ public class SkillServiceImpl implements SkillService {
         validator.validate(skill);
         return repository.saveAndFlush(skill);
     }
+
+    @Override
+    public void delete(Integer id) {
+        
+    }
 }

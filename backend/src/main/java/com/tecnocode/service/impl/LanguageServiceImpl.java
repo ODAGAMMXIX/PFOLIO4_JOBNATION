@@ -18,4 +18,9 @@ public class LanguageServiceImpl implements LanguageService {
 		validator.validate(language);
 		return repository.saveAndFlush(language);
 	}
+
+	@Override
+	public void delete(Integer id) {
+
+	}
 }

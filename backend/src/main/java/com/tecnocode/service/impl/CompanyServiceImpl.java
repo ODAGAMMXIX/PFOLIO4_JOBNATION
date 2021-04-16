@@ -18,4 +18,9 @@ public class CompanyServiceImpl implements CompanyService {
         validator.validate(company);
         return repository.saveAndFlush(company);
     }
+
+    @Override
+    public void delete(Integer id) {
+
+    }
 }

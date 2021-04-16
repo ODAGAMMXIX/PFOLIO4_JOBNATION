@@ -18,4 +18,9 @@ public class CandidateServiceImpl implements CandidateService {
         validator.validate(candidate);
         return repository.saveAndFlush(candidate);
     }
+
+    @Override
+    public void delete(Integer id) {
+
+    }
 }
