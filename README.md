@@ -56,31 +56,32 @@ Navegue entre as seções
 ## Features
 
 - [x] Diagrama-Base da JOBNATION
-![01-APPLICATION-FULL-](/uploads/d414dfd1cff1f1edd98d8eb6dae2d89d/01-APPLICATION-FULL-.png)
+![01-APPLICATION-FULL-](/uploads/089115b4466546461e51ac523f68da27/01-APPLICATION-FULL-.png)
 
 - [x]  API JOBNATION
-![02-JN-API](/uploads/74477725731929257f1059ba53662a13/02-JN-API.png)
+![02-JN-API](/uploads/7d566f3198f060ba024b3ef4a03fa626/02-JN-API.png)
+
 
 - [x] JOBNATION's DATABASE
 
-![03-JN-DB](/uploads/5416de4691a575e4ea07ec64411d5d4b/03-JN-DB.png)
+![03-JN-DB](/uploads/e22f22f0c02b924bf06d0aef1a8c14ff/03-JN-DB.png)
 
 - [x]  BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR DISTÂNCIA
-![07-LAT-LONG-PROCEDURE-W-QUERY](/uploads/2e5bcb71d152ce70dd44f5e1d36ede5f/07-LAT-LONG-PROCEDURE-W-QUERY.mp4)
+![07-LAT-LONG-PROCEDURE-W-QUERY](/uploads/033a931cb97772d18addc21209037ac3/07-LAT-LONG-PROCEDURE-W-QUERY.mp4)
 
 - [x] APLICAÇÃO JOBNATION FUCIONANDO
 ![06-SPRINT-01-BK-END](/uploads/750e8470a821cc4fe5c99daf57e9ff2f/06-SPRINT-01-BK-END.mp4)
 
 - [x]  BONUS-ENTENDENDO A API (Visão de front-end)
 
-![BONUS-FEND-EMULATION](/uploads/358eea7f9144a6c87d6f835059074e1f/BONUS-FEND-EMULATION.mp4)
+![BONUS-FEND-EMULATION](/uploads/65e04f805ea0972f0f8161f50f0d0395/BONUS-FEND-EMULATION.mp4)
 
 ## Entregas
 
 | Sprint | Data  | Vídeo                                       |
 |--------|-------|---------------------------------------------|
 | 1      | 28/03 |----(no video for this sprint)---------------|
-| 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/84e561106b488084300d7ee2c61f789c/APRESENTACAO-SPRINT-02.mp4)--|
+| 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/473105bcdf168d7dbe708defdb127857/APRESENTACAO-SPRINT-02.mp4)--|
 | 3      | 16/05 |---------------------------------------------|
 | 4      | 05/06 |---------------------------------------------|
 
@@ -119,10 +120,10 @@ Navegue entre as seções
 
 ## Banco de dados
 ##DIAGRAMA ENTIDADE-RELACIONAMENTO
-![04-DER-SPRINT-02-](/uploads/1fd083b662512b5655646f3177a0f714/04-DER-SPRINT-02-.png)
+![04-DER-SPRINT-02-](/uploads/43ab9dae9c03891562a4f95a384b60f7/04-DER-SPRINT-02-.png)
 
 ## DIAGRAMA LÓGICO
-![05-LOGICAL-SPRINT-02-](/uploads/2a08eb6e613618e34352b944d72207cc/05-LOGICAL-SPRINT-02-.png)
+![05-LOGICAL-SPRINT-02-](/uploads/80221f57c968b73183896074cca9503a/05-LOGICAL-SPRINT-02-.png)
 
 
 ## Propostas de inovação
