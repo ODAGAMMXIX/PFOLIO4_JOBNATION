@@ -4,7 +4,10 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
@@ -18,6 +21,8 @@ import java.time.LocalDate;
 public class Qualification {
     @Id
     @Column(name = "qua_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "benefit_sequence")
     private Integer id;
 
     @Column(name = "qua_name")
