@@ -1,27 +1,28 @@
 ![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
 
-<h1 align="center">Job Nation</h1>
+<h1 align="center">JOBNATION</h1>
 
 ## Proposta comercial
 
-Temos o objetivo de criar uma aplicação para empregadores, que trará melhorias para essas empresas no momento em que as mesmas precisarem fazer buscas pelos candidatos que irão ocupar suas futuras oportunidades profissionais.
-As duas principais funcionalidades do projeto serão a busca de candidatos por localização e por critérios, porém foi nos dada a liberdade de trazer ideias inovativas durante a construção da plataforma. Nossa proposta de funcionamento para esses recursos serão detalhados logo abaixo:
-- Busca por localização: Esse recurso funcionará utilizando as coordenadas de latitude e longitude. O endereço do candidato e do local da vaga serão cadastrados normalmente, o programa utilizará as coordenadas que compõem esse endereço e calculará a distância do local do candidato para o da empresa, ordenando por quem estiver mais próximo desse local de trabalho.
-- Busca por critérios: A ferramenta terá vários filtros onde o empregador poderá selecionar os requisitos de seleção para a candidatura da vaga em específico. O sistema irá fazer uma varredura nos currículos já cadastrados e identificar os candidatos que mais se adequam ao perfil da vaga.
+A aplicação consiste numa  interface de recepção de currículos, com banco de dados,  que permitirá a busca de candidatos por vaga a partir de filtros configuráveis.
 
-## Propostas de inovação
+Deverão ser destaques a segurança e desempenho da aplicação.
 
-As ideias que irão incrementar valor a este projeto serão discutidas junto a equipe, levadas até o contratante e caso haja aprovação do mesmo, serão detalhadas através dessa guia.
+ Nossa proposta de funcionamento para esses recursos serão detalhados logo abaixo:
+ 
+- Busca por localização: funcionará utilizando as coordenadas de latitude e longitude.
 
-## Descrição do projeto
+- Busca por diferentes critérios: rotas de pesquisa estão sendo desenhadas para propiciar liberdade ao agende de consulta ao BD. Então, a aplicação fará uma varredura nos currículos já cadastrados e identificará os candidatos que mais se adequam aos critérios informados.
 
-Trabalhamos através de um modelo de projeto que faz a integração empresa escola. O desafio foi proposto pela empresa Jet Soft, onde aplicaremos nossos conhecimentos adquiridos ao longo do curso para desenvolver a melhor solução possível dentro dessa proposta. Somos uma equipe formada por alunos do 4° semestre do curso de Banco de Dados da FATEC de São José dos Campos e iremos nos esforçar para cumprir todos os requisitos solicitados durante o período de desenvolvimento.
+## Descrição do projeto integrador
+
+Baseado no modelo de Aprendizado Por Projeto, nossa equipe trabalha para entregar uma solução operante para uma empresa parceira - Jet Soft - com o apoio do Docente desta instituição de ensino superior.
+
 
 Navegue entre as seções
 =================
 <!--ts-->
    * [Proposta comercial](#proposta-comercial)
-   * [Propostas de inovação](#proposta-de-inovacao)
    * [Descrição do Projeto](#descricao-do-projeto)
    * [Navegue entre as seções](#navegue-entre-as-secoes)
    * [Status do Projeto](#status-do-projeto)
@@ -31,8 +32,9 @@ Navegue entre as seções
       * [Funcionais](#funcionais)
       * [Não Funcionais](#nao-funcionais)
    * [User Stories](#user-stories)
-   * [Banco de dados: Modelo relacional](#banco-de-dados:-modelo-relacional)
-   * [Banco de dados: Diagrama de classes](#banco-de-dados:-diagrama-de-classes)
+   * [Banco de dados: Modelo relacional](#banco-de-dados)
+   * [Banco de dados: Diagrama Lógico](#banco-de-dados)
+      * [Propostas de inovação](#proposta-de-inovacao)
    * [Backlog do projeto](#backlog-do-projeto)
       * [Sprint 00](#sprint-00)
       * [Sprint 01](#sprint-01)
@@ -47,34 +49,38 @@ Navegue entre as seções
 ## Status do projeto
 
 <h4 align="center"> 
-	🚧  Job Nation 🔧 em desenvolvimento...  Sprint 1=done! 🚧
+	Job Nation  SPRINT 02 - 18/ABR/2021 = OK; 
+	
 </h4>
 
 ## Features
 
-- [X] Filtrar candidatos por proximidade do local de trabalho
-![Figma1](/uploads/8b0acb7b26c517482ddf0932d49d0456/Figma1.gif)
-- [ ] Formulário de cadastro de vaga
-![figma2](/uploads/5d57de90e82864e5f0b307f4b0a4adb9/figma2.jpg)
-- [ ] Listagem de vagas cadastradas via sistema CRUD
-![figma3](/uploads/20723bc1d3ae179eabdb02d39782c881/figma3.jpg)
-- [ ] Interface com informações do candidato
-![figma4](/uploads/5c99d0adf0aeca650acd8532bf664db5/figma4.jpg)
-- [ ] Buscar candidatos de acordo com critérios selecionados pelo empregador
-![figma5](/uploads/ed118893145eb1b1584a1e09814e544e/figma5.jpg)
-- [ ] Dashboard com informações para o empregador
-> Soon...
-- [ ] Apresentar o quão relevante é a candidatura do concorrente a vaga
-> Soon...
-- [ ] Formulário de cadastro para candidatos
-![figma8](/uploads/df46efa432618da1ddfff9ed3ba41db2/figma8.jpg)
+- [x] Diagrama-Base da JOBNATION
+![01-APPLICATION-FULL-](/uploads/d414dfd1cff1f1edd98d8eb6dae2d89d/01-APPLICATION-FULL-.png)
+
+- [x]  API JOBNATION
+![02-JN-API](/uploads/74477725731929257f1059ba53662a13/02-JN-API.png)
+
+- [x] JOBNATION's DATABASE
+
+![03-JN-DB](/uploads/5416de4691a575e4ea07ec64411d5d4b/03-JN-DB.png)
+
+- [x]  BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR DISTÂNCIA
+![07-LAT-LONG-PROCEDURE-W-QUERY](/uploads/2e5bcb71d152ce70dd44f5e1d36ede5f/07-LAT-LONG-PROCEDURE-W-QUERY.mp4)
+
+- [x] APLICAÇÃO JOBNATION FUCIONANDO
+![06-SPRINT-01-BK-END](/uploads/750e8470a821cc4fe5c99daf57e9ff2f/06-SPRINT-01-BK-END.mp4)
+
+- [x]  BONUS-ENTENDENDO A API (Visão de front-end)
+
+![BONUS-FEND-EMULATION](/uploads/358eea7f9144a6c87d6f835059074e1f/BONUS-FEND-EMULATION.mp4)
 
 ## Entregas
 
 | Sprint | Data  | Vídeo                                       |
 |--------|-------|---------------------------------------------|
 | 1      | 28/03 |----(no video for this sprint)---------------|
-| 2      | 18/04 |---------------------------------------------|
+| 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/84e561106b488084300d7ee2c61f789c/APRESENTACAO-SPRINT-02.mp4)--|
 | 3      | 16/05 |---------------------------------------------|
 | 4      | 05/06 |---------------------------------------------|
 
@@ -84,99 +90,153 @@ Navegue entre as seções
 
 | Requisitos Funcionais                                                  | Código | Prioridade | Sprint |
 |------------------------------------------------------------------------|--------|------------|--------|
-| Filtrar candidatos por proximidade do local de trabalho                | RF01   | 1          | 1      |
-| Formulário de cadastro de vaga                                         | RF02   | 1          | 2      |
-| Listagem de vagas cadastradas via sistema CRUD                         | RF03   | 2          | 2      |
-| Interface com informações do candidato                                 | RF04   | 3          | 2      |
-| Menu lateral navegável                                                 | RF05   | 4          | 2      |
-| Buscar candidatos de acordo com critérios selecionados pelo empregador | RF06   | 1          | 3      |
-| Dashboard com informações para o empregador                            | RF07   | 1          | 4      |
-| Apresentar o quão relevante é a candidatura do concorrente a vaga      | RF08   | 2          | 4      |
-| Formulário de cadastro para candidatos                                 | RF09   | 3          | 4      |
-| Página de login                                                        | RF10   | 4          | 4      |
+| Inicializa uma API e se conecta ao/cria BD                | RF01   | 1          | 1      |
+| Executa Requisição de Terceiro | RF02   | 1          | 2      |
+| Busca candidatos mais pŕoximos de um endereço                                | RF03   | 1          | 2      |
+| Busca candidatos a partir de uma vaga                                                 | RF04  | 1          | 3     |
+| Filtra resultado da Busca | RF05  | 1          | 3      |
+| Importa BD do Cliente                            | RF06   | 1          | 4      |
+
+
 
 #### Não funcionais
 
 | Requisitos Não Funcionais                            | Código | 
 |------------------------------------------------------|--------|
-| Infraestrutura para grande volume de dados           | RNF01  |
-| Proteção dos dados do usuário                        | RNF02  |
-| Banco de dados relacional (my sql)                   | RNF03  |
-| Design intuitivo                                     | RNF04  |
-| Documentação baseada em processo de metodologia ágil | RNF05  |
+| Regras de segurança da informação           | RNF01  |
+| Integridade (BD relacional)                   | RNF02  |
+| Flexibilidade quanto aos critérios                                    | RNF03  |
+| Regras de performance   | RNF04  |
+| Documentação  | RNF05 |
 
 ## User Stories
 
 | Quem? | O que? | Por que? |
 |-------|--------|----------|
-| Usuário da Plataforma | Ter acesso a um sistema que irá trazer inovação para o setor de RH da empresa | Para que o empregador possa fazer contratações mais assertivas de maneira mais facilitada |
-| Jet Soft | Disponibilizar a seus clientes uma plataforma funcional | Para melhorar o processo de contratação de funcionários, trazendo aos empregadores interessados na aquisição do sistema, uma melhoria considerável em seu setor de RH |
-| Equipe Tecno Code | Entregar ao contratante do serviço um sistema de qualidade que contenha os recursos que foram solicitados pelo mesmo | Para aplicar na prática os conhecimentos de programação adquiridos, além de adquirir experiência profissional em desenvolvimento de projetos |
+| API de Terceiros | Fornece critérios de busca | Quer  processo de recrutamento em massa
+| Jet Soft | Disponibiliza JOBNATION aos seus clientes (terceiros) | Velocidade |
+| Tecno Code | Desenvolve a JOBNATION | Para aplicar na prática os conhecimentos de programação adquiridos, além de adquirir experiência profissional em desenvolvimento de projetos |
 
-## Banco de dados: Modelo relacional
-![bd-mer.jfif](/uploads/981554c0608105fa88c415f10d45449c/bd-mer.jfif)
+## Banco de dados
+##DIAGRAMA ENTIDADE-RELACIONAMENTO
+![04-DER-SPRINT-02-](/uploads/1fd083b662512b5655646f3177a0f714/04-DER-SPRINT-02-.png)
 
-## Banco de dados: Diagrama de classes
-![bd-dclass1.jfif](/uploads/73eb3212f5b044942fda78d906891fa9/bd-dclass1.jfif)
-![bd-dclass2.jfif](/uploads/50ddb4f183565b8b1fae0f1f4b729690/bd-dclass2.jfif)
+## DIAGRAMA LÓGICO
+![05-LOGICAL-SPRINT-02-](/uploads/2a08eb6e613618e34352b944d72207cc/05-LOGICAL-SPRINT-02-.png)
+
+
+## Propostas de inovação
+
+Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o protagonismo para a entidade vaga (VACANCY).
+
+Estudamos ainda quais ferramentas servirão aos requisitos não funcionais de Flexibilidade: 
+
+- No código - Rotas fixas em REST para Swagger ou GRAPHiQL;
+
+- No BD - PROCEDURES ou algum tipo de inteligência;
+
 
 ## Backlog do Projeto
-Aba dedicada a organizar as atividades desenvolvidas em cada sprint, além de definir o nível de prioridade das mesmas.
+Atividades de cada sprint, com prioridade.
 
 #### Sprint 00
-- Realizamos a reunião de kickoff junto ao cliente
-- Todas as dúvidas iniciais foram atendidas durante o kickoff
+- reunião de kickoff  com JETSOFT
 - Criação de repositório
 - Definição de cargos (SM e PO)
 - Definição de nome para a equipe
 - Brainstorm para discussão de primeiras ideias
+- Apresntação de proposta de aplicação;
 
 #### Sprint 01
-- Desenvolvimento do readme com informações sobre o projeto e instruções para execução do mesmo
-- Criação de modelo entidade relacionamento para definir como os dados serão estruturados
-- Construção do design da plataforma
-- Desenvolvimento do recurso de busca por proximidade do local da vaga
-- Associação das informações do banco de dados a um diagrama de classes
+- Criação do README.MD com informações sobre o projeto e instruções para execução da aplicação;
+
+- Criação de modelo entidade relacionamento para definir como os dados serão estruturados;
+
+- Início do Desenvolvimento do Core da Aplicação: Controller, Model (Arquitetura REST) e Banco de Dados (Oracle)
+
+- Associação das informações do banco de dados a um diagrama de classes;
+
+- BONUS; FRONT-END - Construção do design da plataforma;
+
+- BONUS: FRONT-END - Desenvolvimento do recurso de busca por proximidade do local da vaga
+
 
 #### Sprint 02
 
-#### Sprint 03
+- Core da Aplicação Funcionando: Controller, Model (Arquitetura REST) e Banco de Dados (Oracle);
 
-#### Sprint 04
+- CRUD: 1a Rota de submissão de requisições:  Benefícios oferecidos pela vaga (via POSTMAN);
+
+- Criação ou atualização automática das tabelas (Hibernate- MODEL);
+
+- Segurança no Código: Sigilo de dados sensíveis/prescindíveis (payloads, DTO,Converter);
+	
+- Validação de Dados: Campos que NÃO  podem estar vazios;
+
+- Testes - Início de implementação de teste unitário de métodos;
+
+- PROCEDURE PL/SQL: Consulta candidatos por distância (LAT,LONG);
+
+#### Sprint 03 - 16 de maio de 2021.
+
+- Criação de Multiplas Rotas x Múltiplos Critérios;
+
+- Novos testes unitários de métodos;
+
+- Novas procedures de devolução de listas por outros critérios;
+
+- População do BD com dados fictícios para teste de performance;
+
+#### Sprint 04 - 05 de junho de 2021.
+
+- Busca por qualquer critério;
+
+- Importação do BD do cliente;
+
+- Adaptação do Código para novas classes e tabelas;
+
+- Adaptação do BD para novas tabelas;
+
+#### Apresentação Final - 11 de junho de 2021.
+
+- Bugs e Documentação;
+
+#### Feira de Soluções - 18 de junho de 2021.
+
 
 ## Equipe:
 
-#### Caroline Paz de Sousa (Database developer)
+#### Caroline Paz de Sousa (Java back-end developer)
 * [Git Lab](https://gitlab.com/CarolPaz)
 * [Linkedin](https://www.linkedin.com/in/caroline-sousa-53a27972/)
 * RA: 1460281923049
 
-#### Fabio Odaguiri (Scrum master e database developer)
+#### Fabio Odaguiri LL.M.(Scrum master e database developer)
 * [Git Lab](https://gitlab.com/ODAGAMMXIX)
 * [Linkedin]()
 * RA: 1460281923008
 
-#### Felipe Santos Carvalho (Product owner e front end developer)
+#### Felipe Santos Carvalho (Product owner e database developer)
 * [Git Lab](https://gitlab.com/felipefsc)
 * [Linkedin](https://www.linkedin.com/in/felipe-santos-carvalho-454060187/)
 * RA: 1460281923011
 
-#### Gabriela Momilli (Back end developer)
+#### Gabriela Momilli ((Java back-end developer)
 * [Git Lab](https://gitlab.com/gabsmomilli)
 * [Linkedin](https://www.linkedin.com/in/gabriela-momilli-105b1a184/)
 * RA: 1460281923058
 
-#### Nathan Augusto Bugni Naressi (Front end developer)
+#### Nathan Augusto Bugni Naressi (Java back-end developer)
 * [Git Lab](https://gitlab.com/nathanaugusto10)
 * [Linkedin](https://www.linkedin.com/in/nathan-naressi-b529081b2)
 * RA: 1460281923027
 
-#### Rafael Estevam de Oliveira (Front end developer)
+#### Rafael Estevam de Oliveira (Oracle tabase developer)
 * [Git Lab](https://gitlab.com/rafaelEstevam)
 * [Linkedin](https://www.linkedin.com/in/rafael-estevam-de-oliveira/)
 * RA: 1460281823040
 
-#### Wilson Amore Vieira Filho (Back end developer)
+#### Wilson Amore Vieira Filho ((Java back-end developer)
 * [Git Lab](https://gitlab.com/ZVIEWIL)
 * [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
@@ -186,14 +246,42 @@ Aba dedicada a organizar as atividades desenvolvidas em cada sprint, além de de
 - Selecione uma pasta de sua preferência, através do comando "cd Pasta Escolhida"
 - Abra o terminal clicando dentro de uma pasta com o botão direito e selecione a opção git bash here
 - Utilize a função git clone https://gitlab.com/gabsmomilli/tecnocode para instalar os arquivos no seu computador
+- Abra o SQL DEVELOPER (com Oracle 11g instalado);
+- Execute o SCRIPT:
+
+|-------------------------|
+|CREATE TABLESPACE  tecnocode|
+|DATAFILE  'C:\BD\tecnocode.dbf' SIZE 1M|
+|AUTOEXTEND ON;|
+|------------------
+|----CRIA USUÁRIO --|
+|------------------
+|CREATE USER tecnocode|
+|IDENTIFIED BY tecnocode|
+|DEFAULT TABLESPACE tecnocode|
+|TEMPORARY TABLESPACE TEMP|
+|QUOTA UNLIMITED ON tecnocode;|
+|-----------------
+|----PRIVILÉGIOS --|
+|-----------------
+|GRANT DBA TO tecnocode WITH ADMIN OPTION;|
+
+- Na sua IDE, importe o projeto Tecnocode;
+- Abra o arquivo "application.properties" e altere a seguinte linha "spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe";
+
+- Abra o INSOMNIA e escreva uma das rotas criadas nas clases "controller", com os dados ali exigidos e envie a requisição;
+
 
 ## 💻 Tecnologias
 
-As seguintes ferramentas foram usadas na construção do projeto:
+As ferramentasutilizadas na construção deste projeto:
 
+- Oracle 11g (Sql developer)
+- Java (IntelliJ / Eclipse))
+- React (Insomnia/POSTMAN);
+- Git;
+- OBS Studio / Kdenlive;
 - Html
 - Css
 - Javascript
-- React
-- Sql developer (Oracle)
-- Java
+
