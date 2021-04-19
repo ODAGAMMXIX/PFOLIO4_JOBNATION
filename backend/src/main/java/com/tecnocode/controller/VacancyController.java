@@ -6,7 +6,6 @@ import com.tecnocode.model.*;
 import com.tecnocode.payload.VacancyDTO;
 import com.tecnocode.service.VacancyService;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -23,13 +22,19 @@ public class VacancyController {
     private final VacancyToDtoConverter vacancyToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final VacancyDTO vacancyDTO) {
+    public ResponseEntity saveNew(@RequestBody final VacancyDTO vacancyDTO) {
         try {
             Vacancy vacancy = service.save(dtoToVacancyConverter.convert(vacancyDTO));
             return ResponseEntity.status(HttpStatus.CREATED).body(vacancyToDtoConverter.convert(vacancy));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity delete(@PathVariable("id") Integer id) {
+        service.delete(id);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 
     @GetMapping("/{company}")

@@ -18,21 +18,21 @@ public class VacancyValidator implements AbstractValidator<Vacancy> {
 
     @Override
     public void validate(Vacancy vacancy){
-        if(isNull(vacancy.getCompany()) || isNull(vacancy.getCompany().getId())){
-            throw new RuntimeException("Empresa não pode ser vazio.");
-        }
-
-        if(!companyRepository.findById(vacancy.getCompany().getId()).isPresent()) {
-            throw new RuntimeException("A Empresa informada não existe.");
-        }
-
-        if(isNull(vacancy.getAddress()) || isNull(vacancy.getAddress().getId())){
-            throw new RuntimeException("endereço não pode ser vazio.");
-        }
-
-        if(!addressRepository.findById(vacancy.getAddress().getId()).isPresent()){
-            throw new RuntimeException("O endereço informado não existe.");
-        }
+//        if(isNull(vacancy.getCompany()) || isNull(vacancy.getCompany().getId())){
+//            throw new RuntimeException("Empresa não pode ser vazio.");
+//        }
+//
+//        if(!companyRepository.findById(vacancy.getCompany().getId()).isPresent()) {
+//            throw new RuntimeException("A Empresa informada não existe.");
+//        }
+//
+//        if(isNull(vacancy.getAddress()) || isNull(vacancy.getAddress().getId())){
+//            throw new RuntimeException("endereço não pode ser vazio.");
+//        }
+//
+//        if(!addressRepository.findById(vacancy.getAddress().getId()).isPresent()){
+//            throw new RuntimeException("O endereço informado não existe.");
+//        }
 
         if(vacancy.getTitle().isEmpty()){
             throw new RuntimeException("O titulo não pode ser vazio.");
@@ -40,15 +40,15 @@ public class VacancyValidator implements AbstractValidator<Vacancy> {
         if(vacancy.getDescription().isEmpty()){
             throw new RuntimeException("A descrição não pode ser vazio.");
         }
-        if(isNull(vacancy.getOpenDate())){
-            throw new RuntimeException("A data de abertura da vaga não pode ser vazia.");
-        }
-        if(isNull(vacancy.getCloseDate())){
-            throw new RuntimeException("A data de fechamento da vaga não pode ser vazia.");
-        }
-//        if(vacancy.getContract().isEmpty()){
-//            throw new RuntimeException("Empresa não pode ser vazio.");
+//        if(isNull(vacancy.getOpenDate())){
+//            throw new RuntimeException("A data de abertura da vaga não pode ser vazia.");
 //        }
+//        if(isNull(vacancy.getCloseDate())){
+//            throw new RuntimeException("A data de fechamento da vaga não pode ser vazia.");
+//        }
+        if(vacancy.getContract().isEmpty()){
+            throw new RuntimeException("Empresa não pode ser vazio.");
+        }
 
     }
 }
