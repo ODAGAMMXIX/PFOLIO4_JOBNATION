@@ -1,5 +1,6 @@
 package com.tecnocode.controller;
 
+import com.tecnocode.validator.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -23,7 +24,7 @@ public class LanguageController {
 	@PostMapping
 	public ResponseEntity saveNew(final LanguageDTO languageDTO) {
 		try {
-			Language language = service.save(dtoToLanguageConverter.convert(languageDTO));
+			Language language = service.save(dtoToLanguageConverter.convert(languageDTO), Operation.INSERT);
 			return ResponseEntity.status(HttpStatus.CREATED).body(languageToDtoConverter.convert(language));
 		} catch (RuntimeException ex) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

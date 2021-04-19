@@ -5,6 +5,7 @@ import com.tecnocode.converter.DtoToCandidateConverter;
 import com.tecnocode.model.Candidate;
 import com.tecnocode.payload.CandidateDTO;
 import com.tecnocode.service.CandidateService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class CandidateController {
     @PostMapping
     public ResponseEntity saveNew(final CandidateDTO candidateDTO) {
         try {
-            Candidate candidate = service.save(dtoToCandidateConverter.convert(candidateDTO));
+            Candidate candidate = service.save(dtoToCandidateConverter.convert(candidateDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(candidateToDtoConverter.convert(candidate));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

@@ -5,6 +5,7 @@ import com.tecnocode.converter.VacancyToDtoConverter;
 import com.tecnocode.model.*;
 import com.tecnocode.payload.VacancyDTO;
 import com.tecnocode.service.VacancyService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class VacancyController {
     @PostMapping
     public ResponseEntity saveNew(@RequestBody final VacancyDTO vacancyDTO) {
         try {
-            Vacancy vacancy = service.save(dtoToVacancyConverter.convert(vacancyDTO));
+            Vacancy vacancy = service.save(dtoToVacancyConverter.convert(vacancyDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(vacancyToDtoConverter.convert(vacancy));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

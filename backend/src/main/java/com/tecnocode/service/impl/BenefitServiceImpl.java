@@ -4,6 +4,7 @@ import com.tecnocode.model.Benefit;
 import com.tecnocode.repository.BenefitRepository;
 import com.tecnocode.service.BenefitService;
 import com.tecnocode.validator.BenefitValidator;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
@@ -16,7 +17,7 @@ public class BenefitServiceImpl implements BenefitService {
     private final BenefitValidator validator;
 
     @Override
-    public Benefit save(final Benefit benefit) {
+    public Benefit save(final Benefit benefit, Operation operation) {
         validator.validate(benefit);
         return repository.saveAndFlush(benefit);
     }
