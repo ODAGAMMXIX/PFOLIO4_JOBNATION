@@ -4,7 +4,10 @@ import lombok.*;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.SequenceGenerator;
 import javax.persistence.Table;
 import java.time.LocalDate;
 
@@ -18,6 +21,8 @@ import java.time.LocalDate;
 public class Experience {
     @Id
     @Column(name = "exp_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "experience_sequence")
     private Integer id;
 
     @Column(name = "exp_company")
@@ -26,7 +31,7 @@ public class Experience {
     @Column(name = "exp_city")
     private String city;
 
-    @Column(name = "exp_star")
+    @Column(name = "exp_start")
     private LocalDate start;
 
     @Column(name = "exp_end")
