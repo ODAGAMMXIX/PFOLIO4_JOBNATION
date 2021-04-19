@@ -1,5 +1,7 @@
 package com.tecnocode.validator;
 
+import com.tecnocode.model.Address;
+import com.tecnocode.model.Company;
 import com.tecnocode.model.Vacancy;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +18,11 @@ public class VacancyValidatorTest {
     @Test
     public void givenAValidVacancyData_whenTryToValidate_thenShouldSuccess() {
         Vacancy vacancy = Vacancy.builder()
+                .company(Company.builder().id(1).build())
+                .address(Address.builder().id(40).build())
                 .title("Java Pleno")
                 .description("Neste trabalho será realizado a criação e manutenção de sistemas em Java.")
+                .contract("PJ")
                 .build();
         assertDoesNotThrow(() -> validator.validate(vacancy));
     }
