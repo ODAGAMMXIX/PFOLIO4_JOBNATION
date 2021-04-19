@@ -30,7 +30,7 @@ public class Qualification {
     private String institution;
 
     @Column(name = "qua_corse_prg")
-    private String couse;
+    private String course;
 
     @Column(name = "qua_start")
     private LocalDate start;
