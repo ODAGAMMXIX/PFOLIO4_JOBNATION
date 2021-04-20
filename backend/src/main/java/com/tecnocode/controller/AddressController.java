@@ -5,6 +5,7 @@ import com.tecnocode.converter.DtoToAddressConverter;
 import com.tecnocode.model.Address;
 import com.tecnocode.payload.AddressDTO;
 import com.tecnocode.service.AddressService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class AddressController {
     @PostMapping
     public ResponseEntity saveNew(final AddressDTO addressDTO) {
         try {
-            Address address = service.save(dtoToAddressConverter.convert(addressDTO));
+            Address address = service.save(dtoToAddressConverter.convert(addressDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(addressToDtoConverter.convert(address));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

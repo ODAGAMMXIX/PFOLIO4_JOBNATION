@@ -2,6 +2,7 @@ package com.tecnocode.service;
 
 import com.tecnocode.model.Address;
 import com.tecnocode.model.Company;
+import com.tecnocode.validator.Operation;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -23,7 +24,7 @@ public class CompanyServiceTest {
                 .cnpj("38354796000153")
                 .address(saveNewAddress())
                 .build();
-        final Company savedCompany = service.save(company);
+        final Company savedCompany = service.save(company, Operation.INSERT);
         assertAll(() -> {
                 assertNotNull(savedCompany);
                 assertNotNull(savedCompany.getId());
@@ -41,6 +42,6 @@ public class CompanyServiceTest {
                 .hood("Pq Industrial")
                 .state("SP")
                 .country("Brasil")
-                .build());
+                .build(), Operation.INSERT);
     }
 }

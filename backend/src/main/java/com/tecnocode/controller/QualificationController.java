@@ -5,6 +5,7 @@ import com.tecnocode.converter.QualificationToDtoConverter;
 import com.tecnocode.model.Qualification;
 import com.tecnocode.payload.QualificationDTO;
 import com.tecnocode.service.QualificationService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -24,7 +25,7 @@ public class QualificationController {
     @PostMapping
     public ResponseEntity saveNew(final QualificationDTO qualificationDTO) {
         try {
-            Qualification qualification = service.save(dtoToQualificationConverter.convert(qualificationDTO));
+            Qualification qualification = service.save(dtoToQualificationConverter.convert(qualificationDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(qualificationToDtoConverter.convert(qualification));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

@@ -5,6 +5,7 @@ import com.tecnocode.converter.DtoToCompanyConverter;
 import com.tecnocode.model.Company;
 import com.tecnocode.payload.CompanyDTO;
 import com.tecnocode.service.CompanyService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class CompanyController {
     @PostMapping
     public ResponseEntity saveNew(final CompanyDTO companyDTO) {
         try {
-            Company company = service.save(dtoToCompanyConverter.convert(companyDTO));
+            Company company = service.save(dtoToCompanyConverter.convert(companyDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(companyToDtoConverter.convert(company));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
