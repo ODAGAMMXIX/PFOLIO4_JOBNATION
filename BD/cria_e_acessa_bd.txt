@@ -1,0 +1,5 @@
+//Cria o banco de dados
+CREATE DATABASE TECNOCODE;
+
+// Acessa o banco de dados
+USE TECNOCODE;
