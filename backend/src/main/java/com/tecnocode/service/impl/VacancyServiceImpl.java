@@ -3,6 +3,7 @@ package com.tecnocode.service.impl;
 import com.tecnocode.model.*;
 import com.tecnocode.repository.VacancyRepository;
 import com.tecnocode.service.VacancyService;
+import com.tecnocode.validator.Operation;
 import com.tecnocode.validator.VacancyValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -17,7 +18,7 @@ public class VacancyServiceImpl implements VacancyService {
     private final VacancyValidator validator;
 
     @Override
-    public Vacancy save(final Vacancy vacancy) {
+    public Vacancy save(final Vacancy vacancy, Operation operation) {
         validator.validate(vacancy);
         return repository.saveAndFlush(vacancy);
     }

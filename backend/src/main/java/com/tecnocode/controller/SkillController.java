@@ -5,6 +5,7 @@ import com.tecnocode.converter.DtoToSkillConverter;
 import com.tecnocode.model.Skill;
 import com.tecnocode.payload.SkillDTO;
 import com.tecnocode.service.SkillService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -23,7 +24,7 @@ public class SkillController {
     @PostMapping
     public ResponseEntity saveNew(final SkillDTO skillDTO) {
         try {
-            Skill skill = service.save(dtoToSkillConverter.convert(skillDTO));
+            Skill skill = service.save(dtoToSkillConverter.convert(skillDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(skillToDtoConverter.convert(skill));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

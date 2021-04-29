@@ -4,13 +4,16 @@ import com.tecnocode.model.Address;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.Map;
+
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
 @SpringBootTest
 public class AddressValidatorTest {
     @Autowired
-    private AddressValidator validator;
+    private Map<Operation, AddressValidator> validator;
 
     @Test
     public void givenAValidAddressData_whenTryToValidate_thenShouldSuccess() {
@@ -24,7 +27,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertDoesNotThrow(() -> validator.validate(address));
+        assertDoesNotThrow(() -> validator.get(Operation.INSERT).validate(address));
     }
 
     @Test
@@ -39,7 +42,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address1));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address1));
 
         Address address2 = Address.builder()
                 .cep("")
@@ -51,7 +54,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address2));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address2));
 
         Address address3 = Address.builder()
                 .cep("")
@@ -63,7 +66,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address3));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address3));
 
         Address address4 = Address.builder()
                 .cep("")
@@ -75,7 +78,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address4));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address4));
 
         Address address5 = Address.builder()
                 .cep("")
@@ -87,7 +90,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address5));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address5));
 
         Address address6 = Address.builder()
                 .cep("")
@@ -99,7 +102,7 @@ public class AddressValidatorTest {
                 .country("Brasil")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address6));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address6));
 
         Address address7 = Address.builder()
                 .cep("")
@@ -111,7 +114,7 @@ public class AddressValidatorTest {
                 .country("")
                 .state("São Paulo")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address7));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address7));
 
         Address address8 = Address.builder()
                 .cep("")
@@ -123,6 +126,6 @@ public class AddressValidatorTest {
                 .country("")
                 .state("")
                 .build();
-        assertThrows(RuntimeException.class, () -> validator.validate(address8));
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address8));
     }
 }

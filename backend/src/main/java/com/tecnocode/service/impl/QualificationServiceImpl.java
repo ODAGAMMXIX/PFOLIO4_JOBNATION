@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 import com.tecnocode.model.Qualification;
 import com.tecnocode.repository.QualificationRepository;
 import com.tecnocode.service.QualificationService;
+import com.tecnocode.validator.Operation;
 import com.tecnocode.validator.QualificationValidator;
 
 import lombok.RequiredArgsConstructor;
@@ -44,10 +45,11 @@ public class QualificationServiceImpl implements QualificationService {
 		return repository.findAllByInstitution(institution);
 	}
 
-	@Override
-	public List<Qualification> buscarTodosComEsteInicio(LocalDate start) {
-		return repository.findAllByStart(start);
-	}
+    @Override
+    public Qualification save(final Qualification qualification, Operation operation) {
+        validator.validate(qualification);
+        return repository.saveAndFlush(qualification);
+    }
 
 	@Override
 	public List<Qualification> buscarTodosComEsteFim(LocalDate end) {

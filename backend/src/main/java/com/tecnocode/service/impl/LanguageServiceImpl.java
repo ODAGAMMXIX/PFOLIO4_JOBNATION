@@ -1,5 +1,6 @@
 package com.tecnocode.service.impl;
 
+import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
 import com.tecnocode.model.Language;
 import com.tecnocode.repository.LanguageRepository;
@@ -14,7 +15,7 @@ public class LanguageServiceImpl implements LanguageService {
 	private final LanguageValidator validator;
 
 	@Override
-	public Language save(final Language language) {
+	public Language save(final Language language, Operation operation) {
 		validator.validate(language);
 		return repository.saveAndFlush(language);
 	}
