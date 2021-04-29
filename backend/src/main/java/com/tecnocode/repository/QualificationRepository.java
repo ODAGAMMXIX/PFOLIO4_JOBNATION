@@ -10,21 +10,21 @@ import org.springframework.data.repository.query.Param;
 import com.tecnocode.model.Qualification;
 
 public interface QualificationRepository extends JpaRepository<Qualification, Integer> {
-	@Query("SELECT v FROM Qualification v WHERE v.name like :name")
+	@Query("SELECT q FROM Qualification q WHERE q.name like :name")
 	List<Qualification> findAllByName(@Param("name") String name);
 
-	@Query("SELECT v FROM Qualification v WHERE v.level like :level")
+	@Query("SELECT q FROM Qualification q WHERE q.level like :level")
 	List<Qualification> findAllByLevel(@Param("level") String level);
 
-	@Query("SELECT v FROM Qualification v WHERE v.institution like :institution")
+	@Query("SELECT q FROM Qualification q WHERE q.institution like :institution")
 	List<Qualification> findAllByInstitution(@Param("institution") String institution);
 
-	@Query("SELECT v FROM Qualification v WHERE v.start <= :start AND v.start IS NOT NULL")
+	@Query("SELECT q FROM Qualification q WHERE q.start <= :start AND q.start IS NOT NULL")
 	List<Qualification> findAllByStart(@Param("start") LocalDate start);
 
-	@Query("SELECT v FROM Qualification v WHERE v.end >= :end AND v.end IS NOT NULL")
+	@Query("SELECT q FROM Qualification q WHERE q.end >= :end AND q.end IS NOT NULL")
 	List<Qualification> findAllByEnd(@Param("end") LocalDate end);
 
-	@Query("SELECT v FROM Qualification v WHERE v.status like :status")
+	@Query("SELECT q FROM Qualification q WHERE q.status like :status")
 	List<Qualification> findAllByStatus(@Param("status") String status);
 }
