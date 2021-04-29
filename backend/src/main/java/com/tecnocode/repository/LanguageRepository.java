@@ -9,10 +9,10 @@ import org.springframework.data.repository.query.Param;
 import com.tecnocode.model.Language;
 
 public interface LanguageRepository extends JpaRepository<Language, Integer> {
-	@Query("SELECT v FROM Language v WHERE v.name like :name")
+	@Query("SELECT l FROM Language l WHERE l.name like :name")
 	List<Language> findAllByName(@Param("name") String name);
 
-	@Query("SELECT v FROM Language v WHERE v.level like :level")
+	@Query("SELECT l FROM Language l WHERE l .level like :level")
 	List<Language> findAllByLevel(@Param("level") String level);
 
 }
