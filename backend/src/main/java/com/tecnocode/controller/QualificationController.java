@@ -9,10 +9,20 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.DeleteMapping;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.tecnocode.converter.DtoToQualificationConverter;
+import com.tecnocode.converter.QualificationToDtoConverter;
+import com.tecnocode.model.Qualification;
+import com.tecnocode.payload.QualificationDTO;
+import com.tecnocode.service.QualificationService;
+
+import lombok.RequiredArgsConstructor;
 
 @RestController
 @RequestMapping("/qualification")
