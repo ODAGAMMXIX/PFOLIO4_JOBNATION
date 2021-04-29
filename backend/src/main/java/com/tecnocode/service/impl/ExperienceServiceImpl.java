@@ -3,6 +3,7 @@ package com.tecnocode.service.impl;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
 
 import com.tecnocode.model.Company;
@@ -21,10 +22,9 @@ public class ExperienceServiceImpl implements ExperienceService{
 	private final ExperienceValidator validator;
 	
 	@Override
-	public Experience save(final Experience experience) {
+	public Experience save(final Experience experience, Operation operation) {
 		validator.validate(experience);
 		return repository.saveAndFlush(experience);
-		
 	}
 	
 	@Override

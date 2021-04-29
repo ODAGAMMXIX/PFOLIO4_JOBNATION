@@ -4,13 +4,10 @@ package com.tecnocode.controller;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.validator.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.tecnocode.converter.DtoToExperienceConverter;
 import com.tecnocode.converter.ExperienceToDtoConverter;
@@ -31,11 +28,17 @@ public class ExperienceController {
 	@PostMapping
 	public ResponseEntity saveNew(final ExperienceDTO experienceDTO) {
 		try {
-			Experience experience = service.save(dtoToExperienceConverter.convert(experienceDTO));
+			Experience experience = service.save(dtoToExperienceConverter.convert(experienceDTO), Operation.INSERT);
 			return ResponseEntity.status(HttpStatus.CREATED).body(experienceToDtoConverter.convert(experience));
 		} catch (RuntimeException ex) {
 			return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
 		}
+	}
+
+	@DeleteMapping("/{id}")
+	public ResponseEntity delete(@PathVariable("id") Integer id) {
+		service.delete(id);
+		return ResponseEntity.status(HttpStatus.OK).build();
 	}
 	
 	@GetMapping("/{company}")
