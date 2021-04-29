@@ -16,6 +16,8 @@ import java.util.Set;
 public class Vacancy {
     @Id
     @Column(name = "vcy_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "vacancy_sequence")
     private Integer id;
 
     @ManyToOne
@@ -71,7 +73,7 @@ public class Vacancy {
     private Set<Language> languages;
 
     @Column(name = "vcy_contract", length = 20)
-    private Integer contract;
+    private String contract;
 
     @ManyToMany
     @JoinTable(name = "vacancy_benefits",

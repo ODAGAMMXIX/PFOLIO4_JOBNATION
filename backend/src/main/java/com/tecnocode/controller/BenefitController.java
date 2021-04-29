@@ -5,8 +5,8 @@ import com.tecnocode.converter.DtoToBenefitConverter;
 import com.tecnocode.model.Benefit;
 import com.tecnocode.payload.BenefitDTO;
 import com.tecnocode.service.BenefitService;
+import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
@@ -24,7 +24,7 @@ public class BenefitController {
     @PostMapping
     public ResponseEntity saveNew(@RequestBody final BenefitDTO benefitDTO) {
         try {
-            Benefit benefit = service.save(dtoToBenefitConverter.convert(benefitDTO));
+            Benefit benefit = service.save(dtoToBenefitConverter.convert(benefitDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(benefitToDtoConverter.convert(benefit));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());

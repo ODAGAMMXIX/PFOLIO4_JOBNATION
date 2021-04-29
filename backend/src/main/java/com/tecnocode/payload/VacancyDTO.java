@@ -35,7 +35,7 @@ public class VacancyDTO implements Serializable {
 
     private Set<Language> languages;
 
-    private Integer contract;
+    private String contract;
 
     private Set<Benefit> benefits;
 }
