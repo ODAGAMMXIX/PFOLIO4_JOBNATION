@@ -20,7 +20,7 @@ public class QualificationServiceImpl implements QualificationService {
 	private final QualificationValidator validator;
 
 	@Override
-	public Qualification save(final Qualification qualification) {
+	public Qualification save(final Qualification qualification, Operation operation) {
 		validator.validate(qualification);
 		return repository.saveAndFlush(qualification);
 	}
@@ -45,11 +45,10 @@ public class QualificationServiceImpl implements QualificationService {
 		return repository.findAllByInstitution(institution);
 	}
 
-    @Override
-    public Qualification save(final Qualification qualification, Operation operation) {
-        validator.validate(qualification);
-        return repository.saveAndFlush(qualification);
-    }
+	@Override
+	public List<Qualification> buscarTodosComEsteInicio(LocalDate start) {
+		return repository.findAllByEnd(start);
+	}
 
 	@Override
 	public List<Qualification> buscarTodosComEsteFim(LocalDate end) {
