@@ -47,7 +47,7 @@ public class QualificationServiceImpl implements QualificationService {
 
 	@Override
 	public List<Qualification> buscarTodosComEsteInicio(LocalDate start) {
-		return repository.findAllByEnd(start);
+		return repository.findAllByStart(start);
 	}
 
 	@Override
