@@ -280,11 +280,8 @@ Atividades de cada sprint, com prioridade.
 As ferramentasutilizadas na construção deste projeto:
 
 - Oracle 11g (Sql developer)
-- Java (IntelliJ / Eclipse))
-- React (Insomnia/POSTMAN);
+- Java (IntelliJ / Eclipse)
+- Spring
 - Git;
-- OBS Studio / Kdenlive;
-- Html
-- Css
-- Javascript
+
 
