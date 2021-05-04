@@ -2,6 +2,7 @@ package com.tecnocode.controller;
 
 import com.tecnocode.converter.SkillToDtoConverter;
 import com.tecnocode.converter.DtoToSkillConverter;
+import com.tecnocode.model.Benefit;
 import com.tecnocode.model.Skill;
 import com.tecnocode.payload.SkillDTO;
 import com.tecnocode.service.SkillService;
@@ -9,9 +10,9 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/skill")
@@ -29,5 +30,21 @@ public class SkillController {
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
+    }
+
+    @GetMapping("/{name}")
+    public List<Skill> buscarTodosComEsteNome(@PathVariable("name") String name){
+        return service.buscarTodosComEsteNome(name);
+    }
+
+    @GetMapping("/{level}")
+    public List<Skill> buscarTodosComEsteNivel(@PathVariable("level") String level){
+        return service.buscarTodosComEsteNivel(level);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity delete(@PathVariable("id") Integer id) {
+        service.delete(id);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

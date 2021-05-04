@@ -14,7 +14,7 @@ import static org.junit.jupiter.api.Assertions.assertThrows;
 public class ExperienceValidatorTest {
 	@Autowired
 	private ExperienceValidator validator;
-	
+
 	@Test
 	public void givenAValidExperienceData_whenTryToValidate_thenShouldSuccess() {
 		DateTimeFormatter date= DateTimeFormatter.ofPattern("dd/MM/uuuu");
@@ -30,7 +30,7 @@ public class ExperienceValidatorTest {
 				.build();
 		assertDoesNotThrow(() -> validator.validate(experience));
 	}
-	
+
 	@Test
 	public void givenAnInvalidExperienceData_whenTryToValidate_thenThrowsException() {
 		DateTimeFormatter date= DateTimeFormatter.ofPattern("dd/MM/uuuu");
@@ -45,7 +45,7 @@ public class ExperienceValidatorTest {
 				.achiev("I was a manager for a year at that company.")
 				.build();
 		assertThrows(RuntimeException.class, () -> validator.validate(experience1));
-		
+
 		Experience experience2 = Experience.builder()
 				.company("")
 				.city("")
@@ -55,7 +55,7 @@ public class ExperienceValidatorTest {
 				.achiev("I was a manager for a year at that company.")
 				.build();
 		 assertThrows(RuntimeException.class, () -> validator.validate(experience2));
-		
+
 		Experience experience3 = Experience.builder()
 				.company("")
 				.city("")
@@ -65,7 +65,7 @@ public class ExperienceValidatorTest {
 				.achiev("I was a manager for a year at that company.")
 				.build();
 		 assertThrows(RuntimeException.class, () -> validator.validate(experience3));
-		
+
 		Experience experience4 = Experience.builder()
 				.company("")
 				.city("")

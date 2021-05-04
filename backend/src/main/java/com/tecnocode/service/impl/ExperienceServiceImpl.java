@@ -6,9 +6,7 @@ import java.util.List;
 import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
 
-import com.tecnocode.model.Company;
 import com.tecnocode.model.Experience;
-import com.tecnocode.model.Vacancy;
 import com.tecnocode.repository.ExperienceRepository;
 import com.tecnocode.service.ExperienceService;
 import com.tecnocode.validator.ExperienceValidator;
@@ -34,17 +32,17 @@ public class ExperienceServiceImpl implements ExperienceService{
 
 	
 	@Override
-	public List<Experience> buscarTodasExperienciasComEssaEmpresa (final String company){
+	public List<Experience> buscarTodasExperienciasComEssaEmpresa (String company){
 		return repository.findAllByCompany(company);
 	}
 	
 	@Override
-	public List<Experience> buscarTodasExperienciasComEssaCidade (final String city){
+	public List<Experience> buscarTodasExperienciasComEssaCidade (String city){
 		return repository.findAllByCity(city);
 	}
 	
 	@Override
-	public List<Experience> buscarTodasExperienciasComEssaDataDeInicio (final LocalDate start){
+	public List<Experience> buscarTodasExperienciasComEssaDataDeInicio (LocalDate start){
 		return repository.findAllByInit(start);
 	}
 

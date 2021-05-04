@@ -8,6 +8,8 @@ import com.tecnocode.validator.SkillValidator;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 @RequiredArgsConstructor
 public class SkillServiceImpl implements SkillService {
@@ -22,6 +24,16 @@ public class SkillServiceImpl implements SkillService {
 
     @Override
     public void delete(Integer id) {
-        
+        repository.deleteById(id);
+    }
+
+    @Override
+    public List<Skill> buscarTodosComEsteNome(String name) {
+        return repository.findAllBySkillName(name);
+    }
+
+    @Override
+    public List<Skill> buscarTodosComEsteNivel(String level) {
+        return repository.findAllBySkillLevel(level);
     }
 }

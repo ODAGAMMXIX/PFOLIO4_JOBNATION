@@ -15,15 +15,15 @@ public interface ExperienceRepository extends JpaRepository<Experience, Integer>
 	@Query("SELECT e FROM Experience e WHERE e.city like :city")
 	List<Experience> findAllByCity(@Param("city") String city);
 	
-	@Query("SELECT e FROM experience e WHERE e.start <= :start AND e.start IS NOT NULL")
+	@Query("SELECT e FROM Experience e WHERE e.start <= :start AND e.start IS NOT NULL")
 	List<Experience> findAllByInit(@Param("start") LocalDate start);
 	
-	@Query("SELECT e FROM experience e WHERE e.end <= :end AND e.end IS NOT NULL")
+	@Query("SELECT e FROM Experience e WHERE e.end <= :end AND e.end IS NOT NULL")
 	List<Experience> findAllByFinish(@Param("end") LocalDate end);
 	
-	@Query("SELECT e FROM experience e WHERE e.title like :title")
+	@Query("SELECT e FROM Experience e WHERE e.title like :title")
 	List<Experience> findAllByTitle(@Param("title") String title);
 	
-	@Query("SELECT e FROM experience e WHERE e.achiev like :achiev")
+	@Query("SELECT e FROM Experience e WHERE e.achiev like :achiev")
 	List<Experience> findAllByAchiev(@Param("achiev") String achiev);
 } 
