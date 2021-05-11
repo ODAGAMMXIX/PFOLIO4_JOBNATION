@@ -16,6 +16,8 @@ import java.util.Set;
 public class Candidate {
     @Id
     @Column(name = "cdt_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "candidate_sequence")
     private Integer id;
 
     @ManyToOne

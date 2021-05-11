@@ -12,10 +12,11 @@ import javax.persistence.*;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Company {
     @Id
     @Column(name = "cpy_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "company_sequence")
     private Integer id;
 
     @ManyToOne

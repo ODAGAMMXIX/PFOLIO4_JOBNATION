@@ -2,21 +2,24 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-# Install Node and Dependencies
+# Installing Node and Dependencies
 
-To start this project in local environment, is necessary install Node JS and run command bellow 
-on project directory to install the dependencies.
+
+To start this project in yout local environment, it is necessary to install Node JS and run the command bellow
+in the project's directory to install its dependencies.
 
 ### npm install
 
 ## Available Scripts
 
-In the project directory, you can run:
+In the project's directory, you must run:
 
 ### `npm start`
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Run the app in the development mode.\
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+Open [http://localhost:3000](http://localhost:3000) to visualize it on the browser.
+
+The page will reload if you edit it.\
+
+You will also see any errors in the console.

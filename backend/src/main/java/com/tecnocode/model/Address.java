@@ -2,10 +2,7 @@ package com.tecnocode.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "address")
@@ -14,10 +11,11 @@ import javax.persistence.Table;
 @EqualsAndHashCode(of = "id")
 @NoArgsConstructor
 @AllArgsConstructor
-
 public class Address {
     @Id
     @Column(name = "adr_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "address_sequence")
     private Integer id;
 
     @Column(name = "adr_cep_pczc")
@@ -27,7 +25,7 @@ public class Address {
     private String street;
 
     @Column(name = "adr_num")
-    private Integer number;
+    private String number;
 
     @Column(name = "adr_detail")
     private String detail;
@@ -41,8 +39,8 @@ public class Address {
     @Column(name = "adr_country")
     private String country;
 
-    @Column(name = "adr_others")
-    private String others;
+    @Column(name = "adr_state")
+    private String state;
 
     @Column(name = "adr_lat")
     private Integer latitude;
