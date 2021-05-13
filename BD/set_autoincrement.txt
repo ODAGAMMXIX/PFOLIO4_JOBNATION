@@ -1,0 +1,20 @@
+//Transformando a coluna em auto increment
+create sequence LAN_ID minvalue 1 start with 1 cache 10;
+
+create sequence SKI_ID minvalue 1 start with 1 cache 10;
+
+create sequence EXP_ID minvalue 1 start with 1 cache 10;
+
+create sequence BEN_ID minvalue 1 start with 1 cache 10;
+
+create sequence QUA_ID minvalue 1 start with 1 cache 10;
+
+create sequence CDT_ID minvalue 1 start with 1 cache 10;
+
+create sequence ADR_ID minvalue 1 start with 1 cache 10;
+
+create sequence VCY_ID minvalue 1 start with 1 cache 10;
+
+create sequence ID_USER minvalue 1 start with 1 cache 10;
+
+create sequence CPY_ID minvalue 1 start with 1 cache 10;
