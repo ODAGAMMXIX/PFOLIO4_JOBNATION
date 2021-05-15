@@ -92,4 +92,9 @@ public class VacancyController {
     public List<Vacancy> buscarTodasVagasComEsteBeneficio(@PathVariable("benefits") Benefit benefits){
         return service.buscarTodasVagasComEsteBeneficio(benefits);
     }
+
+//    @GetMapping("/{match/{id_vaga}")
+//    public List<Vacancy> buscarTodasOsCandidatosVaga(@PathVariable("match") Boolean match){
+//        return service.buscarTodasOsCandidatosVaga(match);
+//    }
 }

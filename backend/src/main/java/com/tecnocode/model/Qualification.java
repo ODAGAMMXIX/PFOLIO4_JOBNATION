@@ -34,15 +34,6 @@ public class Qualification {
     @Column(name = "qua_institution")
     private String institution;
 
-    @Column(name = "qua_corse_prg")
-    private String course;
-
-    @Column(name = "qua_start")
-    private LocalDate start;
-
-    @Column(name = "qua_end")
-    private LocalDate end;
-
     @Column(name = "qua_status")
     private String status;
 

@@ -3,6 +3,8 @@ package com.tecnocode.validator;
 import com.tecnocode.model.Candidate;
 import org.springframework.stereotype.Component;
 
+import static java.util.Objects.isNull;
+
 @Component
 public class CandidateValidator implements AbstractValidator<Candidate> {
     @Override
@@ -25,17 +27,17 @@ public class CandidateValidator implements AbstractValidator<Candidate> {
         if(candidate.getMarital().isEmpty()){
             throw new RuntimeException("O status de relacionamento não pode ser vazio.");
         }
-//        if(candidate.getBirth().isEmpty()){
-//            throw new RuntimeException("O aniversario não pode ser vazio.");
-//        }
+        if(isNull(candidate.getBirth())){
+            throw new RuntimeException("O aniversario não pode ser vazio.");
+        }
         if(candidate.getEmail().isEmpty()){
             throw new RuntimeException("O email não pode ser vazio.");
         }
-//        if(candidate.getMobile().isEmpty()){
-//            throw new RuntimeException("O número de telefone não pode ser vazio.");
-//        }
-//        if(candidate.getPhone().isEmpty()){
-//            throw new RuntimeException("O número de celular não pode ser vazio.");
-//        }
+        if(isNull(candidate.getMobile())){
+            throw new RuntimeException("O número de telefone não pode ser vazio.");
+        }
+        if(isNull(candidate.getPhone())){
+            throw new RuntimeException("O número de celular não pode ser vazio.");
+        }
     }
 }

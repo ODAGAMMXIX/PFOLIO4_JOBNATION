@@ -60,16 +60,6 @@ public class QualificationController {
         return service.buscarTodosComEstaInstituicao(institution);
     }
 
-    @GetMapping("/{start}")
-    public List<Qualification> buscarTodosComEsteInicio(@PathVariable("start") LocalDate start) {
-        return service.buscarTodosComEsteInicio(start);
-    }
-
-    @GetMapping("/{end}")
-    public List<Qualification> buscarTodosComEsteFim(@PathVariable("end") LocalDate end) {
-        return service.buscarTodosComEsteFim(end);
-    }
-
     @GetMapping("/{status}")
     public List<Qualification> buscarTodosComEsteStatus(@PathVariable("status") String status) {
         return service.buscarTodosComEsteStatus(status);

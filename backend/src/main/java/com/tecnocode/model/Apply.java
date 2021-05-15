@@ -25,6 +25,5 @@ public class Apply {
     private Candidate candidate;
 
     @Column(name = "apply_at")
-    @Temporal(TemporalType.TIMESTAMP)
     private LocalDateTime applyAt;
 }

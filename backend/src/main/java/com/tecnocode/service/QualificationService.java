@@ -12,9 +12,6 @@ public interface QualificationService extends GenericService<Qualification> {
 
 	List<Qualification> buscarTodosComEstaInstituicao(final String institution);
 
-	List<Qualification> buscarTodosComEsteInicio(final LocalDate start);
-
-	List<Qualification> buscarTodosComEsteFim(final LocalDate end);
-
 	List<Qualification> buscarTodosComEsteStatus(final String status);
+
 }

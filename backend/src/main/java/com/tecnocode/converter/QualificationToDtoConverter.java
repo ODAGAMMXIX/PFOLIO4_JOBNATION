@@ -13,8 +13,6 @@ public class QualificationToDtoConverter implements Converter<Qualification, Qua
                 .name(qualification.getName())
                 .level(qualification.getLevel())
                 .institution(qualification.getInstitution())
-                .start(qualification.getStart())
-                .end(qualification.getEnd())
                 .status(qualification.getStatus())
                 .build();
     }

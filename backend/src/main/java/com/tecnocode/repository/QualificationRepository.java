@@ -19,12 +19,6 @@ public interface QualificationRepository extends JpaRepository<Qualification, In
 	@Query("SELECT q FROM Qualification q WHERE q.institution like :institution")
 	List<Qualification> findAllByInstitution(@Param("institution") String institution);
 
-	@Query("SELECT q FROM Qualification q WHERE q.start <= :start AND q.start IS NOT NULL")
-	List<Qualification> findAllByStart(@Param("start") LocalDate start);
-
-	@Query("SELECT q FROM Qualification q WHERE q.end >= :end AND q.end IS NOT NULL")
-	List<Qualification> findAllByEnd(@Param("end") LocalDate end);
-
 	@Query("SELECT q FROM Qualification q WHERE q.status like :status")
 	List<Qualification> findAllByStatus(@Param("status") String status);
 }
