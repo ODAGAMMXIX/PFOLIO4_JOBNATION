@@ -32,5 +32,10 @@ public class BenefitServiceImpl implements BenefitService {
         return repository.findAllByBenefit(benefit);
     }
 
+    @Override
+    public List<Benefit> buscarTodos() {
+        return repository.findAll();
+    }
+
 
 }

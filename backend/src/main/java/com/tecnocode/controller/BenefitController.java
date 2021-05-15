@@ -36,6 +36,11 @@ public class BenefitController {
         return service.buscarTodosComEsteBeneficio(benefit);
     }
 
+    @GetMapping("/all")
+    public List<Benefit> buscarTodos(){
+        return service.buscarTodos();
+    }
+
     @DeleteMapping("/{id}")
     public ResponseEntity delete(@PathVariable("id") Integer id) {
         service.delete(id);

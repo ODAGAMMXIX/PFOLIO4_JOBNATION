@@ -10,4 +10,7 @@ import java.util.List;
 public interface BenefitRepository extends JpaRepository<Benefit, Integer> {
     @Query("SELECT b FROM Benefit b WHERE b.benefit like :benefit ")
     List<Benefit> findAllByBenefit(@Param("benefit") String benefit);
+
+    @Query("SELECT b FROM Benefit b ")
+    List<Benefit> findAll();
 }

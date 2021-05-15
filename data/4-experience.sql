@@ -16,8 +16,8 @@ INSERT INTO EXPERIENCE VALUES(
 	'', /*ARCHIEV*/
     'São José dos Campos', /*City*/
     'Univalle Sistemas', /*Company*/
-    TO_DATE('2017/01/04 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*End*/
-    TO_DATE('2019/01/31 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*Start*/
+    TO_DATE('2019/01/04 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*End*/
+    TO_DATE('2017/01/31 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*Start*/
     'Desenvolvedor Web'/*Title*/
 );
 
@@ -26,7 +26,7 @@ INSERT INTO EXPERIENCE VALUES(
 	'', /*ARCHIEV*/
     'São José dos Campos', /*City*/
     'IUGU', /*Company*/
-    TO_DATE('2017/01/04 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*End*/
-    TO_DATE('2019/01/31 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*Start*/
+    TO_DATE('2019/01/04 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*End*/
+    TO_DATE('2017/01/31 12:00:00', 'yyyy/mm/dd hh:mi:ss'), /*Start*/
     'Analista de crédito'/*Title*/
 );
