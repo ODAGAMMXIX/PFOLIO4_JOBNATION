@@ -3,6 +3,7 @@ package com.tecnocode.controller;
 import com.tecnocode.converter.CompanyToDtoConverter;
 import com.tecnocode.converter.DtoToCompanyConverter;
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Candidate;
 import com.tecnocode.model.Company;
 import com.tecnocode.payload.CompanyDTO;
 import com.tecnocode.service.CompanyService;
@@ -51,6 +52,11 @@ public class CompanyController {
     @GetMapping("/{cnpj}")
     public List<Company> buscarTodosComEsteCnpj(@PathVariable("cnpj") String cnpj) {
         return service.buscarTodosComEsteCnpj(cnpj);
+    }
+
+    @GetMapping("/all")
+    public List<Company> buscarTodos(){
+        return service.buscarTodos();
     }
 
 }

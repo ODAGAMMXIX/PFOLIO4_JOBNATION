@@ -1,6 +1,7 @@
 package com.tecnocode.service.impl;
 
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Benefit;
 import com.tecnocode.repository.AddressRepository;
 import com.tecnocode.service.AddressService;
 import com.tecnocode.validator.AddressInsertValidator;
@@ -43,4 +44,10 @@ public class AddressServiceImpl implements AddressService {
     public List<Address> buscarTodosComEstePais(String country) {
         return repository.findAllByCountry(country);
     }
+
+    @Override
+    public List<Address> buscarTodos() {
+        return repository.findAll();
+    }
+
 }

@@ -3,6 +3,7 @@ package com.tecnocode.repository;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Language;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -27,4 +28,7 @@ public interface QualificationRepository extends JpaRepository<Qualification, In
 
 	@Query("SELECT q FROM Qualification q WHERE q.status like :status")
 	List<Qualification> findAllByStatus(@Param("status") String status);
+
+	@Query("SELECT q FROM Qualification q")
+	List<Qualification> findAll();
 }

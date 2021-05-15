@@ -3,6 +3,7 @@ package com.tecnocode.controller;
 import com.tecnocode.converter.SkillToDtoConverter;
 import com.tecnocode.converter.DtoToSkillConverter;
 import com.tecnocode.model.Benefit;
+import com.tecnocode.model.Qualification;
 import com.tecnocode.model.Skill;
 import com.tecnocode.payload.SkillDTO;
 import com.tecnocode.service.SkillService;
@@ -46,5 +47,10 @@ public class SkillController {
     public ResponseEntity delete(@PathVariable("id") Integer id) {
         service.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
+    }
+
+    @GetMapping("/all")
+    public List<Skill> buscarTodos(){
+        return service.buscarTodos();
     }
 }

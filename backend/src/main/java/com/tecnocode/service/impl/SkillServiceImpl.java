@@ -1,5 +1,6 @@
 package com.tecnocode.service.impl;
 
+import com.tecnocode.model.Qualification;
 import com.tecnocode.model.Skill;
 import com.tecnocode.repository.SkillRepository;
 import com.tecnocode.service.SkillService;
@@ -36,4 +37,10 @@ public class SkillServiceImpl implements SkillService {
     public List<Skill> buscarTodosComEsteNivel(String level) {
         return repository.findAllBySkillLevel(level);
     }
+
+    @Override
+    public List<Skill> buscarTodos() {
+        return repository.findAll();
+    }
+
 }

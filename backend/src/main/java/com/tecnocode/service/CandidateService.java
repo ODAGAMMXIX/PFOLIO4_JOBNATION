@@ -25,6 +25,7 @@ public interface CandidateService extends GenericService<Candidate> {
 
     List<Candidate> buscarTodosCandidatosComEsteGenero(final String gender);
 
+    List<Candidate> buscarTodos();
 
 
 }

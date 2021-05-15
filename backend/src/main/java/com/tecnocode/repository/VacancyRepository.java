@@ -44,4 +44,7 @@ public interface VacancyRepository extends JpaRepository<Vacancy, Integer>{
 
     @Query("SELECT v FROM Vacancy v WHERE v.benefits like :benefits")
     List<Vacancy> findAllByBenefit(@Param("benefits") Benefit benefits);
+
+    @Query("SELECT v FROM Vacancy v")
+    List<Vacancy> findAll();
 }

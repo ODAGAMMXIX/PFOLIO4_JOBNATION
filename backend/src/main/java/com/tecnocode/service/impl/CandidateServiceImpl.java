@@ -75,4 +75,10 @@ public class CandidateServiceImpl implements CandidateService {
     public List<Candidate> buscarTodosCandidatosComEsteGenero(String gender) {
         return repository.findAllByGender(gender);
     }
+
+    @Override
+    public List<Candidate> buscarTodos() {
+        return repository.findAll();
+    }
+
 }

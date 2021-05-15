@@ -2,6 +2,7 @@ package com.tecnocode.controller;
 
 import com.tecnocode.converter.DtoToQualificationConverter;
 import com.tecnocode.converter.QualificationToDtoConverter;
+import com.tecnocode.model.Language;
 import com.tecnocode.model.Qualification;
 import com.tecnocode.payload.QualificationDTO;
 import com.tecnocode.service.QualificationService;
@@ -80,6 +81,11 @@ public class QualificationController {
         service.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
 
+    }
+
+    @GetMapping("/all")
+    public List<Qualification> buscarTodos(){
+        return service.buscarTodos();
     }
 
 }

@@ -3,6 +3,7 @@ package com.tecnocode.service;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Language;
 import com.tecnocode.model.Qualification;
 
 public interface QualificationService extends GenericService<Qualification> {
@@ -17,4 +18,6 @@ public interface QualificationService extends GenericService<Qualification> {
 	List<Qualification> buscarTodosComEsteFim(final LocalDate end);
 
 	List<Qualification> buscarTodosComEsteStatus(final String status);
+
+	List<Qualification> buscarTodos();
 }

@@ -1,5 +1,6 @@
 package com.tecnocode.controller;
 
+import com.tecnocode.model.Experience;
 import com.tecnocode.validator.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -45,6 +46,11 @@ public class LanguageController {
 	@GetMapping("/{level}")
 	public List<Language> buscarTodosComEsteNivel(@PathVariable("level") String level) {
 		return service.buscarTodosComEsteNivel(level);
+	}
+
+	@GetMapping("/all")
+	public List<Language> buscarTodos(){
+		return service.buscarTodos();
 	}
 
 }

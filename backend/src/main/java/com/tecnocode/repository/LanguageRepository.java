@@ -2,6 +2,7 @@ package com.tecnocode.repository;
 
 import java.util.List;
 
+import com.tecnocode.model.Experience;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
@@ -14,5 +15,8 @@ public interface LanguageRepository extends JpaRepository<Language, Integer> {
 
 	@Query("SELECT l FROM Language l WHERE l .level like :level")
 	List<Language> findAllByLevel(@Param("level") String level);
+
+	@Query("SELECT l FROM Language l")
+	List<Language> findAll();
 
 }

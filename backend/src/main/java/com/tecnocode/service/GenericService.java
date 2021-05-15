@@ -6,4 +6,5 @@ public interface GenericService<T>{
     T save(T t, Operation operation);
 
     void delete(final Integer id);
+
 }

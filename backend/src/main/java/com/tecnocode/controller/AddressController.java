@@ -3,6 +3,7 @@ package com.tecnocode.controller;
 import com.tecnocode.converter.AddressToDtoConverter;
 import com.tecnocode.converter.DtoToAddressConverter;
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Benefit;
 import com.tecnocode.payload.AddressDTO;
 import com.tecnocode.service.AddressService;
 import com.tecnocode.validator.Operation;
@@ -51,4 +52,10 @@ public class AddressController {
         service.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
+
+    @GetMapping("/all")
+    public List<Address> buscarTodos(){
+        return service.buscarTodos();
+    }
+
 }

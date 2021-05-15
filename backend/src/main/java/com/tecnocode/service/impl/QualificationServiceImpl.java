@@ -3,6 +3,7 @@ package com.tecnocode.service.impl;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Language;
 import org.springframework.stereotype.Service;
 
 import com.tecnocode.model.Qualification;
@@ -59,4 +60,10 @@ public class QualificationServiceImpl implements QualificationService {
 	public List<Qualification> buscarTodosComEsteStatus(String status) {
 		return repository.findAllByStatus(status);
 	}
+
+	@Override
+	public List<Qualification> buscarTodos() {
+		return repository.findAll();
+	}
+
 }

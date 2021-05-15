@@ -3,6 +3,7 @@ package com.tecnocode.service;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Company;
 import com.tecnocode.model.Experience;
 
 public interface ExperienceService extends GenericService <Experience> {
@@ -17,5 +18,7 @@ public interface ExperienceService extends GenericService <Experience> {
 	List<Experience> buscarTodasExperienciasComEsseTitulo(final String title);
 	
 	List<Experience> buscarTodasExperienciasComEsseAchiev(final String achiev);
+
+	List<Experience> buscarTodos();
 
 }

@@ -83,4 +83,9 @@ public class VacancyServiceImpl implements VacancyService {
         return repository.findAllByBenefit(benefits);
     }
 
+    @Override
+    public List<Vacancy> buscarTodos() {
+        return repository.findAll();
+    }
+
 }

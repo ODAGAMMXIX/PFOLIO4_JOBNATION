@@ -1,6 +1,7 @@
 package com.tecnocode.service.impl;
 
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Candidate;
 import com.tecnocode.model.Company;
 import com.tecnocode.repository.CompanyRepository;
 import com.tecnocode.service.CompanyService;
@@ -41,6 +42,11 @@ public class CompanyServiceImpl implements CompanyService {
     @Override
     public List<Company> buscarTodosComEsteCnpj(String cnpj) {
         return repository.findAllByCnpj(cnpj);
+    }
+
+    @Override
+    public List<Company> buscarTodos() {
+        return repository.findAll();
     }
 
 }

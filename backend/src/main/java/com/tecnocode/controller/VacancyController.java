@@ -92,4 +92,9 @@ public class VacancyController {
     public List<Vacancy> buscarTodasVagasComEsteBeneficio(@PathVariable("benefits") Benefit benefits){
         return service.buscarTodasVagasComEsteBeneficio(benefits);
     }
+
+    @GetMapping("/all")
+    public List<Vacancy> buscarTodos(){
+        return service.buscarTodos();
+    }
 }

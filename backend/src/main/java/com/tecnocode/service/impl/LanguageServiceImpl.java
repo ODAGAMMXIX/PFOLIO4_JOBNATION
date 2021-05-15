@@ -1,5 +1,6 @@
 package com.tecnocode.service.impl;
 
+import com.tecnocode.model.Experience;
 import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
 import com.tecnocode.model.Language;
@@ -35,6 +36,11 @@ public class LanguageServiceImpl implements LanguageService {
 	@Override
 	public List<Language> buscarTodosComEsteNivel(String level) {
 		return repository.findAllByLevel(level);
+	}
+
+	@Override
+	public List<Language> buscarTodos() {
+		return repository.findAll();
 	}
 
 }

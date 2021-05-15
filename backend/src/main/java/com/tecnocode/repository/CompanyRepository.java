@@ -1,6 +1,7 @@
 package com.tecnocode.repository;
 
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Candidate;
 import com.tecnocode.model.Company;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
@@ -17,5 +18,8 @@ public interface CompanyRepository extends JpaRepository<Company, Integer> {
 
     @Query("SELECT c FROM Company c WHERE c.cnpj like :cnpj")
     List<Company> findAllByCnpj(@Param("cnpj") String cnpj);
+
+    @Query("SELECT c FROM Candidate c")
+    List<Company> findAll();
 
 }

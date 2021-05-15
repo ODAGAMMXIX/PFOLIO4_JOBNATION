@@ -26,4 +26,7 @@ public interface ExperienceRepository extends JpaRepository<Experience, Integer>
 	
 	@Query("SELECT e FROM Experience e WHERE e.achiev like :achiev")
 	List<Experience> findAllByAchiev(@Param("achiev") String achiev);
+
+	@Query("SELECT e FROM Experience e")
+	List<Experience> findAll();
 } 

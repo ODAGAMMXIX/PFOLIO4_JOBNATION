@@ -37,4 +37,7 @@ public interface CandidateRepository extends JpaRepository<Candidate, Integer>{
 
     @Query("SELECT c FROM Candidate c WHERE c.gender like :gender")
     List<Candidate> findAllByGender(@Param("gender") String gender);
+
+    @Query("SELECT c FROM Candidate c")
+    List<Candidate> findAll();
 }

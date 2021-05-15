@@ -4,6 +4,7 @@ package com.tecnocode.controller;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Company;
 import com.tecnocode.validator.Operation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
@@ -69,6 +70,11 @@ public class ExperienceController {
 	@GetMapping("/{achiev}")
 	public List<Experience> buscarTodasExperienciasComEsseAchiev (@PathVariable("achiev") String achiev){
 		return service.buscarTodasExperienciasComEsseAchiev(achiev);
-	}	
+	}
+
+	@GetMapping("/all")
+	public List<Experience> buscarTodos(){
+		return service.buscarTodos();
+	}
 	
 }

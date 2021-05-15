@@ -87,4 +87,9 @@ public class CandidateController {
     public List<Candidate> buscarTodosCandidatosComEsteGenero(@PathVariable("gender") String gender){
         return service.buscarTodosCandidatosComEsteGenero(gender);
     }
+
+    @GetMapping("/all")
+    public List<Candidate> buscarTodos(){
+        return service.buscarTodos();
+    }
 }

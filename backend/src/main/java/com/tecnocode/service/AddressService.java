@@ -1,6 +1,7 @@
 package com.tecnocode.service;
 
 import com.tecnocode.model.Address;
+import com.tecnocode.model.Benefit;
 
 import java.util.List;
 
@@ -10,5 +11,7 @@ public interface AddressService extends GenericService<Address> {
     List<Address> buscarTodosComEsteEstado(String state);
 
     List<Address> buscarTodosComEstePais(String country);
+
+    List<Address> buscarTodos();
 
 }

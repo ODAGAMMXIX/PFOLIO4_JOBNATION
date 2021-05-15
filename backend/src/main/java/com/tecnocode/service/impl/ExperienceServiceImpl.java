@@ -3,6 +3,7 @@ package com.tecnocode.service.impl;
 import java.time.LocalDate;
 import java.util.List;
 
+import com.tecnocode.model.Company;
 import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
 
@@ -59,6 +60,11 @@ public class ExperienceServiceImpl implements ExperienceService{
 	@Override
 	public List<Experience> buscarTodasExperienciasComEsseAchiev(String achiev) {
 		return repository.findAllByAchiev(achiev);		
+	}
+
+	@Override
+	public List<Experience> buscarTodos() {
+		return repository.findAll();
 	}
 
 }
