@@ -10,9 +10,9 @@ Deverão ser destaques a segurança e desempenho da aplicação.
 
  Nossa proposta:
  
-- Busca por localização: coordenadas de latitude e longitude ou número de conduções para chegar ao local de trabalho.
+- Busca por localização: número de conduções para chegar ao local de trabalho ou coordenadas de latitude e longitude.
 
-- Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá  currículos já cadastrados e identificará candidatos  mais adequados à vaga.
+- Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá  currículos já cadastrados e identificará candidato(s)  mais adequados à vaga.
 
 ## Descrição do projeto integrador
 
@@ -35,7 +35,7 @@ Navegue entre as seções
    * [Diagrama de Casos de Uso](#user-stories)
    * [Banco de dados: Modelo relacional](#banco-de-dados)
    * [Banco de dados: Diagrama Lógico](#banco-de-dados)
-      * [Propostas de inovação](#proposta-de-inovacao)
+   * [Propostas de inovação](#proposta-de-inovacao)
    * [Backlog do projeto](#backlog-do-projeto)
       * [Sprint 00](#sprint-00)
       * [Sprint 01](#sprint-01)
@@ -68,31 +68,28 @@ Navegue entre as seções
 
 ![03-JN-DB](/uploads/b8be1ac87ec9fdc6db5cdd8641094e2a/MicrosoftTeams-image__7_.png)
 
-![03-JN-DB](https://youtu.be/1qW7Q7gVW8Q)
+- [x] 4) API JOBNATION - MATCH DE CANDIDATOS (MOST SUITED FOR THE JOB)
 
-- [x] 4) JOBNATION's DATABASE
+![MATCH](/uploads/2a223e4711dc9aa2117ff9ef40948f68/MATCH.mp4)
 
-![04-JN-DB](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
+- [x] 5) JOBNATION's DATABASE
 
-- [x] 5) BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR DISTÂNCIA
+![05-JN-DB](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
 
-![05-JN-DB - CANDIDATO POR DISTÂNCIA](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
+- [x]  6) BANCO DE DADOS JOBNATION - PROCEDURE MÚLTIPLOS CRITÉRIOS COM CURSOR.
 
-- [x] 6) BANCO DE DADOS JOBNATION - FUNÇÃO CANDIDATO POR DISTÂNCIA
+![06-JN-CURSOR-PROCEDURE-SEARCH](/uploads/f9712ad20ad02d0f7e22d4db1f597d18/CURSOR-PROCEDURE-SEARCH.mp4)
 
-![06-JN-DB - CANDIDATO POR MÚLTIPLOS CRITÉRIOS]((/uploads/033a931cb97772d18addc21209037ac3/07-LAT-LONG-PROCEDURE-W-QUERY.mp4))
+- [x] 7) BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR LAT-LOG
 
-- [x]  7) BANCO DE DADOS JOBNATION - PROCEDURE MÚLTIPLOS CRITÉRIOS COM CURSOR.
-![07-JN-CURSOR-PROCEDURE-SEARCH](/uploads/f9712ad20ad02d0f7e22d4db1f597d18/CURSOR-PROCEDURE-SEARCH.mp4))
+![07-JN-DB - CANDIDATO PORLAT-LONG ](/uploads/800d1feede969d62c5cac5930dd8f67c/LAT-LONG-ORACLE.mp4)
 
-- [x]  8) BANCO DE DADOS JOBNATION - ANÁLISE DE PERFORMANCE COM MILHARES DE REGISTROS FICTÍCIOS	.
+- [x]  8) BANCO DE DADOS JOBNATION - ANÁLISE DE PERFORMANCE COM MILHARES DE REGISTROS FICTÍCIOS.
+
 ![08-JN-DB - PERFORMANCE-ANTES](/uploads/72c6849e98ebb4b2f464d8b9da78a0b3/Performance_antes_dos_5k.mp4)
 
 ![08-A-JN-DB - PERFORMANCE-DEPOIS](/uploads/fa91f82f7ea2dc3df12765133838d457/Performance_depois_dos_5k.mp4)
 
-- [x] 9) APLICAÇÃO JOBNATION FUCIONANDO
-
-![09-SPRINT-01-BK-END](/uploads/226f36a4bda28a6333393d012525ad17/06-SPRINT-01-BK-END.mp4)
 
 ## Entregas
 
@@ -111,10 +108,10 @@ Navegue entre as seções
 |------------------------------------------------------------------------|--------|------------|--------|
 | Inicializa uma API e se conecta ao/cria BD                | RF01   | 1          | 1      |
 | Executa Requisição de Terceiro | RF02   | 1          | 2      |
-| Busca candidatos mais pŕoximos de um endereço                                | RF03   | 1          | 2      |
-| Busca candidatos a partir de uma vaga                                                 | RF04  | 1          | 3     |
+| Busca candidatos x No de conduções do para chegar ao trabalho                                 | RF03   | 1          | 2      |
+| MATCH Candidato-Vaga                                                 | RF04  | 1          | 3     |
 | Filtra resultado da Busca | RF05  | 1          | 3      |
-| Importa BD do Cliente                            | RF06   | 1          | 4      |
+| Busca x critérios de uma vaga                            | RF06   | 1          | 4      |
 
 
 
@@ -143,7 +140,8 @@ Navegue entre as seções
 
 
 ## Banco de dados
-##Diagrama Entidade-Relacionamento
+## Diagrama Entidade-Relacionamento
+
 ![DER-SPRINT-03-](/uploads/19fc541596b0e39ab528b13fbf1c2be7/MicrosoftTeams-image__5_.png)
 
 ## Diagrama Lógico
@@ -156,7 +154,7 @@ Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o prota
 
 Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais: 
 
-- No código - Mais de uma linguagem de programação no BACK-END;
+- No BACK-END - Mais de uma linguagem de programação;
 
 - No BD - PROCEDURES com CURSORES e FUNCTIONS para dar flexibilidade às QUERIES;
 
@@ -208,9 +206,9 @@ Atividades de cada sprint, com prioridade.
 
 - BD - População do BD com dados fictícios para teste de PERFORMANCE;
 
-- BE - MATCH Candidato-Vaga;
-
 - BE - 2a API-JN para buscar quantidade de meios de transporte necessárias ao canditado chegar ao local de trabalho;
+
+- BE - MATCH Candidato-Vaga;
 
 #### Sprint 04 - 05 de junho de 2021.
 
