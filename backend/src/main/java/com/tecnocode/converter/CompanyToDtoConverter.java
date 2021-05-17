@@ -10,8 +10,9 @@ public class CompanyToDtoConverter implements Converter<Company, CompanyDTO>{
     @Override
     public CompanyDTO convert(Company company){
         return CompanyDTO.builder()
-                .address(company.getAddress())
+                .addressId(company.getAddress().getId())
                 .name(company.getName())
+                .cnpj(company.getCnpj())
                 .build();
     }
 }

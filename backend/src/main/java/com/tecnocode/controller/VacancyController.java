@@ -3,6 +3,7 @@ package com.tecnocode.controller;
 import com.tecnocode.converter.DtoToVacancyConverter;
 import com.tecnocode.converter.VacancyToDtoConverter;
 import com.tecnocode.model.*;
+import com.tecnocode.payload.MatchPayload;
 import com.tecnocode.payload.VacancyDTO;
 import com.tecnocode.service.VacancyService;
 import com.tecnocode.validator.Operation;
@@ -12,7 +13,9 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
 import java.time.LocalDate;
-import java.util.List;
+import java.util.*;
+import java.util.stream.Collectors;
+import java.util.stream.Stream;
 
 @RestController
 @RequestMapping("/vacancy")
@@ -93,8 +96,36 @@ public class VacancyController {
         return service.buscarTodasVagasComEsteBeneficio(benefits);
     }
 
-//    @GetMapping("/{match/{id_vaga}")
-//    public List<Vacancy> buscarTodasOsCandidatosVaga(@PathVariable("match") Boolean match){
-//        return service.buscarTodasOsCandidatosVaga(match);
-//    }
+    @GetMapping("/match/{id_vaga}")
+    public List<MatchPayload> buscarTodasOsCandidatosVaga(@PathVariable("id_vaga") Integer id){
+        List<Apply> applies = service.buscarTodasOsCandidatosVaga(id);
+        List<Candidate> candidates = applies.stream().map(Apply::getCandidate).collect(Collectors.toList());
+        Vacancy vacancy = applies.stream().map(Apply::getVacancy).findFirst().get();
+        return transformWithGrade(candidates, vacancy);
+    }
+
+    private List<MatchPayload> transformWithGrade(List<Candidate> candidates, Vacancy vacancy) {
+        List<MatchPayload> matchPayloads = candidates.stream().filter(Objects::nonNull).map(candidate -> {
+            Integer candidateLanguageGrade = candidate.getLanguages().stream().filter(language -> vacancy.getLanguages().contains(language)).collect(Collectors.toList()).size();
+            Integer candidateSkillGrade = candidate.getSkills().stream().filter(skill -> vacancy.getSkills().contains(skill)).collect(Collectors.toList()).size();
+            Integer candidateQualificationGrade = candidate.getQualifications().stream().filter(qualification -> vacancy.getQualifications().contains(qualification)).collect(Collectors.toList()).size();
+            return MatchPayload.builder()
+                    .candidateName(candidate.getFirstName() + " " + candidate.getMiddleName())
+                    .languageGrade(candidateLanguageGrade)
+                    .qualificationGrade(candidateQualificationGrade)
+                    .skillGrade(candidateSkillGrade)
+                    .companyName(vacancy.getCompany().getName())
+                    .vacancyTitle(vacancy.getTitle())
+                    .build();
+        }).collect(Collectors.toList());
+
+        matchPayloads.sort(Comparator.comparing(MatchPayload::getLanguageGrade)
+                .reversed()
+                .thenComparing(MatchPayload::getSkillGrade)
+                .reversed()
+                .thenComparing(MatchPayload::getQualificationGrade)
+                .reversed());
+        return matchPayloads;
+    }
+
 }

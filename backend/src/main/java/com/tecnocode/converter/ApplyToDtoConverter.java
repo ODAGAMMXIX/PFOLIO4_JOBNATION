@@ -10,8 +10,8 @@ public class ApplyToDtoConverter implements Converter<Apply, ApplyDTO> {
     @Override
     public ApplyDTO convert(Apply apply){
         return ApplyDTO.builder()
-                .vacancy(apply.getVacancy())
-                .candidate(apply.getCandidate())
+                .vacancyId(apply.getVacancy().getId())
+                .candidateId(apply.getCandidate().getId())
                 .build();
     }
 }

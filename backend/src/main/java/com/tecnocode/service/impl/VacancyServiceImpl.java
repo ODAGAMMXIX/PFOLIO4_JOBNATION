@@ -1,6 +1,7 @@
 package com.tecnocode.service.impl;
 
 import com.tecnocode.model.*;
+import com.tecnocode.repository.ApplyRepository;
 import com.tecnocode.repository.VacancyRepository;
 import com.tecnocode.service.VacancyService;
 import com.tecnocode.validator.Operation;
@@ -10,12 +11,14 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class VacancyServiceImpl implements VacancyService {
     private final VacancyRepository repository;
     private final VacancyValidator validator;
+    private final ApplyRepository applyRepository;
 
     @Override
     public Vacancy save(final Vacancy vacancy, Operation operation) {
@@ -81,6 +84,11 @@ public class VacancyServiceImpl implements VacancyService {
     @Override
     public List<Vacancy> buscarTodasVagasComEsteBeneficio(Benefit benefits) {
         return repository.findAllByBenefit(benefits);
+    }
+
+    @Override
+    public List<Apply> buscarTodasOsCandidatosVaga(Integer id) {
+        return applyRepository.findAllByVacancyId(id);
     }
 
 }

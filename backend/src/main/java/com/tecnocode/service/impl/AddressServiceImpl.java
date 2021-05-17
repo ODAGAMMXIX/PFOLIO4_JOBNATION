@@ -43,4 +43,9 @@ public class AddressServiceImpl implements AddressService {
     public List<Address> buscarTodosComEstePais(String country) {
         return repository.findAllByCountry(country);
     }
+
+    @Override
+    public List<Address> buscarTodos() {
+        return repository.findAll();
+    }
 }

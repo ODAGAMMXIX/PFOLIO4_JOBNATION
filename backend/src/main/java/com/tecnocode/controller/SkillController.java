@@ -23,7 +23,7 @@ public class SkillController {
     private final SkillToDtoConverter skillToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final SkillDTO skillDTO) {
+    public ResponseEntity saveNew(@RequestBody final SkillDTO skillDTO) {
         try {
             Skill skill = service.save(dtoToSkillConverter.convert(skillDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(skillToDtoConverter.convert(skill));

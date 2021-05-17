@@ -34,9 +34,6 @@ public class CandidateValidator implements AbstractValidator<Candidate> {
             throw new RuntimeException("O email não pode ser vazio.");
         }
         if(isNull(candidate.getMobile())){
-            throw new RuntimeException("O número de telefone não pode ser vazio.");
-        }
-        if(isNull(candidate.getPhone())){
             throw new RuntimeException("O número de celular não pode ser vazio.");
         }
     }

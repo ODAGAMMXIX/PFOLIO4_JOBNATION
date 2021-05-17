@@ -20,7 +20,7 @@ public class ApplyController {
     private final ApplyToDtoConverter applyToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final ApplyDTO applyDTO) {
+    public ResponseEntity saveNew(@RequestBody final ApplyDTO applyDTO) {
         try {
             Apply apply = service.save(dtoToApplyConverter.convert(applyDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(applyToDtoConverter.convert(apply));

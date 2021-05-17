@@ -23,7 +23,7 @@ public class CandidateController {
     private final CandidateToDtoConverter candidateToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final CandidateDTO candidateDTO) {
+    public ResponseEntity saveNew(@RequestBody final CandidateDTO candidateDTO) {
         try {
             Candidate candidate = service.save(dtoToCandidateConverter.convert(candidateDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(candidateToDtoConverter.convert(candidate));

@@ -11,4 +11,5 @@ public interface AddressService extends GenericService<Address> {
 
     List<Address> buscarTodosComEstePais(String country);
 
+    List<Address> buscarTodos();
 }

@@ -11,9 +11,9 @@ import java.util.Set;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class VacancyDTO implements Serializable {
-    private Company company;
+    private Integer companyId;
 
-    private Address address;
+    private Integer addressId;
 
     private String title;
 
@@ -27,15 +27,15 @@ public class VacancyDTO implements Serializable {
 
     private LocalDate closeDate;
 
-    private Set<Experience> experiences;
+    private Set<Integer> experiences;
 
-    private Set<Qualification> qualifications;
+    private Set<Integer> qualifications;
 
-    private Set<Skill> skills;
+    private Set<Integer> skills;
 
-    private Set<Language> languages;
+    private Set<Integer> languages;
 
     private String contract;
 
-    private Set<Benefit> benefits;
+    private Set<Integer> benefits;
 }

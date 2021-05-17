@@ -11,6 +11,6 @@ import java.io.Serializable;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class ApplyDTO implements Serializable {
-    private Vacancy vacancy;
-    private Candidate candidate;
+    private Integer vacancyId;
+    private Integer candidateId;
 }

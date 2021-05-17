@@ -28,4 +28,5 @@ public interface VacancyService extends GenericService<Vacancy> {
 
     List<Vacancy> buscarTodasVagasComEsteBeneficio(final Benefit benefits);
 
+    List<Apply> buscarTodasOsCandidatosVaga(Integer id);
 }

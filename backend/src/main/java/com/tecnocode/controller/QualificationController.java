@@ -9,12 +9,7 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.DeleteMapping;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import com.tecnocode.converter.DtoToQualificationConverter;
 import com.tecnocode.converter.QualificationToDtoConverter;
@@ -36,7 +31,7 @@ public class QualificationController {
     private final QualificationToDtoConverter qualificationToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final QualificationDTO qualificationDTO) {
+    public ResponseEntity saveNew(@RequestBody final QualificationDTO qualificationDTO) {
         try {
             Qualification qualification = service.save(dtoToQualificationConverter.convert(qualificationDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(qualificationToDtoConverter.convert(qualification));

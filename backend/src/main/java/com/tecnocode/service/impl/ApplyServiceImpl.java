@@ -23,15 +23,4 @@ public class ApplyServiceImpl implements ApplyService {
     public void delete(Integer id) {
         repository.deleteById(id);
     }
-
-    @Override
-    public List<Apply> buscarTodosComEsteEndereco(Boolean vacancy) {
-        return repository.findAllByVacancyApply(vacancy);
-    }
-
-    @Override
-    public List<Apply> buscarTodosComEstaCompanhia(Boolean candidate) {
-        return repository.findAllByCandidateApply(candidate);
-    }
-
 }

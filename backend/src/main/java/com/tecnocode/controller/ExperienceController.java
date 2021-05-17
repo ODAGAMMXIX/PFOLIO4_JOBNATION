@@ -26,7 +26,7 @@ public class ExperienceController {
 	private final ExperienceToDtoConverter experienceToDtoConverter;
 	
 	@PostMapping
-	public ResponseEntity saveNew(final ExperienceDTO experienceDTO) {
+	public ResponseEntity saveNew(@RequestBody final ExperienceDTO experienceDTO) {
 		try {
 			Experience experience = service.save(dtoToExperienceConverter.convert(experienceDTO), Operation.INSERT);
 			return ResponseEntity.status(HttpStatus.CREATED).body(experienceToDtoConverter.convert(experience));

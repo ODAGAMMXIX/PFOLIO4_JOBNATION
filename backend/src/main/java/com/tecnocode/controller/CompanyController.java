@@ -23,7 +23,7 @@ public class CompanyController {
     private final CompanyToDtoConverter companyToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final CompanyDTO companyDTO) {
+    public ResponseEntity saveNew(@RequestBody final CompanyDTO companyDTO) {
         try {
             Company company = service.save(dtoToCompanyConverter.convert(companyDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(companyToDtoConverter.convert(company));
@@ -43,12 +43,12 @@ public class CompanyController {
         return service.buscarTodosComEsteEndereco(address);
     }
 
-    @GetMapping("/{name}")
+    @GetMapping("/name/{name}")
     public List<Company> buscarTodosComEstaCompanhia(@PathVariable("name") String name) {
         return service.buscarTodosComEstaCompanhia(name);
     }
 
-    @GetMapping("/{cnpj}")
+    @GetMapping("/cnpj/{cnpj}")
     public List<Company> buscarTodosComEsteCnpj(@PathVariable("cnpj") String cnpj) {
         return service.buscarTodosComEsteCnpj(cnpj);
     }

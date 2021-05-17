@@ -15,9 +15,5 @@ public class QualificationDTO implements Serializable {
 
     private String institution;
 
-    private LocalDate start;
-
-    private LocalDate end;
-
     private String status;
 }

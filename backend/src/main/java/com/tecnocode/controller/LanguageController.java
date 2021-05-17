@@ -22,7 +22,7 @@ public class LanguageController {
 	private final LanguageToDtoConverter languageToDtoConverter;
 
 	@PostMapping
-	public ResponseEntity saveNew(final LanguageDTO languageDTO) {
+	public ResponseEntity saveNew(@RequestBody final LanguageDTO languageDTO) {
 		try {
 			Language language = service.save(dtoToLanguageConverter.convert(languageDTO), Operation.INSERT);
 			return ResponseEntity.status(HttpStatus.CREATED).body(languageToDtoConverter.convert(language));

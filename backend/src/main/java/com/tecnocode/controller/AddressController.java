@@ -22,13 +22,18 @@ public class AddressController {
     private final AddressToDtoConverter addressToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final AddressDTO addressDTO) {
+    public ResponseEntity saveNew(@RequestBody final AddressDTO addressDTO) {
         try {
             Address address = service.save(dtoToAddressConverter.convert(addressDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(addressToDtoConverter.convert(address));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
+    }
+
+    @GetMapping
+    public List<Address> buscarTodos(){
+        return service.buscarTodos();
     }
 
     @GetMapping("/{city}")
