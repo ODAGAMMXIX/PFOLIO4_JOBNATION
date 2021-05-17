@@ -66,11 +66,14 @@ Navegue entre as seções
 
 - [x] 3) API JOBNATION - NODE-JS - BUSCA QUANTIDADE DE MEIOS DE TRANSPORTES NO GOOGLE MAPS.
 
-![03-JN-DB](/uploads/b8be1ac87ec9fdc6db5cdd8641094e2a/MicrosoftTeams-image__7_.png)
+![03-JN-API](/uploads/b8be1ac87ec9fdc6db5cdd8641094e2a/MicrosoftTeams-image__7_.png)
+
+![JN-API-over-limit](https://youtu.be/1qW7Q7gVW8Q)
+
 
 - [x] 4) API JOBNATION - MATCH DE CANDIDATOS (MOST SUITED FOR THE JOB)
 
-![MATCH](/uploads/2a223e4711dc9aa2117ff9ef40948f68/MATCH.mp4)
+![JN-API-MATCH](/uploads/2a223e4711dc9aa2117ff9ef40948f68/MATCH.mp4)
 
 - [x] 5) JOBNATION's DATABASE
 
@@ -82,7 +85,7 @@ Navegue entre as seções
 
 - [x] 7) BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR LAT-LOG
 
-![07-JN-DB - CANDIDATO PORLAT-LONG ](/uploads/800d1feede969d62c5cac5930dd8f67c/LAT-LONG-ORACLE.mp4)
+![07-JN-DB - CANDIDATO POR LAT-LONG ](/uploads/800d1feede969d62c5cac5930dd8f67c/LAT-LONG-ORACLE.mp4)
 
 - [x]  8) BANCO DE DADOS JOBNATION - ANÁLISE DE PERFORMANCE COM MILHARES DE REGISTROS FICTÍCIOS.
 
@@ -97,7 +100,7 @@ Navegue entre as seções
 |--------|-------|---------------------------------------------|
 | 1      | 28/03 |----(no video for this sprint)---------------|
 | 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/473105bcdf168d7dbe708defdb127857/APRESENTACAO-SPRINT-02.mp4)--|
-| 3      | 16/05 |----[APRESENTACAO-SPRINT-03]-----|
+| 3      | 16/05 |----[APRESENTACAO-SPRINT-03-18/05 (COMING SOON)]-----|
 | 4      | 05/06 |---------------------------------------------|
 
 ## Requisitos
