@@ -1,14 +1,17 @@
 package com.tecnocode.model;
 
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
+import lombok.NoArgsConstructor;
 import lombok.RequiredArgsConstructor;
 
 import javax.persistence.*;
 import java.io.Serializable;
 
 @Entity
-@RequiredArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 @Getter
 @Table(name = "userjn")
 public class User implements Serializable {
@@ -18,8 +21,8 @@ public class User implements Serializable {
 	private Integer id;
 	
 	@Column(name="name")
-	private final String name;
+	private String name;
 	
 	@Column(name="email")
-	private final String email;
+	private String email;
 }

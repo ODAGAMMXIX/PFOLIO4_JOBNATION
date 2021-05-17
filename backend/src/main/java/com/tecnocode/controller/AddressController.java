@@ -9,9 +9,9 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/address")
@@ -22,12 +22,38 @@ public class AddressController {
     private final AddressToDtoConverter addressToDtoConverter;
 
     @PostMapping
-    public ResponseEntity saveNew(final AddressDTO addressDTO) {
+    public ResponseEntity saveNew(@RequestBody final AddressDTO addressDTO) {
         try {
             Address address = service.save(dtoToAddressConverter.convert(addressDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(addressToDtoConverter.convert(address));
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
+    }
+
+    @GetMapping
+    public List<Address> buscarTodos(){
+        return service.buscarTodos();
+    }
+
+    @GetMapping("/{city}")
+    public List<Address> buscarTodosComEstaCidade(@PathVariable("city") String city){
+        return service.buscarTodosComEstaCidade(city);
+    }
+
+    @GetMapping("/{state}")
+    public List<Address> buscarTodosComEsteEstado(@PathVariable("state") String state){
+        return service.buscarTodosComEsteEstado(state);
+    }
+
+    @GetMapping("/{country}")
+    public List<Address> buscarTodosComEstePais(@PathVariable("country") String country){
+        return service.buscarTodosComEstePais(country);
+    }
+
+    @DeleteMapping("/{id}")
+    public ResponseEntity delete(@PathVariable("id") Integer id) {
+        service.delete(id);
+        return ResponseEntity.status(HttpStatus.OK).build();
     }
 }

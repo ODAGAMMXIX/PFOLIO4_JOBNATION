@@ -9,6 +9,7 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.Map;
 
 @Service
@@ -25,6 +26,26 @@ public class AddressServiceImpl implements AddressService {
 
     @Override
     public void delete(Integer id) {
+        repository.deleteById(id);
+    }
 
+    @Override
+    public List<Address> buscarTodosComEstaCidade(String city) {
+        return repository.findAllByCity(city);
+    }
+
+    @Override
+    public List<Address> buscarTodosComEsteEstado(String state) {
+        return repository.findAllByState(state);
+    }
+
+    @Override
+    public List<Address> buscarTodosComEstePais(String country) {
+        return repository.findAllByCountry(country);
+    }
+
+    @Override
+    public List<Address> buscarTodos() {
+        return repository.findAll();
     }
 }

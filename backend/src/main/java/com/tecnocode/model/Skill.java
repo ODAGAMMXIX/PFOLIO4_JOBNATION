@@ -2,10 +2,7 @@ package com.tecnocode.model;
 
 import lombok.*;
 
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
-import javax.persistence.Table;
+import javax.persistence.*;
 
 @Entity
 @Table(name = "skill")
@@ -17,6 +14,8 @@ import javax.persistence.Table;
 public class Skill {
     @Id
     @Column(name = "ski_id")
+    @GeneratedValue(strategy = GenerationType.SEQUENCE)
+    @SequenceGenerator(name = "skill_sequence")
     private Integer id;
 
     @Column(name = "ski_name")

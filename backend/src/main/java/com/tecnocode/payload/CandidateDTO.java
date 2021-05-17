@@ -11,15 +11,15 @@ import java.util.Set;
 @NoArgsConstructor(access = AccessLevel.PRIVATE)
 @AllArgsConstructor(access = AccessLevel.PRIVATE)
 public class CandidateDTO implements Serializable {
-    private Address address;
+    private Integer addressId;
 
-    private Set<Experience> experiences;
+    private Set<Integer> experiences;
 
-    private Set<Qualification> qualifications;
+    private Set<Integer> qualifications;
 
-    private Set<Skill> skills;
+    private Set<Integer> skills;
 
-    private Set<Language> languages;
+    private Set<Integer> languages;
 
     private String cpf;
 
