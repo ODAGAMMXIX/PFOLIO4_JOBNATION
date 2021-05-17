@@ -4,15 +4,15 @@
 
 ## Proposta comercial
 
-A aplicação consiste numa  interface de recepção de currículos, com banco de dados,  que permitirá a busca de candidatos por vaga a partir de filtros configuráveis.
+Esta aplicação consiste numa interface de recepção de currículos, com banco de dados,  que permitirá a busca de candidatos a partir de uma vaga, com filtros parametrizáveis.
 
 Deverão ser destaques a segurança e desempenho da aplicação.
 
- Nossa proposta de funcionamento para esses recursos serão detalhados logo abaixo:
+ Nossa proposta:
  
-- Busca por localização: funcionará utilizando as coordenadas de latitude e longitude.
+- Busca por localização: coordenadas de latitude e longitude ou número de conduções para chegar ao local de trabalho.
 
-- Busca por diferentes critérios: rotas de pesquisa estão sendo desenhadas para propiciar liberdade ao agende de consulta ao BD. Então, a aplicação fará uma varredura nos currículos já cadastrados e identificará os candidatos que mais se adequam aos critérios informados.
+- Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá  currículos já cadastrados e identificará candidatos  mais adequados à vaga.
 
 ## Descrição do projeto integrador
 
@@ -32,6 +32,7 @@ Navegue entre as seções
       * [Funcionais](#funcionais)
       * [Não Funcionais](#nao-funcionais)
    * [User Stories](#user-stories)
+   * [Diagrama de Casos de Uso](#user-stories)
    * [Banco de dados: Modelo relacional](#banco-de-dados)
    * [Banco de dados: Diagrama Lógico](#banco-de-dados)
       * [Propostas de inovação](#proposta-de-inovacao)
@@ -46,37 +47,52 @@ Navegue entre as seções
    * [Tecnologias](#tecnologias)
 <!--te-->
 
-## Status do projeto
+## Status do projeto Job Nation 
 
 <h4 align="center"> 
-	Job Nation  SPRINT 02 - 18/ABR/2021 = OK; 
+	SPRINT 03 - 16/MAIO/2021 = OK; 
 	
 </h4>
 
 ## Features
 
-- [x] Diagrama-Base da JOBNATION
-![01-APPLICATION-FULL-](/uploads/089115b4466546461e51ac523f68da27/01-APPLICATION-FULL-.png)
+- [x] 1) DIAGRAMA-BASE JOBNATION
 
-- [x]  API JOBNATION
-![02-JN-API](/uploads/7d566f3198f060ba024b3ef4a03fa626/02-JN-API.png)
+![01-APPLICATION-FULL-](/uploads/6127191a6d0335a0d320b70e0d4f58de/MicrosoftTeams-image__1_.png)
 
+- [x]  2) API JOBNATION
 
-- [x] JOBNATION's DATABASE
+![02-JN-API](/uploads/86eb66876ffa54385ee99b9fae7258e8/MicrosoftTeams-image__3_.png)
 
-![03-JN-DB](/uploads/e22f22f0c02b924bf06d0aef1a8c14ff/03-JN-DB.png)
+- [x] 3) API JOBNATION - NODE-JS - BUSCA QUANTIDADE DE MEIOS DE TRANSPORTES NO GOOGLE MAPS.
 
-- [x]  BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR DISTÂNCIA
+![03-JN-DB](/uploads/b8be1ac87ec9fdc6db5cdd8641094e2a/MicrosoftTeams-image__7_.png)
 
-![07-LAT-LONG-PROCEDURE-W-QUERY](/uploads/033a931cb97772d18addc21209037ac3/07-LAT-LONG-PROCEDURE-W-QUERY.mp4)
+![03-JN-DB](https://youtu.be/1qW7Q7gVW8Q)
 
-- [x] APLICAÇÃO JOBNATION FUCIONANDO
+- [x] 4) JOBNATION's DATABASE
 
-![06-SPRINT-01-BK-END](/uploads/226f36a4bda28a6333393d012525ad17/06-SPRINT-01-BK-END.mp4)
+![04-JN-DB](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
 
-- [x]  BONUS-ENTENDENDO A API (Visão de front-end)
+- [x] 5) BANCO DE DADOS JOBNATION - PEQUISA CANDIDATO POR DISTÂNCIA
 
-![BONUS-FEND-EMULATION](/uploads/65e04f805ea0972f0f8161f50f0d0395/BONUS-FEND-EMULATION.mp4)
+![05-JN-DB - CANDIDATO POR DISTÂNCIA](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
+
+- [x] 6) BANCO DE DADOS JOBNATION - FUNÇÃO CANDIDATO POR DISTÂNCIA
+
+![06-JN-DB - CANDIDATO POR MÚLTIPLOS CRITÉRIOS]((/uploads/033a931cb97772d18addc21209037ac3/07-LAT-LONG-PROCEDURE-W-QUERY.mp4))
+
+- [x]  7) BANCO DE DADOS JOBNATION - PROCEDURE MÚLTIPLOS CRITÉRIOS COM CURSOR.
+![07-JN-CURSOR-PROCEDURE-SEARCH](/uploads/f9712ad20ad02d0f7e22d4db1f597d18/CURSOR-PROCEDURE-SEARCH.mp4))
+
+- [x]  8) BANCO DE DADOS JOBNATION - ANÁLISE DE PERFORMANCE COM MILHARES DE REGISTROS FICTÍCIOS	.
+![08-JN-DB - PERFORMANCE-ANTES](/uploads/72c6849e98ebb4b2f464d8b9da78a0b3/Performance_antes_dos_5k.mp4)
+
+![08-A-JN-DB - PERFORMANCE-DEPOIS](/uploads/fa91f82f7ea2dc3df12765133838d457/Performance_depois_dos_5k.mp4)
+
+- [x] 9) APLICAÇÃO JOBNATION FUCIONANDO
+
+![09-SPRINT-01-BK-END](/uploads/226f36a4bda28a6333393d012525ad17/06-SPRINT-01-BK-END.mp4)
 
 ## Entregas
 
@@ -84,7 +100,7 @@ Navegue entre as seções
 |--------|-------|---------------------------------------------|
 | 1      | 28/03 |----(no video for this sprint)---------------|
 | 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/473105bcdf168d7dbe708defdb127857/APRESENTACAO-SPRINT-02.mp4)--|
-| 3      | 16/05 |---------------------------------------------|
+| 3      | 16/05 |----[APRESENTACAO-SPRINT-03]-----|
 | 4      | 05/06 |---------------------------------------------|
 
 ## Requisitos
@@ -120,23 +136,29 @@ Navegue entre as seções
 | Jet Soft | Disponibiliza JOBNATION aos seus clientes (terceiros) | Velocidade |
 | Tecno Code | Desenvolve a JOBNATION | Para aplicar na prática os conhecimentos de programação adquiridos, além de adquirir experiência profissional em desenvolvimento de projetos |
 
-## Banco de dados
-##DIAGRAMA ENTIDADE-RELACIONAMENTO
-![04-DER-SPRINT-02-](/uploads/43ab9dae9c03891562a4f95a384b60f7/04-DER-SPRINT-02-.png)
 
-## DIAGRAMA LÓGICO
-![05-LOGICAL-SPRINT-02-](/uploads/80221f57c968b73183896074cca9503a/05-LOGICAL-SPRINT-02-.png)
+## Diagrama de Casos de Uso
+
+![CASOS DE USO](/uploads/18cb3c6e95bcaf600b618b6e2199230b/MicrosoftTeams-image__8_.png)
+
+
+## Banco de dados
+##Diagrama Entidade-Relacionamento
+![DER-SPRINT-03-](/uploads/19fc541596b0e39ab528b13fbf1c2be7/MicrosoftTeams-image__5_.png)
+
+## Diagrama Lógico
+![LOGICAL-SPRINT-03-](/uploads/ea7c9eade4119499aa05097656d7389c/MicrosoftTeams-image__6_.png)
 
 
 ## Propostas de inovação
 
 Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o protagonismo para a entidade vaga (VACANCY).
 
-Estudamos ainda quais ferramentas servirão aos requisitos não funcionais de Flexibilidade: 
+Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais: 
 
-- No código - Rotas fixas em REST para Swagger ou GRAPHiQL;
+- No código - Mais de uma linguagem de programação no BACK-END;
 
-- No BD - PROCEDURES ou algum tipo de inteligência;
+- No BD - PROCEDURES com CURSORES e FUNCTIONS para dar flexibilidade às QUERIES;
 
 
 ## Backlog do Projeto
@@ -182,15 +204,17 @@ Atividades de cada sprint, com prioridade.
 
 #### Sprint 03 - 16 de maio de 2021.
 
-- Criação de Multiplas Rotas x Múltiplos Critérios;
+- BD - PROCEDURE  de devolução de listas por Múltiplos  Critérios com CURSOR;
 
-- Novos testes unitários de métodos;
+- BD - População do BD com dados fictícios para teste de PERFORMANCE;
 
-- Novas procedures de devolução de listas por outros critérios;
+- BE - MATCH Candidato-Vaga;
 
-- População do BD com dados fictícios para teste de performance;
+- BE - 2a API-JN para buscar quantidade de meios de transporte necessárias ao canditado chegar ao local de trabalho;
 
 #### Sprint 04 - 05 de junho de 2021.
+
+- BE - Criação pesquisa por Múltiplos Critérios;
 
 - Busca por qualquer critério;
 
@@ -199,6 +223,8 @@ Atividades de cada sprint, com prioridade.
 - Adaptação do Código para novas classes e tabelas;
 
 - Adaptação do BD para novas tabelas;
+
+- Novos testes unitários de métodos;
 
 #### Apresentação Final - 11 de junho de 2021.
 
@@ -281,6 +307,7 @@ As ferramentasutilizadas na construção deste projeto:
 
 - Oracle 11g (Sql developer)
 - Java (IntelliJ / Eclipse))
+- Node-JS;
 - React (Insomnia/POSTMAN);
 - Git;
 - OBS Studio / Kdenlive;
