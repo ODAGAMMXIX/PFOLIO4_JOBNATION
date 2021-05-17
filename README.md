@@ -68,9 +68,6 @@ Navegue entre as seções
 
 ![03-JN-API](/uploads/b8be1ac87ec9fdc6db5cdd8641094e2a/MicrosoftTeams-image__7_.png)
 
-![JN-API-over-limit](https://youtu.be/1qW7Q7gVW8Q)
-
-
 - [x] 4) API JOBNATION - MATCH DE CANDIDATOS (MOST SUITED FOR THE JOB)
 
 ![JN-API-MATCH](/uploads/2a223e4711dc9aa2117ff9ef40948f68/MATCH.mp4)
