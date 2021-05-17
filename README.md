@@ -238,7 +238,7 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](https://www.linkedin.com/in/caroline-sousa-53a27972/)
 * RA: 1460281923049
 
-#### Fabio Odaguiri LL.M.(Scrum master e database developer)
+#### Fabio Odaguiri LL.M. (Scrum master e database developer)
 * [Git Lab](https://gitlab.com/ODAGAMMXIX)
 * [Linkedin]()
 * RA: 1460281923008
@@ -248,22 +248,17 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](https://www.linkedin.com/in/felipe-santos-carvalho-454060187/)
 * RA: 1460281923011
 
-#### Gabriela Momilli ((Java back-end developer)
+#### Gabriela Momilli (Java back-end developer)
 * [Git Lab](https://gitlab.com/gabsmomilli)
 * [Linkedin](https://www.linkedin.com/in/gabriela-momilli-105b1a184/)
 * RA: 1460281923058
-
-#### Nathan Augusto Bugni Naressi (Java back-end developer)
-* [Git Lab](https://gitlab.com/nathanaugusto10)
-* [Linkedin](https://www.linkedin.com/in/nathan-naressi-b529081b2)
-* RA: 1460281923027
 
 #### Rafael Estevam de Oliveira (Oracle dabase developer)
 * [Git Lab](https://gitlab.com/rafaelEstevam)
 * [Linkedin](https://www.linkedin.com/in/rafael-estevam-de-oliveira/)
 * RA: 1460281823040
 
-#### Wilson Amore Vieira Filho ((Java back-end developer)
+#### Wilson Amore Vieira Filho (Java back-end developer)
 * [Git Lab](https://gitlab.com/ZVIEWIL)
 * [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
