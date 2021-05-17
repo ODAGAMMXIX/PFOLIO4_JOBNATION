@@ -127,7 +127,7 @@ Navegue entre as seções
 
 ## User Stories
 
-| Quem? | O que? | Por que? |
+| Quem? | O que? | Por quê? |
 |-------|--------|----------|
 | API de Terceiros | Fornece critérios de busca | Quer  processo de recrutamento em massa
 | Jet Soft | Disponibiliza JOBNATION aos seus clientes (terceiros) | Velocidade |
@@ -163,12 +163,12 @@ Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais:
 Atividades de cada sprint, com prioridade.
 
 #### Sprint 00
-- reunião de kickoff  com JETSOFT
+- reunião de kick-off  com JETSOFT
 - Criação de repositório
 - Definição de cargos (SM e PO)
 - Definição de nome para a equipe
 - Brainstorm para discussão de primeiras ideias
-- Apresntação de proposta de aplicação;
+- Apresentação de proposta de aplicação;
 
 #### Sprint 01
 - Criação do README.MD com informações sobre o projeto e instruções para execução da aplicação;
@@ -206,7 +206,7 @@ Atividades de cada sprint, com prioridade.
 
 - BD - População do BD com dados fictícios para teste de PERFORMANCE;
 
-- BE - 2a API-JN para buscar quantidade de meios de transporte necessárias ao canditado chegar ao local de trabalho;
+- BE - 2a API-JN para buscar quantidade de meios de transporte necessárias ao candidato chegar ao local de trabalho;
 
 - BE - MATCH Candidato-Vaga;
 
@@ -258,7 +258,7 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](https://www.linkedin.com/in/nathan-naressi-b529081b2)
 * RA: 1460281923027
 
-#### Rafael Estevam de Oliveira (Oracle tabase developer)
+#### Rafael Estevam de Oliveira (Oracle dabase developer)
 * [Git Lab](https://gitlab.com/rafaelEstevam)
 * [Linkedin](https://www.linkedin.com/in/rafael-estevam-de-oliveira/)
 * RA: 1460281823040
@@ -301,7 +301,7 @@ Atividades de cada sprint, com prioridade.
 
 ## 💻 Tecnologias
 
-As ferramentasutilizadas na construção deste projeto:
+As ferramentas utilizadas na construção deste projeto:
 
 - Oracle 11g (Sql developer)
 - Java (IntelliJ / Eclipse))
