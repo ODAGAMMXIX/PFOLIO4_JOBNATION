@@ -4,7 +4,7 @@
 
 ## Proposta comercial
 
-Esta aplicação consiste numa interface de recepção de currículos, com banco de dados,  que permitirá a busca de candidatos a partir de uma vaga, com filtros parametrizáveis.
+Desenvolver uma API que possíbilita a busca de candidatos a partir de uma vaga, conseguindo uma contração mais assertiva utilizando um método ágil para conseguir encontrar os candidatos que preenchem mais criterios
 
 Deverão ser destaques a segurança e desempenho da aplicação.
 
@@ -216,13 +216,9 @@ Atividades de cada sprint, com prioridade.
 
 - Busca por qualquer critério;
 
-- Importação do BD do cliente;
-
 - Adaptação do Código para novas classes e tabelas;
 
 - Adaptação do BD para novas tabelas;
-
-- Novos testes unitários de métodos;
 
 #### Apresentação Final - 11 de junho de 2021.
 
