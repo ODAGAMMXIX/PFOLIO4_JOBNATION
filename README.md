@@ -206,13 +206,13 @@ Atividades de cada sprint, com prioridade.
 
 - BD - População do BD com dados fictícios para teste de PERFORMANCE;
 
-- BE - 2a API-JN para buscar quantidade de meios de transporte necessárias ao candidato chegar ao local de trabalho;
+- Back-end - 2a API-JN para buscar quantidade de meios de transporte necessárias ao candidato chegar ao local de trabalho;
 
-- BE - MATCH Candidato-Vaga;
+- Back-end - MATCH Candidato-Vaga;
 
 #### Sprint 04 - 05 de junho de 2021.
 
-- BE - Criação pesquisa por Múltiplos Critérios;
+- Back-end - Criação pesquisa por Múltiplos Critérios;
 
 - Busca por qualquer critério;
 
