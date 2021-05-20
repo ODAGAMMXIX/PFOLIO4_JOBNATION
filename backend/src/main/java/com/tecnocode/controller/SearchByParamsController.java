@@ -17,7 +17,7 @@ public class SearchByParamsController {
     private final SearchByParamsService searchByParamsService;
 
     @PostMapping
-    public List<Candidate> getCandidateByParams(@RequestBody final SearchDTO params) {
+    public List<Object> getCandidateByParams(@RequestBody final SearchDTO params) {
         return searchByParamsService.getCandidateByParams(
                 params.getLat(),
                 params.getLng(),

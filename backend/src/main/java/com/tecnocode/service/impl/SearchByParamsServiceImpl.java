@@ -7,6 +7,8 @@ import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
+import javax.management.Query;
+import java.util.Arrays;
 import java.util.List;
 
 @Service
@@ -16,7 +18,7 @@ public class SearchByParamsServiceImpl implements SearchByParamsService {
     private final SearchByParamsRepository searchByParamsRepository;
 
     @Override
-    public List<Candidate> getCandidateByParams(Float lat, Float lgn, Integer range_distance, Integer experience_year, String genre, String[] language, String[] skill, String qualification) {
+    public List<Object> getCandidateByParams(Float lat, Float lgn, Integer range_distance, Integer experience_year, String genre, String[] language, String[] skill, String qualification) {
         StringBuilder query = new StringBuilder();
 
         if(experience_year != null ||
@@ -28,7 +30,7 @@ public class SearchByParamsServiceImpl implements SearchByParamsService {
                 experience_year != null
         ){
 
-            query.append("where ");
+//            query.append("where ");
 
             if(experience_year != null){
                 query.append("candidate_profile.cdt_id = candidate_experience.cdt_id ");
@@ -67,9 +69,25 @@ public class SearchByParamsServiceImpl implements SearchByParamsService {
 
         }
 
-//        query.append(";");
+        List <String> candidates = searchByParamsRepository.searchAllCandidates(
+                Arrays.asList("Superior"),
+                Arrays.asList("HTML"),
+                Arrays.asList("Inglês"),
+                "masculino",
+                365.00,
+                -23.1622,
+                -45.7953,
+                100
+        );
 
-        searchByParamsRepository.searchByParams(query.toString(), lat, lgn, range_distance);
+
+//        query.append(";");
+            //System.out.print(query.toString());
+
+        //List<Object> candidates = searchByParamsRepository.searchByParams(" 1 = 1 ;", lat, lgn, range_distance);
+
+        // return candidates;
+        // System.out.print(searchByParamsRepository.searchByParams(query.toString(), lat, lgn, range_distance).toString());
 
         return null;
     }

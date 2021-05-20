@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface SearchByParamsService extends GenericService<Candidate> {
 
-    List<Candidate> getCandidateByParams(final Float lat,
+    List<Object> getCandidateByParams(final Float lat,
                                          final Float lgn,
                                          final Integer range_distance,
                                          final Integer experience_year,
