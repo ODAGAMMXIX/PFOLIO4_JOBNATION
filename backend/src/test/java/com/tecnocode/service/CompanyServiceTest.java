@@ -22,14 +22,12 @@ public class CompanyServiceTest {
         Company company = Company.builder()
                 .name("A CompanyName")
                 .cnpj("38354796000153")
-                .address(saveNewAddress())
                 .build();
         final Company savedCompany = service.save(company, Operation.INSERT);
-        assertAll(() -> {
                 assertNotNull(savedCompany);
                 assertNotNull(savedCompany.getId());
-                assertEquals(savedCompany.getId(), 1);
-        });
+               
+        
     }
 
     private Address saveNewAddress() {
@@ -43,5 +41,6 @@ public class CompanyServiceTest {
                 .state("SP")
                 .country("Brasil")
                 .build(), Operation.INSERT);
+   
     }
 }

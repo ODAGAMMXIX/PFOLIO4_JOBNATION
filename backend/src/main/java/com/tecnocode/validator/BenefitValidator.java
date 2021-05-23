@@ -1,7 +1,9 @@
 package com.tecnocode.validator;
 
-import com.tecnocode.model.Benefit;
 import org.springframework.stereotype.Component;
+
+import com.tecnocode.model.Benefit;
+
 
 @Component
 public class BenefitValidator implements AbstractValidator<Benefit> {
@@ -11,4 +13,5 @@ public class BenefitValidator implements AbstractValidator<Benefit> {
             throw new RuntimeException("O beneficio não pode ser vazio.");
         }
     }
+
 }

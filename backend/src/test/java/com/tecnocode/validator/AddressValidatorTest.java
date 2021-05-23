@@ -127,5 +127,36 @@ public class AddressValidatorTest {
                 .state("")
                 .build();
         assertThrows(RuntimeException.class, () -> validator.get(Operation.INSERT).validate(address8));
+        
+    }
+        @Test
+        public void givenAnUpdateInvalidAddressData_whenTryToValidate_thenThrowsException() {
+        Address address9 = Address.builder()
+                .cep("")
+                .street("")
+                .number("")
+                .detail("")
+                .hood("")
+                .city("")
+                .country("")
+                .state("")
+                .build();
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.UPDATE).validate(address9)); 
+     
+        }
+        
+        @Test
+        public void givenAnDeleteInvalidAddressData_whenTryToValidate_thenThrowsException() {
+        Address address10 = Address.builder()
+                .cep("")
+                .street("")
+                .number("")
+                .detail("")
+                .hood("")
+                .city("")
+                .country("")
+                .state("")
+                .build();
+        assertThrows(RuntimeException.class, () -> validator.get(Operation.DELETE).validate(address10));
     }
 }
