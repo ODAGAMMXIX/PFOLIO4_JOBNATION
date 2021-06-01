@@ -70,11 +70,10 @@ public class SearchByParamsServiceImpl implements SearchByParamsService {
 //        }
 
         List <Object> candidates = searchByParamsRepository.searchAllCandidates(
-                Arrays.asList("SUPERIOR"),
-                Arrays.asList("HTML"),
-                Arrays.asList("INGLES"),
-                "MASCULINO"
+                genre
         );
+
+        System.out.print(candidates.toString());
 
 
 //        query.append(";");
@@ -85,7 +84,7 @@ public class SearchByParamsServiceImpl implements SearchByParamsService {
         // return candidates;
         // System.out.print(searchByParamsRepository.searchByParams(query.toString(), lat, lgn, range_distance).toString());
 
-        return null;
+        return candidates;
     }
 
     @Override

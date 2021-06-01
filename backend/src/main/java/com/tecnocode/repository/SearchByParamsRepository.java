@@ -21,21 +21,11 @@ public interface SearchByParamsRepository extends JpaRepository<Candidate, Integ
 
 
     @Query(value=
-            "SELECT distinct candidate.firstName " +
-                    "FROM Candidate candidate " +
-                    "JOIN candidate.experience experience " +
-                    "JOIN candidate.qualification qualification " +
-                    "JOIN candidate.skill skill " +
-                    "JOIN candidate.language language " +
-                    "WHERE (?1 is null or qualification.level IN (?1))" +
-                    "AND (?2 is null or skill.name IN (?2))" +
-                    "AND (?3 is null or language.name IN (?3))" +
-                    "AND (?4 is null or candidate.gender = ?4)", nativeQuery = true
+            "SELECT distinct candidate_profile.* " +
+                    "FROM candidate_profile " +
+                    "WHERE candidate_profile.cdt_gender = ?1", nativeQuery = true
     )
     List<Object> searchAllCandidates(
-            List<String> levels,
-            List<String> skills,
-            List<String> languages,
             String gender
     );
 
