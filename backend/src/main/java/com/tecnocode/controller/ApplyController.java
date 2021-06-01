@@ -2,6 +2,7 @@ package com.tecnocode.controller;
 
 import com.tecnocode.converter.ApplyToDtoConverter;
 import com.tecnocode.converter.DtoToApplyConverter;
+import com.tecnocode.model.Address;
 import com.tecnocode.model.Apply;
 import com.tecnocode.payload.ApplyDTO;
 import com.tecnocode.service.ApplyService;
@@ -10,6 +11,8 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.List;
 
 @RestController
 @RequestMapping("/apply")
@@ -34,4 +37,9 @@ public class ApplyController {
         service.delete(id);
         return ResponseEntity.status(HttpStatus.OK).build();
     }
+    @GetMapping
+    public List<Apply> buscarTodos(){
+        return service.buscarTodos();
+    }
+
 }

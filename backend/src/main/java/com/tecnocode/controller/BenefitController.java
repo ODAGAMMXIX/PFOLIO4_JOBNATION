@@ -2,6 +2,7 @@ package com.tecnocode.controller;
 
 import com.tecnocode.converter.BenefitToDtoConverter;
 import com.tecnocode.converter.DtoToBenefitConverter;
+import com.tecnocode.model.Address;
 import com.tecnocode.model.Benefit;
 import com.tecnocode.payload.BenefitDTO;
 import com.tecnocode.service.BenefitService;
@@ -29,6 +30,11 @@ public class BenefitController {
         } catch (RuntimeException ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
+    }
+
+    @GetMapping
+    public List<Benefit> buscarTodos(){
+        return service.buscarTodos();
     }
 
     @GetMapping("/{benefit}")

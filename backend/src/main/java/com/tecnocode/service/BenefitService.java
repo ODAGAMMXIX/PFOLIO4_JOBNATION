@@ -6,4 +6,7 @@ import java.util.List;
 
 public interface BenefitService extends GenericService<Benefit>{
     List<Benefit> buscarTodosComEsteBeneficio(final String benefit);
+
+    List<Benefit> buscarTodos();
 }
+

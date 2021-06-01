@@ -1,5 +1,6 @@
 package com.tecnocode.service.impl;
 
+import com.tecnocode.model.Address;
 import com.tecnocode.model.Benefit;
 import com.tecnocode.repository.BenefitRepository;
 import com.tecnocode.service.BenefitService;
@@ -32,5 +33,9 @@ public class BenefitServiceImpl implements BenefitService {
         return repository.findAllByBenefit(benefit);
     }
 
+    @Override
+    public List<Benefit> buscarTodos() {
+        return repository.findAll();
+    }
 
 }

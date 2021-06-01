@@ -23,4 +23,9 @@ public class ApplyServiceImpl implements ApplyService {
     public void delete(Integer id) {
         repository.deleteById(id);
     }
+
+    @Override
+    public List<Apply> buscarTodos() {
+        return repository.findAll();
+    }
 }
