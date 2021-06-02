@@ -9,4 +9,5 @@ import java.util.List;
 
 public interface ApplyRepository extends JpaRepository<Apply, Integer> {
     List<Apply> findAllByVacancyId(final Integer id);
+
 }

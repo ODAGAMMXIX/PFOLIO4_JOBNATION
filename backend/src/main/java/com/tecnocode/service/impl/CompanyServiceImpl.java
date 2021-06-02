@@ -10,16 +10,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class CompanyServiceImpl implements CompanyService {
     private final CompanyRepository repository;
-    private final CompanyValidator validator;
+    private final Map<Operation,CompanyValidator > validator;
 
     @Override
     public Company save(final Company company, Operation operation) {
-        validator.validate(company);
+        validator.get(operation).validate(company);
         return repository.saveAndFlush(company);
     }
 

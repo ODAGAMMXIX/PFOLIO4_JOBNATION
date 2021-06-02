@@ -21,5 +21,4 @@ public class QualificationUpdateValidator implements QualificationValidator {
             throw new RuntimeException("A qualificação informada para atualizar não existe.");
         }
     }
-}{
 }

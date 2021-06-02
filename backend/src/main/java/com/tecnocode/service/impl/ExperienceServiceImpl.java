@@ -2,6 +2,7 @@ package com.tecnocode.service.impl;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 
 import com.tecnocode.validator.Operation;
 import org.springframework.stereotype.Service;
@@ -17,11 +18,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ExperienceServiceImpl implements ExperienceService{
 	private final ExperienceRepository repository;
-	private final ExperienceValidator validator;
+	private final Map<Operation, ExperienceValidator> validator;
 	
 	@Override
 	public Experience save(final Experience experience, Operation operation) {
-		validator.validate(experience);
+		validator.get(operation).validate(experience);
 		return repository.saveAndFlush(experience);
 	}
 	

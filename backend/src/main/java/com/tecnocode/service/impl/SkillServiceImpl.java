@@ -9,16 +9,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class SkillServiceImpl implements SkillService {
     private final SkillRepository repository;
-    private final SkillValidator validator;
+    private final Map<Operation, SkillValidator> validator;
 
     @Override
     public Skill save(final Skill skill, Operation operation) {
-        validator.validate(skill);
+        validator.get(operation).validate(skill);
         return repository.saveAndFlush(skill);
     }
 

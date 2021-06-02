@@ -28,4 +28,9 @@ public class ApplyServiceImpl implements ApplyService {
     public List<Apply> buscarTodos() {
         return repository.findAll();
     }
+
+    @Override
+    public Apply search(final Apply apply, Operation operation) {
+        return repository.search();
+    }
 }

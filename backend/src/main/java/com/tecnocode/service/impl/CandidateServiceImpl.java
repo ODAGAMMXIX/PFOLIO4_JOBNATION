@@ -9,16 +9,17 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class CandidateServiceImpl implements CandidateService {
     private final CandidateRepository repository;
-    private final CandidateValidator validator;
+    private final Map<Operation, CandidateValidator> candidateValidators;
 
     @Override
     public Candidate save(final Candidate candidate, Operation operation) {
-        validator.validate(candidate);
+        candidateValidators.get(operation).validate(candidate);
         return repository.saveAndFlush(candidate);
     }
 

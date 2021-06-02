@@ -9,16 +9,17 @@ import com.tecnocode.validator.LanguageValidator;
 import lombok.RequiredArgsConstructor;
 
 import java.util.List;
+import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
 public class LanguageServiceImpl implements LanguageService {
 	private final LanguageRepository repository;
-	private final LanguageValidator validator;
+	private final Map<Operation, LanguageValidator> validator;
 
 	@Override
 	public Language save(final Language language, Operation operation) {
-		validator.validate(language);
+		validator.get(operation).validate(language);
 		return repository.saveAndFlush(language);
 	}
 

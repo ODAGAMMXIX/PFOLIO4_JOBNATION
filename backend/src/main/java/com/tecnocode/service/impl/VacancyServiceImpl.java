@@ -11,18 +11,19 @@ import org.springframework.stereotype.Service;
 
 import java.time.LocalDate;
 import java.util.List;
+import java.util.Map;
 import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
 public class VacancyServiceImpl implements VacancyService {
     private final VacancyRepository repository;
-    private final VacancyValidator validator;
+    private final Map<Operation, VacancyValidator> validator;
     private final ApplyRepository applyRepository;
 
     @Override
     public Vacancy save(final Vacancy vacancy, Operation operation) {
-        validator.validate(vacancy);
+        validator.get(operation).validate(vacancy);
         return repository.saveAndFlush(vacancy);
     }
 
