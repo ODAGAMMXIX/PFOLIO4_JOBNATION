@@ -267,27 +267,6 @@ Atividades de cada sprint, com prioridade.
 - Abra o SQL DEVELOPER (com Oracle 11g instalado);
 - Execute o SCRIPT:
 
-|-------------------------|
-|CREATE TABLESPACE  tecnocode|
-|DATAFILE  'C:\BD\tecnocode.dbf' SIZE 1M|
-|AUTOEXTEND ON;|
-|------------------
-|----CRIA USUÁRIO --|
-|------------------
-|CREATE USER tecnocode|
-|IDENTIFIED BY tecnocode|
-|DEFAULT TABLESPACE tecnocode|
-|TEMPORARY TABLESPACE TEMP|
-|QUOTA UNLIMITED ON tecnocode;|
-|-----------------
-|----PRIVILÉGIOS --|
-|-----------------
-|GRANT DBA TO tecnocode WITH ADMIN OPTION;|
-
-- Na sua IDE, importe o projeto Tecnocode;
-- Abra o arquivo "application.properties" e altere a seguinte linha "spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe";
-
-- Abra o INSOMNIA e escreva uma das rotas criadas nas clases "controller", com os dados ali exigidos e envie a requisição;
 
 
 ## 💻 Tecnologias
