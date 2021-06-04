@@ -1,7 +1,9 @@
 package com.tecnocode.validator;
 
 import com.tecnocode.model.Language;
+import org.springframework.stereotype.Component;
 
+@Component
 public class LanguageInsertValidator implements LanguageValidator{
 
     @Override

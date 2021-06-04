@@ -11,8 +11,5 @@ public interface ApplyService  extends GenericService<Apply>{
 
     List<Apply> buscarTodos();
 
-    @Query("SELECT a FROM Apply a WHERE a.candidate.gender = :gender AND a.candidate.languages in (:languages)" +
-            "AND a.candidate.qualifications = (:qualifications) AND a.candidate.skills = (:skills)")
-    List<Apply> search(@Param("gender") String gender, @Param("languages") Set<String> languages,
-                       @Param("qualifications") Set<String> qualifications, @Param("skills") Set<String> skills);
+    List<Apply> search(Integer vacancyId, String gender, Set<String> languages, Set<String> qualifications, Set<String> skills);
 }

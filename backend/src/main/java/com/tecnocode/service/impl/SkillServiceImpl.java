@@ -15,11 +15,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class SkillServiceImpl implements SkillService {
     private final SkillRepository repository;
-    private final Map<Operation, SkillValidator> validator;
+    private final Map<Operation, SkillValidator> skillValidators;
 
     @Override
     public Skill save(final Skill skill, Operation operation) {
-        validator.get(operation).validate(skill);
+        skillValidators.get(operation).validate(skill);
         return repository.saveAndFlush(skill);
     }
 

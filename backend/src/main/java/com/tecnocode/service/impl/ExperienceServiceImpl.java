@@ -18,11 +18,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class ExperienceServiceImpl implements ExperienceService{
 	private final ExperienceRepository repository;
-	private final Map<Operation, ExperienceValidator> validator;
+	private final Map<Operation, ExperienceValidator> experienceValidators;
 	
 	@Override
 	public Experience save(final Experience experience, Operation operation) {
-		validator.get(operation).validate(experience);
+		experienceValidators.get(operation).validate(experience);
 		return repository.saveAndFlush(experience);
 	}
 	

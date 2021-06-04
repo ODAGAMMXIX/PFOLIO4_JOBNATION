@@ -15,11 +15,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class LanguageServiceImpl implements LanguageService {
 	private final LanguageRepository repository;
-	private final Map<Operation, LanguageValidator> validator;
+	private final Map<Operation, LanguageValidator> languageValidators;
 
 	@Override
 	public Language save(final Language language, Operation operation) {
-		validator.get(operation).validate(language);
+		languageValidators.get(operation).validate(language);
 		return repository.saveAndFlush(language);
 	}
 

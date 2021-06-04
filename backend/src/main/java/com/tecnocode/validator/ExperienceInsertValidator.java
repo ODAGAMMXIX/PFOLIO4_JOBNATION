@@ -1,9 +1,11 @@
 package com.tecnocode.validator;
 
 import com.tecnocode.model.Experience;
+import org.springframework.stereotype.Component;
 
 import static java.util.Objects.isNull;
 
+@Component
 public class ExperienceInsertValidator implements ExperienceValidator{
 
     @Override

@@ -18,12 +18,12 @@ import java.util.stream.Collectors;
 @RequiredArgsConstructor
 public class VacancyServiceImpl implements VacancyService {
     private final VacancyRepository repository;
-    private final Map<Operation, VacancyValidator> validator;
+    private final Map<Operation, VacancyValidator> vacancyValidators;
     private final ApplyRepository applyRepository;
 
     @Override
     public Vacancy save(final Vacancy vacancy, Operation operation) {
-        validator.get(operation).validate(vacancy);
+        vacancyValidators.get(operation).validate(vacancy);
         return repository.saveAndFlush(vacancy);
     }
 

@@ -1,7 +1,9 @@
 package com.tecnocode.validator;
 
 import com.tecnocode.model.Benefit;
+import org.springframework.stereotype.Component;
 
+@Component
 public class BenefitInsertValidator implements BenefitValidator{
 
     @Override

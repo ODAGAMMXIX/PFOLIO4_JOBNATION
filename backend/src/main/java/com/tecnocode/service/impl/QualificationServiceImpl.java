@@ -18,11 +18,11 @@ import lombok.RequiredArgsConstructor;
 @RequiredArgsConstructor
 public class QualificationServiceImpl implements QualificationService {
 	private final QualificationRepository repository;
-	private final Map<Operation, QualificationValidator> validator;
+	private final Map<Operation, QualificationValidator> qualificationValidators;
 
 	@Override
 	public Qualification save(final Qualification qualification, Operation operation) {
-		validator.get(operation).validate(qualification);
+		qualificationValidators.get(operation).validate(qualification);
 		return repository.saveAndFlush(qualification);
 	}
 

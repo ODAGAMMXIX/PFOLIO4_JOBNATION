@@ -16,11 +16,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class CompanyServiceImpl implements CompanyService {
     private final CompanyRepository repository;
-    private final Map<Operation,CompanyValidator > validator;
+    private final Map<Operation,CompanyValidator > companyValidators;
 
     @Override
     public Company save(final Company company, Operation operation) {
-        validator.get(operation).validate(company);
+        companyValidators.get(operation).validate(company);
         return repository.saveAndFlush(company);
     }
 

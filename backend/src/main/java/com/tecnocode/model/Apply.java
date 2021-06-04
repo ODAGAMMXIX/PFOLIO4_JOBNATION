@@ -18,7 +18,7 @@ public class Apply {
     @Id
     @GeneratedValue(strategy = GenerationType.SEQUENCE)
     @SequenceGenerator(name = "apply_sequence", sequenceName = "apply_sequence")
-    private Long id;
+    private Integer id;
 
     @ManyToOne
     @JoinColumn(name = "vcy_id", referencedColumnName = "vcy_id")

@@ -15,11 +15,11 @@ import java.util.Map;
 @RequiredArgsConstructor
 public class BenefitServiceImpl implements BenefitService {
     private final BenefitRepository repository;
-    private final Map<Operation, BenefitValidator> validator;
+    private final Map<Operation, BenefitValidator> benefitValidators;
 
     @Override
     public Benefit save(final Benefit benefit, Operation operation) {
-        validator.get(operation).validate(benefit);
+        benefitValidators.get(operation).validate(benefit);
         return repository.saveAndFlush(benefit);
     }
 

@@ -1,7 +1,9 @@
 package com.tecnocode.validator;
 
 import com.tecnocode.model.Qualification;
+import org.springframework.stereotype.Component;
 
+@Component
 public class QualificationInsertValidator implements  QualificationValidator{
 
     @Override

@@ -12,7 +12,10 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.util.List;
+import javax.websocket.server.PathParam;
+import java.util.*;
+
+import static java.util.Arrays.asList;
 
 @RestController
 @RequestMapping("/apply")
@@ -42,4 +45,12 @@ public class ApplyController {
         return service.buscarTodos();
     }
 
+    @GetMapping("/search/{vacancy_id}")
+    public List<Apply> search(@PathVariable("vacancy_id") final Integer vacancyId,
+                              @PathParam("gender") final String gender,
+                              @PathParam("languages") final String[] languages,
+                              @PathParam("qualifications") final String[] qualifications,
+                              @PathParam("skills") final String[] skills){
+        return service.search(vacancyId, gender, new HashSet(asList(languages)), new HashSet(asList(qualifications)), new HashSet(asList(skills)));
+    }
 }
