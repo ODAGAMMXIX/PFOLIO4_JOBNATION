@@ -4,7 +4,8 @@
 
 ## Proposta comercial
 
-Desenvolver uma API que possíbilita a busca de candidatos a partir de uma vaga, conseguindo uma contração mais assertiva utilizando um método ágil para conseguir encontrar os candidatos que preenchem mais criterios
+Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Os critérios rios .....
+
 
 Deverão ser destaques a segurança e desempenho da aplicação.
 
@@ -50,7 +51,7 @@ Navegue entre as seções
 ## Status do projeto Job Nation 
 
 <h4 align="center"> 
-	SPRINT 03 - 16/MAIO/2021 = OK; 
+	SPRINT 04 - 06/JUNHO/2021 = OK; 
 	
 </h4>
 
@@ -59,6 +60,63 @@ Navegue entre as seções
 - [x] 1) DIAGRAMA-BASE JOBNATION
 
 ![01-APPLICATION-FULL-](/uploads/6127191a6d0335a0d320b70e0d4f58de/MicrosoftTeams-image__1_.png)
+
+
+![image](/uploads/13a7f6370fecad7d70911e3c1b645a69/image.png)
+
+
+
+
+DUMP.SQL [CRIA AS TABELAS]:
+![image](/uploads/e405184d2b7959527a838ae4d9bf7e8f/image.png)
+
+VALIDACÃO DE PREENCHIMENTO DE CAMPOS:
+![image](/uploads/9a12f240674782683e9254f666d17b30/image.png)
+![image](/uploads/b745a366c1df12e9bfc27a5902e0f276/image.png)
+
+CAMADA "SERVICE":
+{{LÓGICA DE VALIDAÇÃO}}
+![image](/uploads/bb707f924a01d0b3e9241ac80c99e6e8/image.png)
+
+
+ROTAS:
+![image](/uploads/bd2f9e2733222169a70aeccdc9587310/image.png)
+
+PROTEÇÃO DE DADOS SENSÍVEIS:
+![image](/uploads/a9168131cb387ad2e14da03de24c0074/image.png)
+ESTRUTURA DO CÓDIGO JAVA - BACKEND:
+
+![image](/uploads/2c17f0e269d4dc31b0a153c9b40a381f/image.png)
+![image](/uploads/9e75051c420206cebf35da842a30dda2/image.png)
+
+DATA TRANSFER OBJECT:
+<<CandidateToDtoConverter>>
+![image](/uploads/2b6e5455fb9dd376519029f095b5d402/image.png)
+<<DtoToCandidateConverter>>
+![image](/uploads/e5c15bcb151ea7678e41744b41a5506d/image.png)
+<<CandidateController>>
+![image](/uploads/a712c4afc42c3740aac95bcb99ee9d1c/image.png)
+
+COM AS VAGAS CADASTRADAS + CANDIDATOS CADASTRADOS = CANDIDATAR-SE À VAGA (APPLY):
+![image](/uploads/31147f12903934c738526e31c48d6d3a/image.png)
+
+APÓS O APPLY, É POSSÍVEL CONCILIAR CANDIDATOS E VAGAS ATRAVES DO MÉTODO MATCH:
+![image](/uploads/0b8b59bdfca3b3dc029903641dc69425/image.png)
+
+DEPLOY EM PRODUÇÃO:
+![image](/uploads/c49a73d35ef3e7b351b4381622c5639c/image.png)
+
+NODEJS - MAPS:
+
+![image](/uploads/676a5a203a10f0ad18b05227de3dc7a8/image.png)
+
+GOOGLE_MAPS_API_KEY:
+
+![image](/uploads/9ca14489550fdf02de8b1a0f05e959c1/image.png)
+
+
+API EXECUTADA:
+![image](/uploads/a95b121d7d3432160a87b4bfe52de1d3/image.png)
 
 - [x]  2) API JOBNATION
 
@@ -124,6 +182,10 @@ Navegue entre as seções
 | Flexibilidade quanto aos critérios                                    | RNF03  |
 | Regras de performance   | RNF04  |
 | Documentação  | RNF05 |
+
+
+INSERIR TESTES NO README;
+
 
 ## User Stories
 
