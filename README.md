@@ -321,36 +321,7 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
 
-## Como Instalar o projeto na máquina:
-
-- Selecione uma pasta de sua preferência, através do comando "cd Pasta Escolhida"
-- Abra o terminal clicando dentro de uma pasta com o botão direito e selecione a opção git bash here
-- Utilize a função git clone https://gitlab.com/gabsmomilli/tecnocode para instalar os arquivos no seu computador
-- Abra o SQL DEVELOPER (com Oracle 11g instalado);
-- Execute o SCRIPT:
-
-|-------------------------|
-|CREATE TABLESPACE  tecnocode|
-|DATAFILE  'C:\BD\tecnocode.dbf' SIZE 1M|
-|AUTOEXTEND ON;|
-|------------------
-|----CRIA USUÁRIO --|
-|------------------
-|CREATE USER tecnocode|
-|IDENTIFIED BY tecnocode|
-|DEFAULT TABLESPACE tecnocode|
-|TEMPORARY TABLESPACE TEMP|
-|QUOTA UNLIMITED ON tecnocode;|
-|-----------------
-|----PRIVILÉGIOS --|
-|-----------------
-|GRANT DBA TO tecnocode WITH ADMIN OPTION;|
-
-- Na sua IDE, importe o projeto Tecnocode;
-- Abra o arquivo "application.properties" e altere a seguinte linha "spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe";
-
-- Abra o INSOMNIA e escreva uma das rotas criadas nas clases "controller", com os dados ali exigidos e envie a requisição;
-
+## Como Instalar a aplicação: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 ## 💻 Tecnologias
 
