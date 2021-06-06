@@ -1,4 +1,3 @@
-
 PASSO 01 - Selecione uma pasta de sua preferência, através do comando "cd Pasta Escolhida";
 
 PASSO 02 - Abra o terminal clicando dentro de uma pasta com o botão direito e selecione a opção git bash here
@@ -35,7 +34,42 @@ PASSO 08 - Abra o INSOMNIA e utilize qualquer uma das rotas das clases "controll
 
 Para perquisa por múltiplos critérios:
 
-/candidate/_______
+http://localhost:8082/candidate/
+
+Exemplo de BODY:
+{
+ "addressId": 1,
+
+  "experiences": [2], 
+
+  "qualifications": [2],
+
+  "skills": [2],
+
+  "languages": [2],
+
+  "cpf": "11122233344",
+
+  "firstName": "ZE",
+
+  "middleName": "SILVA",
+
+  "surname": "CARIOCA",
+
+  "gender": "MASCULINO",
+
+   "marital": "SOLTEIRO",
+
+    "birth":"1962-01-01",
+
+    "joined": "",
+
+    "email": "ZECARIOCA@GMAIL.COM",
+
+    "mobile": 999999999
+    
+}
+
 
 Thatś all folks!
 
