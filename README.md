@@ -4,10 +4,7 @@
 
 ## Proposta comercial
 
-Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Os critérios rios .....
-
-
-Deverão ser destaques a segurança e desempenho da aplicação.
+Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Dentre os critérios, deverão ser destaques a segurança e o desempenho da aplicação.
 
  Nossa proposta:
  
