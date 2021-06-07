@@ -4,10 +4,7 @@
 
 ## Proposta comercial
 
-Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Os critérios rios .....
-
-
-Deverão ser destaques a segurança e desempenho da aplicação.
+Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Dentre os critérios, deverão ser destaques a segurança e o desempenho da aplicação.
 
  Nossa proposta:
  
@@ -66,57 +63,21 @@ Navegue entre as seções
 
 
 
-
-DUMP.SQL [CRIA AS TABELAS]:
-![image](/uploads/e405184d2b7959527a838ae4d9bf7e8f/image.png)
-
-VALIDACÃO DE PREENCHIMENTO DE CAMPOS:
-![image](/uploads/9a12f240674782683e9254f666d17b30/image.png)
-![image](/uploads/b745a366c1df12e9bfc27a5902e0f276/image.png)
-
-CAMADA "SERVICE":
-{{LÓGICA DE VALIDAÇÃO}}
-![image](/uploads/bb707f924a01d0b3e9241ac80c99e6e8/image.png)
-
-
-ROTAS:
-![image](/uploads/bd2f9e2733222169a70aeccdc9587310/image.png)
-
-PROTEÇÃO DE DADOS SENSÍVEIS:
-![image](/uploads/a9168131cb387ad2e14da03de24c0074/image.png)
-ESTRUTURA DO CÓDIGO JAVA - BACKEND:
-
-![image](/uploads/2c17f0e269d4dc31b0a153c9b40a381f/image.png)
-![image](/uploads/9e75051c420206cebf35da842a30dda2/image.png)
-
-DATA TRANSFER OBJECT:
-<<CandidateToDtoConverter>>
-![image](/uploads/2b6e5455fb9dd376519029f095b5d402/image.png)
-<<DtoToCandidateConverter>>
-![image](/uploads/e5c15bcb151ea7678e41744b41a5506d/image.png)
-<<CandidateController>>
-![image](/uploads/a712c4afc42c3740aac95bcb99ee9d1c/image.png)
-
-COM AS VAGAS CADASTRADAS + CANDIDATOS CADASTRADOS = CANDIDATAR-SE À VAGA (APPLY):
-![image](/uploads/31147f12903934c738526e31c48d6d3a/image.png)
-
-APÓS O APPLY, É POSSÍVEL CONCILIAR CANDIDATOS E VAGAS ATRAVES DO MÉTODO MATCH:
-![image](/uploads/0b8b59bdfca3b3dc029903641dc69425/image.png)
-
-DEPLOY EM PRODUÇÃO:
-![image](/uploads/c49a73d35ef3e7b351b4381622c5639c/image.png)
-
-NODEJS - MAPS:
-
-![image](/uploads/676a5a203a10f0ad18b05227de3dc7a8/image.png)
-
-GOOGLE_MAPS_API_KEY:
-
-![image](/uploads/9ca14489550fdf02de8b1a0f05e959c1/image.png)
-
-
-API EXECUTADA:
-![image](/uploads/a95b121d7d3432160a87b4bfe52de1d3/image.png)
+<details><summary>DUMP.SQL [CRIA AS TABELAS]:</summary><img src="/uploads/63a54f1a92f9b07bbbdab48be138dfc1/1.png" name="1"></details>
+  <details><summary>VALIDACÃO DE PREENCHIMENTO DE CAMPOS:</summary><img src="/uploads/12b31e00d9b78283fc5e315a29eba3d5/2.png" name="2"><img src="/uploads/1e507b31e0e997fa66f8e8f9c1c7cdc4/3.png" name="3"></details>
+  <details><summary>CAMADA "SERVICE": (LÓGICA DE VALIDAÇÃO)</summary><img src="/uploads/2b49fa8629c6c80507680fc21642e7db/4.png" name="4"></details>
+  <details><summary>ROTAS:</summary><img src="/uploads/a0f93b9663ba6210a1c11d2e15882bcb/5.png" name="5"></details>
+  <details><summary>PROTEÇÃO DE DADOS SENSÍVEIS:</summary><img src="/uploads/8701ac30a50ff29aadd1dc2f5b112b4d/6.png" name="6"></details>
+  <details><summary>ESTRUTURA DO CÓDIGO JAVA - BACKEND:</summary><img src="/uploads/9c9ff99ccc800eb5f36f44e215e39e6d/7.png" name="7"><img src="/uploads/2df96e095229bcd428f5bce621126eb1/8.png" name="8"></details>
+  <details><summary>DATA TRANSFER OBJECT:</summary><img src="/uploads/a553e6dec0666f9a5c5f5242eef1cfc3/9.png" name="9"></details>
+  <details><summary>CandidateToDtoConverter</summary><img src="/uploads/4295082a6717542a4e7281465f941348/10.png" name="10"></details>
+  <details><summary>DtoToCandidateConverter</summary><img src="/uploads/05359c0ec858394f366dac6111615d34/11.png" name="11"></details>
+  <details><summary>COM AS VAGAS CADASTRADAS + CANDIDATOS CADASTRADOS = CANDIDATAR-SE À VAGA (APPLY):</summary><img src="/uploads/e4d8e42660bfa2c8dc88f76411388c4c/12.png" name="12"></details>
+  <details><summary>APÓS O APPLY, É POSSÍVEL CONCILIAR CANDIDATOS E VAGAS ATRAVES DO MÉTODO MATCH:</summary><img src="/uploads/e4909dc5812f040574277091e215e744/13.png" name="13"></details>
+  <details><summary>DEPLOY EM PRODUÇÃO:</summary><img src="/uploads/6b94cdffba2c26439d5f03d50b14cea3/14.png" name="14"></details>
+  <details><summary>NODEJS - MAPS:</summary><img src="/uploads/13fac9a7213d4256bb41f2c90a0d3604/15.png" name="15"></details>
+  <details><summary>GOOGLE_MAPS_API_KEY:</summary><img src="/uploads/5408653e11c231fc7e84ba656b78145f/16.png" name="16"></details>
+  <details><summary>API EXECUTADA:</summary><img src="/uploads/24cf645c4f783288196aa4d7f50e9cf3/17.png" name="17"></details>
 
 - [x]  2) API JOBNATION
 
@@ -336,4 +297,3 @@ As ferramentas utilizadas na construção deste projeto:
 - Html
 - Css
 - Javascript
-
