@@ -8,7 +8,7 @@ Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, 
 
  Nossa proposta:
  
-- Busca por localização: número de conduções para chegar ao local de trabalho ou coordenadas de latitude e longitude.
+- Busca por localização: número de conduções para chegar ao local de trabalho.
 
 - Busca por diferentes critérios: rota(s) de pesquisa estão sendo desenhadas para propiciar liberdade de consulta ao BD. Nesse passo, a aplicação varrerá  currículos já cadastrados e identificará candidato(s)  mais adequados à vaga.
 
@@ -56,7 +56,7 @@ Navegue entre as seções
 
 - [x] 1) DIAGRAMA-BASE JOBNATION
 
-![01-APPLICATION-FULL-](![image](/uploads/6a6414822f1b7c4077b4e62d6052ee75/image.png)
+(![image](/uploads/6a6414822f1b7c4077b4e62d6052ee75/image.png)
 
 
 ![image](/uploads/13a7f6370fecad7d70911e3c1b645a69/image.png)
@@ -291,10 +291,8 @@ Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 - Oracle 11g (Sql developer)
 - Java (IntelliJ / Eclipse))
-- Node-JS;
-- React (Insomnia/POSTMAN);
-- Git;
-- OBS Studio / Kdenlive;
-- Html
-- Css
-- Javascript
+- Javascript )Node-JS)
+- React (Insomnia/POSTMAN)
+- Git (GitLab)
+- OBS Studio / Kdenlive
+
