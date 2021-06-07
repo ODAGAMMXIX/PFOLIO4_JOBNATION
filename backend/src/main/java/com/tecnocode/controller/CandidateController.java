@@ -4,6 +4,7 @@ import com.tecnocode.converter.CandidateToDtoConverter;
 import com.tecnocode.converter.DtoToCandidateConverter;
 import com.tecnocode.model.*;
 import com.tecnocode.payload.CandidateDTO;
+import com.tecnocode.payload.DistanceDTO;
 import com.tecnocode.service.CandidateService;
 import com.tecnocode.validator.Operation;
 import lombok.RequiredArgsConstructor;
@@ -11,8 +12,17 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import java.time.LocalDate;
+import javax.websocket.DecodeException;
+import java.io.*;
+import java.net.HttpURLConnection;
+import java.net.MalformedURLException;
+import java.net.URL;
+import java.net.URLConnection;
+import java.nio.ByteBuffer;
+import java.nio.charset.StandardCharsets;
 import java.util.List;
+import java.util.Scanner;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/candidate")
@@ -86,5 +96,41 @@ public class CandidateController {
     @GetMapping("/{gender}")
     public List<Candidate> buscarTodosCandidatosComEsteGenero(@PathVariable("gender") String gender){
         return service.buscarTodosCandidatosComEsteGenero(gender);
+    }
+
+    @PostMapping("/get-distance")
+    public String getDistance(@RequestBody final DistanceDTO body) throws IOException {
+//    public List<Object> getDistance(@PathVariable("origin") String origin, @PathVariable("destination") String destination) throws IOException {
+
+        String destination = body.getDestination();
+        String origin = body.getOrigin();
+
+        URL url = new URL("https://jobnation-maps.herokuapp.com/transit-routes");
+        URLConnection con = url.openConnection();
+        HttpURLConnection http = (HttpURLConnection)con;
+        http.setRequestMethod("POST"); // PUT is another valid option
+        http.setDoOutput(true);
+
+        String json = "{\"destination\":\""+ destination +"\", \"origin\":\"" + origin +"\"}";
+
+        byte[] out = json .getBytes(StandardCharsets.UTF_8);
+
+        int length = out.length;
+
+        http.setFixedLengthStreamingMode(length);
+        http.setRequestProperty("Content-Type", "application/json; charset=UTF-8");
+        http.connect();
+        try(OutputStream os = http.getOutputStream()) {
+            os.write(out);
+        }
+
+        InputStream response = http.getInputStream();
+
+        String result = new BufferedReader(new InputStreamReader(response))
+                .lines().collect(Collectors.joining("\n"));
+
+        System.out.print(result);
+
+        return result;
     }
 }

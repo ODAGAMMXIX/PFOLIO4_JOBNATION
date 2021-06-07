@@ -1,0 +1,211 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="87E12E90-2DC4-45A1-3DC2-E5FCEE1C10E6" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="ADDRESS">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="ADR_ID" id="317D68E9-D3E3-F578-951E-6D8B66C64750">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_CEP_PCZC" id="2A7C1D9E-7C63-56A5-79ED-C000D92EFDDA">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_CEP_PCZC</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_CITY" id="187116E1-FE97-41CF-BE91-F9E80633D87A">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_CITY</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_COUNTRY" id="5BB80DBF-0750-1A9F-10CF-0E952B3F24FD">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_COUNTRY</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_DETAIL" id="E2BB0AA4-080A-30FC-A8F2-22C12D8D2944">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_DETAIL</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_HOOD" id="4CAEC050-D883-14A0-1B93-2BD50196DAF4">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_HOOD</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_LAT" id="ADD7630A-BDFA-1F81-ACFA-85E066AC3FD8">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_LAT</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<ownDataTypeParameters>,22,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_LONG" id="618E5C6B-2EDE-2C3D-D099-B9C9BE396C82">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_LONG</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>22</dataTypePrecision>
+<ownDataTypeParameters>,22,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_NUM" id="1D821B52-A792-C79D-2B36-AA38EF13073C">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_NUM</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_OTHERS" id="B3385509-8F2A-6537-D029-9A5D9D4A202F">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_OTHERS</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_ST_NAME" id="A34136DB-58F6-C09B-40D9-997BC3DEB6CF">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_ST_NAME</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADR_STATE" id="4C74390D-65A5-8E59-3596-7924B76F3EB3">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>ADDRESS</sourceObjSchema>
+<sourceObjName>ADR_STATE</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="57196DF0-AE24-7894-BE25-965270984103" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="ADDRESS_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013292</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="317D68E9-D3E3-F578-951E-6D8B66C64750"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

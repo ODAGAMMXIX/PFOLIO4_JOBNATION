@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="82224428-8F0D-8AB9-45C3-D76CE15ECE7B" containerWithKeyObject="2C366CBE-F97B-7819-A215-116D17CE740D" localFKIndex="4F11FC52-4FC1-3673-E322-8B4EDDA407DB" name="FKNUMTE73WCMPAVI1087SLQKUDJ">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>FKNUMTE73WCMPAVI1087SLQKUDJ</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<referredTableLongName>TECNOCODE.EXPERIENCE</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>343BE312-0176-3BC0-B4BE-906198D40A45</referredTableID>
+<keyObject>0323855F-1AE8-AB28-98A7-12317FC2B477</keyObject>
+<referredKeyID>0323855F-1AE8-AB28-98A7-12317FC2B477</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>EXP_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>
