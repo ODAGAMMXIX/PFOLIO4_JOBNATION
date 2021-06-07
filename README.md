@@ -39,7 +39,7 @@ Navegue entre as seções
       * [Sprint 01](#sprint-01)
       * [Sprint 02](#sprint-02)
       * [Sprint 03](#sprint-03)
-      * [Sprint 04](#sprint-04)
+      * [Sprint 04](#sprint-04---05-de-junho-de-2021.)
    * [Equipe](#equipe)
    * [Deploy em produção](#como-instalar-o-projeto-na-maquina)
    * [Tecnologias](#tecnologias)
@@ -221,7 +221,7 @@ Atividades de cada sprint, com prioridade.
 
 - PROCEDURE PL/SQL: Consulta candidatos por distância (LAT,LONG);
 
-#### Sprint 03 - 16 de maio de 2021.
+#### Sprint 03.
 
 - BD - PROCEDURE  de devolução de listas por Múltiplos  Critérios com CURSOR;
 
