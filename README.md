@@ -42,7 +42,7 @@ Navegue entre as seções
       * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
    * [Deployment - No seu dispositivo](#seu-dispositivo)
-   * [Tecnologias](#tecnologias)
+   * [Tecnologias](#oracle-11g)
 <!--te-->
 
 ## Status do projeto Job Nation 
@@ -284,8 +284,6 @@ Atividades de cada sprint, com prioridade.
 ## Deployment - No seu dispositivo: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 ## 💻 Tecnologias
-
-As ferramentas utilizadas na construção deste projeto:
 
 - Oracle 11g (Sql developer)
 - Java (IntelliJ / Eclipse))
