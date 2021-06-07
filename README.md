@@ -281,7 +281,7 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
 
-## Deployment - Como Instalar a aplicação: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
+## deployment - Como Instalar a aplicação: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 ## 💻 Tecnologias
 
