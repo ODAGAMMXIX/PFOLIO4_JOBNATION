@@ -41,7 +41,7 @@ Navegue entre as seções
       * [Sprint 03](#sprint-03)
       * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
-   * [Deployment](#deployment)
+   * [Deployment - No seu dispositivo](#seu-dispositivo)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
@@ -281,7 +281,7 @@ Atividades de cada sprint, com prioridade.
 * [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
 
-## deployment - Como Instalar a aplicação: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
+## Deployment - No seu dispositivo: Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 ## 💻 Tecnologias
 
