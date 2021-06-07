@@ -1,0 +1,65 @@
+--------------------------------------------------------
+--  File created - domingo-junho-06-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Type OBJECTS_LIST
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OBJECTS_LIST" IS TABLE OF VARCHAR2(32767)
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_ADDRESS
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_ADDRESS" as table of output_address_return; 
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_ADDRESS_RETURN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_ADDRESS_RETURN" is
+    object(
+        adr_id number (10,0),
+        adr_cep_pczc varchar(255),
+        adr_detail varchar(255),
+        adr_num varchar(255),
+        adr_hood varchar(255),
+        adr_city varchar(255),
+        --adr_state varchar(255),
+        adr_lat float,
+        adr_long float,
+        adr_distance float
+    );
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_CANDIDATE
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_CANDIDATE" as table of output_candidate_return;
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_CANDIDATE_RETURN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_CANDIDATE_RETURN" is
+object(
+CDT_ID number (10,0),
+CDT_DT_BIRTH DATE,
+CDT_CPF VARCHAR2(255),
+CDT_EMAIL VARCHAR2(255),
+CDT_FIRST_NAME VARCHAR2(255),
+CDT_GENDER VARCHAR2(255),
+CDT_JOINED DATE,
+CDT_MARITAL VARCHAR2(255),
+CDT_MIDDLE_NAME VARCHAR2(255),
+CDT_MOBILE NUMBER(15,0),
+CDT_PHONE NUMBER(15,0),
+CDT_SURNAME VARCHAR2(255),
+ADDRESS_ADR_ID NUMBER(10,0)
+);
+
+/
