@@ -33,7 +33,7 @@ Navegue entre as seções
    * [Diagrama de Casos de Uso](#user-stories)
    * [Banco de dados: Modelo relacional](#banco-de-dados)
    * [Banco de dados: Diagrama Lógico](#banco-de-dados)
-   * [Propostas de inovação](#proposta-de-inovacao)
+   * [Proposta de inovação](#proposta-de-inovacao)
    * [Backlog do projeto](#backlog-do-projeto)
       * [Sprint 00](#sprint-00)
       * [Sprint 01](#sprint-01)
