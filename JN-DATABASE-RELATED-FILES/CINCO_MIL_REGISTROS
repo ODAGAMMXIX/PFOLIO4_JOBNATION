@@ -1,0 +1,532 @@
+--------------------------------------------------------
+--  File created - domingo-junho-06-2021   
+--------------------------------------------------------
+--------------------------------------------------------
+--  DDL for Type OBJECTS_LIST
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OBJECTS_LIST" IS TABLE OF VARCHAR2(32767)
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_ADDRESS
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_ADDRESS" as table of output_address_return; 
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_ADDRESS_RETURN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_ADDRESS_RETURN" is
+    object(
+        adr_id number (10,0),
+        adr_cep_pczc varchar(255),
+        adr_detail varchar(255),
+        adr_num varchar(255),
+        adr_hood varchar(255),
+        adr_city varchar(255),
+        --adr_state varchar(255),
+        adr_lat float,
+        adr_long float,
+        adr_distance float
+    );
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_CANDIDATE
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_CANDIDATE" as table of output_candidate_return;
+
+/
+--------------------------------------------------------
+--  DDL for Type OUTPUT_CANDIDATE_RETURN
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."OUTPUT_CANDIDATE_RETURN" is
+object(
+CDT_ID number (10,0),
+CDT_DT_BIRTH DATE,
+CDT_CPF VARCHAR2(255),
+CDT_EMAIL VARCHAR2(255),
+CDT_FIRST_NAME VARCHAR2(255),
+CDT_GENDER VARCHAR2(255),
+CDT_JOINED DATE,
+CDT_MARITAL VARCHAR2(255),
+CDT_MIDDLE_NAME VARCHAR2(255),
+CDT_MOBILE NUMBER(15,0),
+CDT_PHONE NUMBER(15,0),
+CDT_SURNAME VARCHAR2(255),
+ADDRESS_ADR_ID NUMBER(10,0)
+);
+
+/
+--------------------------------------------------------
+--  DDL for Type REPORT_TEMPLATE
+--------------------------------------------------------
+
+  CREATE OR REPLACE TYPE "TECNOCODE"."REPORT_TEMPLATE" AS OBJECT (reportType                 		INTEGER, useDescriptionInfo         		INTEGER, useQuantitativeInfo         		INTEGER, useDiagrams                 		INTEGER, useTableColumns             		INTEGER, useTableColumnsComments     		INTEGER, useTableIndexes             		INTEGER, useTableConstraints         		INTEGER, useTableFKReferringTo       		INTEGER, useTableFKReferredFrom      		INTEGER, useEntityAttributes         		INTEGER, useEntityAttributesComments 		INTEGER, useEntityConstraints        		INTEGER, useEntityIdentifiers      			INTEGER, useEntityRelationships      		INTEGER, useEntityIncomingProcesses  		INTEGER, useEntityOutgoingProcesses  		INTEGER, useDomainConstraints        		INTEGER, useDomainUsedInTables       		INTEGER, useDomainUsedInEntities     		INTEGER, useSTAttributes             		INTEGER, useSTAttributesComments     		INTEGER, useSTMethods                		INTEGER, useSTUsedInTables           		INTEGER, useSTUsedInEntities         		INTEGER, useCTUsedInTables           		INTEGER, useCTUsedInEntities         		INTEGER, useCTUsedInStructuredTypes  		INTEGER, useDTUsedInTables           		INTEGER, useDTUsedInEntities         		INTEGER, useDTUsedInStructuredTypes  		INTEGER, useSTUsedInStructuredTypes  		INTEGER, useDomainUsedInStructuredTypes  	INTEGER, useCRImpactedObjects        		INTEGER, useMRImpactedObjects        		INTEGER)
+
+/
+--------------------------------------------------------
+--  DDL for Sequence HIBERNATE_SEQUENCE
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."HIBERNATE_SEQUENCE"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 61 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence OSDDMW_DIAGRAMS_ID_SEQAI
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."OSDDMW_DIAGRAMS_ID_SEQAI"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 2 NOCACHE  NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_ADDRESS_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_ADDRESS_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_BENEFITS_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_BENEFITS_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_CANDIDATE_PROFILE_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_CANDIDATE_PROFILE_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_COMPANY_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_COMPANY_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_EXPERIENCE_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_EXPERIENCE_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_LANGUAGE_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_LANGUAGE_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_QUALIFICATION_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_QUALIFICATION_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_SKILL_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_SKILL_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Sequence SQ_VACANCY_ID
+--------------------------------------------------------
+
+   CREATE SEQUENCE  "TECNOCODE"."SQ_VACANCY_ID"  MINVALUE 1 MAXVALUE 9999999999999999999999999999 INCREMENT BY 1 START WITH 21 CACHE 20 NOORDER  NOCYCLE ;
+--------------------------------------------------------
+--  DDL for Table ADDRESS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."ADDRESS" 
+   (	"ADR_ID" NUMBER(10,0), 
+	"ADR_CEP_PCZC" VARCHAR2(255 CHAR), 
+	"ADR_CITY" VARCHAR2(255 CHAR), 
+	"ADR_COUNTRY" VARCHAR2(255 CHAR), 
+	"ADR_DETAIL" VARCHAR2(255 CHAR), 
+	"ADR_HOOD" VARCHAR2(255 CHAR), 
+	"ADR_LAT" FLOAT(22), 
+	"ADR_LONG" FLOAT(22), 
+	"ADR_NUM" NUMBER(10,0), 
+	"ADR_OTHERS" VARCHAR2(255 CHAR), 
+	"ADR_ST_NAME" VARCHAR2(255 CHAR), 
+	"ADR_STATE" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table APPLY
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."APPLY" 
+   (	"ID" NUMBER(19,0), 
+	"APPLY_AT" TIMESTAMP (6), 
+	"VTN_APPLY" NUMBER(10,0), 
+	"CDT_ID" NUMBER(10,0), 
+	"VCY_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table BENEFITS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."BENEFITS" 
+   (	"BEN_ID" NUMBER(10,0), 
+	"COLUMN2" VARCHAR2(255 CHAR), 
+	"BEN_BEN" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_EXPERIENCE" 
+   (	"CDT_ID" NUMBER(10,0), 
+	"EXP_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_LANGUAGE" 
+   (	"CDT_ID" NUMBER(10,0), 
+	"LAN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_PROFILE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_PROFILE" 
+   (	"CDT_ID" NUMBER(10,0), 
+	"CDT_DT_BIRTH" DATE, 
+	"CDT_CPF" VARCHAR2(255 CHAR), 
+	"CDT_EMAIL" VARCHAR2(255 CHAR), 
+	"CDT_FIRST_NAME" VARCHAR2(255 CHAR), 
+	"CDT_GENDER" VARCHAR2(255 CHAR), 
+	"CDT_JOINED" DATE, 
+	"CDT_MARITAL" VARCHAR2(255 CHAR), 
+	"CDT_MIDDLE_NAME" VARCHAR2(255 CHAR), 
+	"CDT_MOBILE" NUMBER(15,0), 
+	"CDT_PHONE" NUMBER(15,0), 
+	"CDT_SURNAME" VARCHAR2(255 CHAR), 
+	"ADDRESS_ADR_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_QUALIFICATION" 
+   (	"CDT_ID" NUMBER(10,0), 
+	"QUA_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table CANDIDATE_SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."CANDIDATE_SKILL" 
+   (	"CDT_ID" NUMBER(10,0), 
+	"SKI_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table COMPANY
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."COMPANY" 
+   (	"CPY_ID" NUMBER(10,0), 
+	"CPY_CNPJ" VARCHAR2(255 CHAR), 
+	"CPY_NAME" VARCHAR2(255 CHAR), 
+	"ADDRESS_ADR_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."EXPERIENCE" 
+   (	"EXP_ID" NUMBER(10,0), 
+	"EXP_ACHIEV" VARCHAR2(255 CHAR), 
+	"EXP_CITY" VARCHAR2(255 CHAR), 
+	"EXP_COMPANY" VARCHAR2(255 CHAR), 
+	"EXP_END" DATE, 
+	"EXP_START" DATE, 
+	"EXP_TITLE" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."LANGUAGE" 
+   (	"LAN_ID" NUMBER(10,0), 
+	"LAN_LEVEL" VARCHAR2(255 CHAR), 
+	"LAN_NAME" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."QUALIFICATION" 
+   (	"QUA_ID" NUMBER(10,0), 
+	"QUA_COURSE_PRG" VARCHAR2(255 CHAR), 
+	"QUA_END" DATE, 
+	"QUA_INSTITUTION" VARCHAR2(255 CHAR), 
+	"QUA_LEVEL_DEGR" VARCHAR2(255 CHAR), 
+	"QUA_NAME" VARCHAR2(255 CHAR), 
+	"QUA_START" DATE, 
+	"QUA_STATUS" VARCHAR2(255 CHAR), 
+	"QUA_CORSE_PRG" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."SKILL" 
+   (	"SKI_ID" NUMBER(10,0), 
+	"SKI_LEVEL" VARCHAR2(255 CHAR), 
+	"SKI_NAME" VARCHAR2(255 CHAR), 
+	"SKI_OTHERS" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table USERJN
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."USERJN" 
+   (	"ID_USER" NUMBER(10,0), 
+	"EMAIL" VARCHAR2(255 CHAR), 
+	"NAME" VARCHAR2(255 CHAR)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"VCY_CLOSIN" DATE, 
+	"VCY_CONTRACT" VARCHAR2(20 BYTE), 
+	"VCY_DESCRIPTION" VARCHAR2(400 BYTE), 
+	"VCY_SAL_MAX" FLOAT(126), 
+	"VCY_SAL_MIN" FLOAT(126), 
+	"VCY_OPENN" DATE, 
+	"VCY_TITLE" VARCHAR2(200 BYTE), 
+	"ADDRESS_ADR_ID" NUMBER(10,0), 
+	"COMPANY_CPY_ID" NUMBER(10,0), 
+	"ID_USER" NUMBER(10,0), 
+	"VCY_EXPTITLE" VARCHAR2(50 BYTE), 
+	"VCY_QLEVELD" VARCHAR2(50 BYTE), 
+	"VCY_SKI_L" VARCHAR2(50 BYTE), 
+	"VCY_SKI_N" VARCHAR2(50 BYTE), 
+	"VCY_LAN_L" VARCHAR2(50 BYTE), 
+	"VCY_LAN_N" VARCHAR2(50 BYTE), 
+	"VCY_DIST" VARCHAR2(50 BYTE), 
+	"VCY__SAL_MAX" FLOAT(126)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_BENEFITS
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_BENEFITS" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"BEN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_EXPERIENCE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_EXPERIENCE" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"EXP_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_LANGUAGE
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_LANGUAGE" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"LAN_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_QUALIFICATION
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_QUALIFICATION" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"QUA_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for Table VACANCY_SKILL
+--------------------------------------------------------
+
+  CREATE TABLE "TECNOCODE"."VACANCY_SKILL" 
+   (	"VCY_ID" NUMBER(10,0), 
+	"SKI_ID" NUMBER(10,0)
+   ) SEGMENT CREATION IMMEDIATE 
+  PCTFREE 10 PCTUSED 40 INITRANS 1 MAXTRANS 255 NOCOMPRESS LOGGING
+  STORAGE(INITIAL 65536 NEXT 1048576 MINEXTENTS 1 MAXEXTENTS 2147483645
+  PCTINCREASE 0 FREELISTS 1 FREELIST GROUPS 1 BUFFER_POOL DEFAULT FLASH_CACHE DEFAULT CELL_FLASH_CACHE DEFAULT)
+  TABLESPACE "TECNOCODE_OLD" ;
+--------------------------------------------------------
+--  DDL for View DMRS_INSTALLATION
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRS_INSTALLATION" ("DMRS_PERSISTENCE_VERSION", "DMRS_REPORTS_VERSION", "CREATED_ON") AS 
+  select 1.6 DMRS_Persistence_Version, 1.0 DMRS_Reports_Version, to_timestamp('2021/03/28 03:44:42','YYYY/MM/DD HH24:MI:SS') Created_On from dual with read only
+;
+--------------------------------------------------------
+--  DDL for View DMRS_VDIAGRAMS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRS_VDIAGRAMS" ("DIAGRAM_NAME", "OBJECT_ID", "OVID", "DIAGRAM_TYPE", "IS_DISPLAY", "VISIBLE", "MASTER_DIAGRAM_ID", "MASTER_DIAGRAM_OVID", "MODEL_ID", "MODEL_OVID", "MODEL_NAME", "NOTATION", "SHOW_ALL_DETAILS", "SHOW_NAMES_ONLY", "SHOW_ELEMENTS", "SHOW_DATATYPE", "SHOW_KEYS", "AUTOROUTE", "BOX_IN_BOX", "DIAGRAM_SVG", "DIAGRAM_PDF", "DESIGN_OVID", "PDF_NAME", "SVG_NAME") AS 
+  Select Diagram_Name, Object_Id, Ovid, Diagram_Type, Is_Display, Visible, Master_Diagram_Id, Master_Diagram_Ovid, Model_Id, Model_Ovid, Model_Name, Notation, Show_All_Details, Show_Names_Only, Show_Elements, Show_Datatype,Show_Keys, Autoroute, Box_In_Box, Diagram_Svg, Diagram_Pdf,  Design_Ovid, Diagram_Name||'.PDF', Diagram_Name||'.SVG' from DMRS_DIAGRAMS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_AGGR_FUNC_DIMENSIONS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_AGGR_FUNC_DIMENSIONS" ("AGGREGATE_FUNCTION_ID", "AGGREGATE_FUNCTION_NAME", "AGGREGATE_FUNCTION_OVID", "DIMENSION_ID", "DIMENSION_NAME", "DIMENSION_OVID", "DESIGN_OVID") AS 
+  select  Aggregate_Function_ID, Aggregate_Function_Name, Aggregate_Function_OVID, Dimension_ID, Dimension_Name, Dimension_OVID, Design_OVID from DMRS_AGGR_FUNC_DIMENSIONS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_AGGR_FUNC_LEVELS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_AGGR_FUNC_LEVELS" ("AGGREGATE_FUNCTION_ID", "AGGREGATE_FUNCTION_NAME", "AGGREGATE_FUNCTION_OVID", "LEVEL_ID", "LEVEL_NAME", "LEVEL_OVID", "DESIGN_OVID") AS 
+  select  Aggregate_Function_ID, Aggregate_Function_Name, Aggregate_Function_OVID, Level_ID, Level_Name, Level_OVID, Design_OVID from DMRS_AGGR_FUNC_LEVELS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_ATTRIBUTES
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_ATTRIBUTES" ("ATTRIBUTE_NAME", "OBJECT_ID", "OVID", "IMPORT_ID", "CONTAINER_ID", "CONTAINER_OVID", "MANDATORY", "DATATYPE_KIND", "VALUE_TYPE", "FORMULA", "SCOPEENTITY_ID", "SCOPEENTITY_OVID", "DOMAIN_ID", "DOMAIN_OVID", "LOGICAL_TYPE_ID", "LOGICAL_TYPE_OVID", "DISTINCT_TYPE_ID", "DISTINCT_TYPE_OVID", "STRUCTURED_TYPE_ID", "STRUCTURED_TYPE_OVID", "COLLECTION_TYPE_ID", "COLLECTION_TYPE_OVID", "CHECK_CONSTRAINT_NAME", "DEFAULT_VALUE", "USE_DOMAIN_CONSTRAINT", "DOMAIN_NAME", "LOGICAL_TYPE_NAME", "STRUCTURED_TYPE_NAME", "DISTINCT_TYPE_NAME", "COLLECTION_TYPE_NAME", "SYNONYMS", "PREFERRED_ABBREVIATION", "RELATIONSHIP_ID", "RELATIONSHIP_OVID", "ENTITY_NAME", "PK_FLAG", "FK_FLAG", "RELATIONSHIP_NAME", "SEQUENCE", "T_SIZE", "T_PRECISION", "CHAR_UNITS", "NATIVE_TYPE", "T_SCALE", "DATA_SOURCE", "SCOPEENTITY_NAME", "DESIGN_OVID") AS 
+  select  Attribute_Name, Object_ID, OVID, Import_ID, Container_ID, Container_OVID, Mandatory, DataType_Kind, Value_Type, Formula, ScopeEntity_ID, ScopeEntity_OVID, Domain_ID, Domain_OVID, Logical_Type_ID, Logical_Type_OVID, Distinct_Type_ID, Distinct_Type_OVID, Structured_Type_ID, Structured_Type_OVID, Collection_Type_ID, Collection_Type_OVID, Check_Constraint_Name, Default_Value, Use_Domain_Constraint, Domain_Name, Logical_Type_Name, Structured_Type_Name, Distinct_Type_Name, Collection_Type_Name, Synonyms, Preferred_Abbreviation, Relationship_ID, Relationship_OVID, Entity_Name, PK_Flag, FK_Flag, Relationship_Name, Sequence, T_Size, T_Precision, Char_Units, Native_Type, T_Scale, Data_Source, ScopeEntity_Name, Design_OVID from DMRS_ATTRIBUTES
+;
+--------------------------------------------------------
+--  DDL for View DMRV_AVT
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_AVT" ("DATAELEMENT_ID", "DATAELEMENT_OVID", "TYPE", "SEQUENCE", "VALUE", "SHORT_DESCRIPTION", "CONTAINER_ID", "CONTAINER_OVID", "CONTAINER_NAME", "DATAELEMENT_NAME", "DESIGN_OVID") AS 
+  select  DataElement_ID, DataElement_OVID, Type, Sequence, Value, Short_Description, Container_ID, Container_OVID, Container_Name, DataElement_Name, Design_OVID from DMRS_AVT
+;
+--------------------------------------------------------
+--  DDL for View DMRV_BUSINESS_INFO
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_BUSINESS_INFO" ("DESIGN_ID", "DESIGN_OVID", "DESIGN_NAME", "BUSINESS_INFO_ID", "BUSINESS_INFO_OVID", "BUSINESS_INFO_NAME") AS 
+  select  Design_ID, Design_OVID, Design_Name, Business_Info_ID, Business_Info_OVID, Business_Info_Name from DMRS_BUSINESS_INFO
+;
+--------------------------------------------------------
+--  DDL for View DMRV_CHANGE_REQUESTS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_CHANGE_REQUESTS" ("DESIGN_ID", "DESIGN_OVID", "DESIGN_NAME", "CHANGE_REQUEST_ID", "CHANGE_REQUEST_OVID", "CHANGE_REQUEST_NAME", "REQUEST_STATUS", "REQUEST_DATE_STRING", "COMPLETION_DATE_STRING", "IS_COMPLETED", "REASON") AS 
+  select  Design_ID, Design_OVID, Design_Name, Change_Request_ID, Change_Request_OVID, Change_Request_Name, Request_Status, Request_Date_String, Completion_Date_String, Is_Completed, Reason from DMRS_CHANGE_REQUESTS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_CHANGE_REQUEST_ELEMENTS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_CHANGE_REQUEST_ELEMENTS" ("CHANGE_REQUEST_ID", "CHANGE_REQUEST_OVID", "CHANGE_REQUEST_NAME", "ELEMENT_ID", "ELEMENT_OVID", "ELEMENT_NAME", "ELEMENT_TYPE", "DESIGN_OVID") AS 
+  select  Change_Request_ID, Change_Request_OVID, Change_Request_Name, Element_ID, Element_OVID, Element_Name, Element_Type, Design_OVID from DMRS_CHANGE_REQUEST_ELEMENTS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_CHECK_CONSTRAINTS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_CHECK_CONSTRAINTS" ("DATAELEMENT_ID", "DATAELEMENT_OVID", "TYPE", "SEQUENCE", "CONSTRAINT_NAME", "TEXT", "DATABASE_TYPE", "CONTAINER_ID", "CONTAINER_OVID", "CONTAINER_NAME", "DATAELEMENT_NAME", "DESIGN_OVID") AS 
+  select  DataElement_ID, DataElement_OVID, Type, Sequence, Constraint_Name, Text, Database_Type, Container_ID, Container_OVID, Container_Name, DataElement_Name, Design_OVID from DMRS_CHECK_CONSTRAINTS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_CLASSIFICATION_TYPES
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_CLASSIFICATION_TYPES" ("TYPE_ID", "TYPE_OVID", "TYPE_NAME", "DESIGN_ID", "DESIGN_OVID", "DESIGN_NAME") AS 
+  select  Type_ID, Type_OVID, Type_Name, Design_ID, Design_OVID, Design_Name from DMRS_CLASSIFICATION_TYPES
+;
+--------------------------------------------------------
+--  DDL for View DMRV_COLLECTION_TYPES
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_COLLECTION_TYPES" ("DESIGN_ID", "DESIGN_OVID", "DESIGN_NAME", "COLLECTION_TYPE_ID", "COLLECTION_TYPE_OVID", "COLLECTION_TYPE_NAME", "C_TYPE", "DATATYPE_ID", "DATATYPE_OVID", "DATATYPE_NAME", "DT_TYPE", "DT_REF", "MAX_ELEMENT", "PREDEFINED") AS 
+  select  Design_ID, Design_OVID, Design_Name, Collection_Type_ID, Collection_Type_OVID, Collection_Type_Name, C_Type, DataType_ID, DataType_OVID, DataType_Name, DT_Type, DT_Ref, Max_Element, Predefined from DMRS_COLLECTION_TYPES
+;
+--------------------------------------------------------
+--  DDL for View DMRV_COLUMNS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_COLUMNS" ("COLUMN_NAME", "ABBREVIATION", "OBJECT_ID", "OVID", "IMPORT_ID", "CONTAINER_ID", "CONTAINER_OVID", "MANDATORY", "DATATYPE_KIND", "VALUE_TYPE", "COMPUTED", "FORMULA", "SCOPEENTITY_ID", "SCOPEENTITY_OVID", "DOMAIN_ID", "DOMAIN_OVID", "LOGICAL_TYPE_ID", "LOGICAL_TYPE_OVID", "DISTINCT_TYPE_ID", "DISTINCT_TYPE_OVID", "STRUCTURED_TYPE_ID", "STRUCTURED_TYPE_OVID", "COLLECTION_TYPE_ID", "COLLECTION_TYPE_OVID", "CHECK_CONSTRAINT_NAME", "DEFAULT_VALUE", "USE_DOMAIN_CONSTRAINT", "DOMAIN_NAME", "LOGICAL_TYPE_NAME", "STRUCTURED_TYPE_NAME", "DISTINCT_TYPE_NAME", "COLLECTION_TYPE_NAME", "USES_DEFAULT", "ENGINEER", "TABLE_NAME", "PK_FLAG", "FK_FLAG", "NATIVE_TYPE", "SEQUENCE", "MODEL_ID", "MODEL_OVID", "MODEL_NAME", "T_SIZE", "T_PRECISION", "T_SCALE", "CHAR_UNITS", "PERSONALLY_ID_INFORMATION", "SENSITIVE_INFORMATION", "MASK_FOR_NONE_PRODUCTION", "SCOPEENTITY_NAME", "AUTO_INCREMENT_COLUMN", "IDENTITY_COLUMN", "AUTO_INCREMENT_GENERATE_ALWAYS", "AUTO_INCREMENT_START_WITH", "AUTO_INCREMENT_INCREMENT_BY", "AUTO_INCREMENT_MIN_VALUE", "AUTO_INCREMENT_MAX_VALUE", "AUTO_INCREMENT_CYCLE", "AUTO_INCREMENT_DISABLE_CACHE", "AUTO_INCREMENT_CACHE", "AUTO_INCREMENT_ORDER", "AUTO_INCREMENT_SEQUENCE_NAME", "AUTO_INCREMENT_TRIGGER_NAME", "DESIGN_OVID") AS 
+  select  Column_Name, Abbreviation, Object_ID, OVID, Import_ID, Container_ID, Container_OVID, Mandatory, DataType_Kind, Value_Type, Computed, Formula, ScopeEntity_ID, ScopeEntity_OVID, Domain_ID, Domain_OVID, Logical_Type_ID, Logical_Type_OVID, Distinct_Type_ID, Distinct_Type_OVID, Structured_Type_ID, Structured_Type_OVID, Collection_Type_ID, Collection_Type_OVID, Check_Constraint_Name, Default_Value, Use_Domain_Constraint, Domain_Name, Logical_Type_Name, Structured_Type_Name, Distinct_Type_Name, Collection_Type_Name, Uses_Default, Engineer, Table_Name, PK_Flag, FK_Flag, Native_Type, Sequence, Model_ID, Model_OVID, Model_Name, T_Size, T_Precision, T_Scale, Char_Units, Personally_ID_Information, Sensitive_Information, Mask_For_None_Production, ScopeEntity_Name, Auto_Increment_Column, Identity_Column, Auto_Increment_Generate_Always, Auto_Increment_Start_With, Auto_Increment_Increment_By, Auto_Increment_Min_Value, Auto_Increment_Max_Value, Auto_Increment_Cycle, Auto_Increment_Disable_Cache, Auto_Increment_Cache, Auto_Increment_Order, Auto_Increment_Sequence_Name, Auto_Increment_Trigger_Name, Design_OVID from DMRS_COLUMNS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_COLUMN_GROUPS
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_COLUMN_GROUPS" ("TABLE_ID", "TABLE_OVID", "SEQUENCE", "COLUMNGROUP_ID", "COLUMNGROUP_OVID", "COLUMNGROUP_NAME", "COLUMNS", "NOTES", "TABLE_NAME", "DESIGN_OVID") AS 
+  select  Table_ID, Table_OVID, Sequence, ColumnGroup_ID, ColumnGroup_OVID, ColumnGroup_Name, Columns, Notes, Table_Name, Design_OVID from DMRS_COLUMN_GROUPS
+;
+--------------------------------------------------------
+--  DDL for View DMRV_COLUMN_UI
+--------------------------------------------------------
+
+  CREATE OR REPLACE FORCE VIEW "TECNOCODE"."DMRV_COLUMN_UI" ("LABEL", "FORMAT_MASK", "FORM_DISPLAY_WIDTH", "FORM_MAXIMUM_WIDTH", "DISPLAY_AS", "FORM_HEIGHT", "DISPLAYED_ON_FORMS", "DISPLAYED_ON_REPORTS", "READ_ONLY", "HELP_TEXT", "OBJECT_ID", "OBJECT_OVID", "OBJECT_NAME", "DESIGN_OVID") AS 
+  select  Label, Format_Mask, Form_Display_Width, Form_Maximum_Width, Display_As, Form_Height, Displayed_On_Forms, Displayed_On_Reports, Read_Only, Help_Text, Object_ID, Object_OVID, Object_Name, Design_OVID from DMRS_COLUMN_UI
+;
