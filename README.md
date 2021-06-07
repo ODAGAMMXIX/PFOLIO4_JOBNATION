@@ -231,7 +231,8 @@ Atividades de cada sprint, com prioridade.
 
 - Back-end - MATCH Candidato-Vaga;
 
-#### Sprint 04 - 05 de junho de 2021.
+#### Sprint 04.
+#### 06 de junho de 2021.
 
 - Back-end - Criação pesquisa por Múltiplos Critérios;
 
