@@ -115,7 +115,7 @@ Navegue entre as seções
 | 1      | 28/03 |----------(no video for this sprint)---------|
 | 2      | 18/04 |-----------(video presented live)------------|
 | 3      | 16/05 |-----------(video presented live)------------|
-| 4      | 05/06 |-------(video will be presented live)--------|
+| 4      | 06/06 |-------(video will be presented live)--------|
 
 ## Requisitos
 
