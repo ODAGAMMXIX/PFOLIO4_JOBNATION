@@ -23,12 +23,12 @@ Navegue entre as seções
    * [Proposta comercial](#Proposta comercial)
    * [Descrição do Projeto](#descricao-do-projeto)
    * [Navegue entre as seções](#navegue-entre-as-secoes)
-   * [Status do projeto Job Nation](#Status do projeto Job Nation)
+   * [Status do projeto Job Nation](#status-do-projeto-job-nation)
    * [Features](#features)
    * [Entregas](#entregas)
    * [Requisitos](#requisitos)
       * [Funcionais](#funcionais)
-      * [Não Funcionais](#Requisitos Não Funcionais)
+      * [Não Funcionais](#requisitos-nao-funcionais)
    * [User Stories](#user-stories)
    * [Diagrama de Casos de Uso](#user-stories)
    * [Banco de dados: Modelo relacional](#banco-de-dados)
@@ -39,9 +39,9 @@ Navegue entre as seções
       * [Sprint 01](#sprint-01)
       * [Sprint 02](#sprint-02)
       * [Sprint 03](#sprint-03)
-      * [Sprint 04](#Sprint-04)
+      * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
-   * [Como Instalar o Projeto na Máquina](#como-instalar-o-projeto-na-maquina)
+   * [Deploy em produção](#como-instalar-o-projeto-na-maquina)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
@@ -112,10 +112,10 @@ Navegue entre as seções
 
 | Sprint | Data  | Vídeo                                       |
 |--------|-------|---------------------------------------------|
-| 1      | 28/03 |----(no video for this sprint)---------------|
-| 2      | 18/04 |--![APRESENTACAO-SPRINT-02](/uploads/473105bcdf168d7dbe708defdb127857/APRESENTACAO-SPRINT-02.mp4)--|
-| 3      | 16/05 |----[APRESENTACAO-SPRINT-03-18/05 (COMING SOON)]-----|
-| 4      | 05/06 |---------------------------------------------|
+| 1      | 28/03 |----------(no video for this sprint)---------|
+| 2      | 18/04 |-----------(video presented live)------------|
+| 3      | 16/05 |-----------(video presented live)------------|
+| 4      | 05/06 |-------(video will be presented live)--------|
 
 ## Requisitos
 
