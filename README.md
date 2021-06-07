@@ -33,7 +33,7 @@ Navegue entre as seções
    * [Diagrama de Casos de Uso](#user-stories)
    * [Banco de dados: Modelo relacional](#banco-de-dados)
    * [Banco de dados: Diagrama Lógico](#banco-de-dados)
-   * [Proposta de inovação](#inovacao)
+   * [Proposta de inovação](#inovation)
    * [Backlog do projeto](#backlog-do-projeto)
       * [Sprint 00](#sprint-00)
       * [Sprint 01](#sprint-01)
@@ -169,7 +169,7 @@ INSERIR TESTES NO README;
 ![LOGICAL-SPRINT-03-](/uploads/ea7c9eade4119499aa05097656d7389c/MicrosoftTeams-image__6_.png)
 
 
-## Proposta de inovação
+## Inovation
 
 Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o protagonismo para a entidade vaga (VACANCY).
 
@@ -177,7 +177,7 @@ Então, estudamos quais ferramentas servirão aos requisitos (não) funcionais:
 
 - No BACK-END - Mais de uma linguagem de programação;
 
-- No BD - PROCEDURES com CURSORES e FUNCTIONS para dar flexibilidade às QUERIES;
+- No BD - FUNCTIONS para dar flexibilidade às QUERIES;
 
 
 ## Backlog do Projeto
