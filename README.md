@@ -81,7 +81,7 @@ Navegue entre as seções
 
 - [x]  2) API JOBNATION
 
-![02-JN-API](/uploads/86eb66876ffa54385ee99b9fae7258e8/MicrosoftTeams-image__3_.png)
+![02-JN-API](![image](/uploads/382f1765869b33897b8220b78573010c/image.png)
 
 - [x] 3) API JOBNATION - NODE-JS - BUSCA QUANTIDADE DE MEIOS DE TRANSPORTES NO GOOGLE MAPS.
 
@@ -95,7 +95,7 @@ Navegue entre as seções
 
 - [x] 5) JOBNATION's DATABASE
 
-![05-JN-DB](/uploads/eb3c887e0cab35f4979a1512aa154453/MicrosoftTeams-image__4_.png)
+![05-JN-DB]![image](/uploads/42d2fb5ba4f7643b910d68777841a68b/image.png)
 
 - [x]  6) BANCO DE DADOS JOBNATION - FUNCTION BUSCA MÚLTIPLOS CRITÉRIOS COM CURSOR.
 
