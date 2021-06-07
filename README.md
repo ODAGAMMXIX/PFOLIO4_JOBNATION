@@ -39,7 +39,7 @@ Navegue entre as seções
       * [Sprint 01](#sprint-01)
       * [Sprint 02](#sprint-02)
       * [Sprint 03](#sprint-03)
-      * [Sprint 04](#sprint-04---05-de-junho-de-2021.)
+      * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
    * [Deploy em produção](#como-instalar-o-projeto-na-maquina)
    * [Tecnologias](#tecnologias)
