@@ -169,7 +169,7 @@ INSERIR TESTES NO README;
 ![LOGICAL-SPRINT-03-](/uploads/ea7c9eade4119499aa05097656d7389c/MicrosoftTeams-image__6_.png)
 
 
-## Propostas de inovação
+## Proposta de inovação
 
 Criamos o 1o BD com benchmarking no LINKEDIN, subsequentemente alterando o protagonismo para a entidade vaga (VACANCY).
 
