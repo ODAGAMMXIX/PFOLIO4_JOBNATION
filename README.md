@@ -41,7 +41,7 @@ Navegue entre as seções
       * [Sprint 03](#sprint-03)
       * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
-   * [Deployment - No seu dispositivo](#running-it-up)
+   * [Running it up - Deployment - No seu dispositivo](#running-it-up)
    * [Ferramentas Tecnologicas](#ferramentas-tecnologicas)
 <!--te-->
 
