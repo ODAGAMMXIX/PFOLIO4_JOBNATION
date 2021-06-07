@@ -234,9 +234,9 @@ Atividades de cada sprint, com prioridade.
 #### Sprint 04.
 #### 06 de junho de 2021.
 
-### Back-end - Criação pesquisa por Múltiplos Critérios;
+# Back-end - Criação pesquisa por Múltiplos Critérios (Priority);
 
-### BD - Busca por qualquer critério;
+# BD - Busca por qualquer critério (Priority);
 
 - Adaptação do Código para novas classes e tabelas;
 
