@@ -95,7 +95,7 @@ Navegue entre as seções
 
 - [x] 5) JOBNATION's DATABASE
 
-![05-JN-DB]![image](/uploads/42d2fb5ba4f7643b910d68777841a68b/image.png)
+![image](/uploads/42d2fb5ba4f7643b910d68777841a68b/image.png)
 
 - [x]  6) BANCO DE DADOS JOBNATION - FUNCTION BUSCA MÚLTIPLOS CRITÉRIOS COM CURSOR.
 
