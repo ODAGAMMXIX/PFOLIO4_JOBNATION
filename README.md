@@ -41,7 +41,7 @@ Navegue entre as seções
       * [Sprint 03](#sprint-03)
       * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
-   * [Deploy em produção](#como-instalar-o-projeto-na-maquina)
+   * [Deploy em produção](#instalar-a-aplicacao)
    * [Tecnologias](#tecnologias)
 <!--te-->
 
