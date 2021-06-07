@@ -20,7 +20,7 @@ Baseado no modelo de Aprendizado Por Projeto, nossa equipe trabalha para entrega
 Navegue entre as seções
 =================
 <!--ts-->
-   * [Proposta comercial](## Proposta comercial)
+   * [Proposta comercial](#Proposta comercial)
    * [Descrição do Projeto](#descricao-do-projeto)
    * [Navegue entre as seções](#navegue-entre-as-secoes)
    * [Status do Projeto](#status-do-projeto)
