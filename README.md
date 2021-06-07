@@ -42,7 +42,7 @@ Navegue entre as seções
       * [Sprint 04](#sprint-04)
    * [Equipe](#equipe)
    * [Deployment - No seu dispositivo](#seu-dispositivo)
-   * [Tecnologias](#oracle-11g)
+   * [Tecnologias](#💻-tecnologias)
 <!--te-->
 
 ## Status do projeto Job Nation 
