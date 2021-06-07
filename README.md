@@ -56,7 +56,7 @@ Navegue entre as seções
 
 - [x] 1) DIAGRAMA-BASE JOBNATION
 
-![01-APPLICATION-FULL-](/uploads/6127191a6d0335a0d320b70e0d4f58de/MicrosoftTeams-image__1_.png)
+![01-APPLICATION-FULL-](![image](/uploads/6a6414822f1b7c4077b4e62d6052ee75/image.png)
 
 
 ![image](/uploads/13a7f6370fecad7d70911e3c1b645a69/image.png)
