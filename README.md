@@ -81,7 +81,7 @@ Navegue entre as seções
 
 - [x]  2) API JOBNATION
 
-![02-JN-API](![image](/uploads/382f1765869b33897b8220b78573010c/image.png)
+![image](/uploads/382f1765869b33897b8220b78573010c/image.png)
 
 - [x] 3) API JOBNATION - NODE-JS - BUSCA QUANTIDADE DE MEIOS DE TRANSPORTES NO GOOGLE MAPS.
 
