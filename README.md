@@ -261,7 +261,7 @@ Atividades de cada sprint, com prioridade.
 
 #### Fabio Odaguiri LL.M. (Scrum master e database developer)
 * [Git Lab](https://gitlab.com/ODAGAMMXIX)
-* [Linkedin]()
+* [Linkedin](www.linkedin.com/in/fabioodaguiri)
 * RA: 1460281923008
 
 #### Felipe Santos Carvalho (Product owner e database developer)
