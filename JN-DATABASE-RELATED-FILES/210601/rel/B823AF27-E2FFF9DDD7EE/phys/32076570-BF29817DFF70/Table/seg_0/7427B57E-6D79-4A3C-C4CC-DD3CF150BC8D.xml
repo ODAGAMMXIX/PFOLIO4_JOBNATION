@@ -1,0 +1,49 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="SKILL" directorySegmentName="seg_0" id="7427B57E-6D79-4A3C-C4CC-DD3CF150BC8D">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6C1A7D26-156B-DF8B-83BA-127B9624EC68</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SKI_ID" id="2A3C8EFE-01C5-4E8C-39EE-159E903A5D5A">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SKI_OTHERS" id="440D9D1A-3AC0-D18A-B826-6B3F6642923B">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SKI_NAME" id="8AC41A40-37DE-436E-B104-DC42FC86E5DE">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SKI_LEVEL" id="AFDA0F2B-2EFD-AA99-C8F9-3558B55426A4">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="SKILL_PK" id="7ABE5C6B-03DB-DD38-0568-8487809D09CC">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<segment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<indexSegment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

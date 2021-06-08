@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VACANCY_EXPERIENCE" directorySegmentName="seg_0" id="F01A8C0E-E0A3-F9B8-2EE7-71F77AF2359E">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6C1A7D26-156B-DF8B-83BA-127B9624EC68</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="VCY_ID" id="535D5880-93D5-EB01-8E51-6AA4E99DD71F">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EXP_ID" id="5E19122C-1A16-B962-25E0-8265D07CE33B">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FKFR515J4970E8X30XNVH77WQLK" id="36B89B35-B392-95FD-DBE6-00D48DF151A7">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK1GBYLD6JE4YF5NS2ABGQ5JTFS" id="AA44748F-3F79-6A85-6C79-425301882450">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="VACANCY_EXPERIENCE_PK" id="F7357467-6D4D-8CD8-FF19-CE9F9E254A46">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<segment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<indexSegment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

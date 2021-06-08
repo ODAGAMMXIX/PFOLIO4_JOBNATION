@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="FB0205C6-3A30-122C-F5D2-3372AE2775D0" containerWithKeyObject="BD3FB6F1-3F85-AF9F-CC84-B6416AD36735" localFKIndex="7F1E1EBC-D26F-D97A-60DF-7A2EBBE2C2CD" name="FK5TRCQJ1LOICHJW96IMLVVOH4V">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>FK5TRCQJ1LOICHJW96IMLVVOH4V</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<referredTableLongName>TECNOCODE.BENEFITS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>5B3172EF-1B1B-6EEB-6F3D-821A9EF72946</referredTableID>
+<keyObject>546EC14F-B312-E6BF-3889-90AE5C8CE6E5</keyObject>
+<referredKeyID>546EC14F-B312-E6BF-3889-90AE5C8CE6E5</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>BEN_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

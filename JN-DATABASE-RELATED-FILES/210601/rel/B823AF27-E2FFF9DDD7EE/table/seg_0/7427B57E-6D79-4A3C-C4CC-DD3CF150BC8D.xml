@@ -1,0 +1,90 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="7427B57E-6D79-4A3C-C4CC-DD3CF150BC8D" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="SKILL">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SKILL</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="SKI_ID" id="2A3C8EFE-01C5-4E8C-39EE-159E903A5D5A">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>SKILL</sourceObjSchema>
+<sourceObjName>SKI_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKI_LEVEL" id="AFDA0F2B-2EFD-AA99-C8F9-3558B55426A4">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>SKILL</sourceObjSchema>
+<sourceObjName>SKI_LEVEL</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKI_NAME" id="8AC41A40-37DE-436E-B104-DC42FC86E5DE">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>SKILL</sourceObjSchema>
+<sourceObjName>SKI_NAME</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SKI_OTHERS" id="440D9D1A-3AC0-D18A-B826-6B3F6642923B">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>SKILL</sourceObjSchema>
+<sourceObjName>SKI_OTHERS</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7ABE5C6B-03DB-DD38-0568-8487809D09CC" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="SKILL_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013318</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A3C8EFE-01C5-4E8C-39EE-159E903A5D5A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

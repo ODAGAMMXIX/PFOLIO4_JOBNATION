@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CANDIDATE_SKILL" directorySegmentName="seg_0" id="F2EF95AF-E808-1DCF-8E15-4E25D233D166">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6C1A7D26-156B-DF8B-83BA-127B9624EC68</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="SKI_ID" id="04BEFBEC-277C-88FB-C542-CE23D59F0DEA">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_ID" id="A6183C9A-2AAF-E9DB-3044-26E137B8F57E">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FKNBHG2CYYVMCB4RATAOG2AHQVG" id="86519EA3-D1C0-3594-C15A-03963256BA52">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FKOPV9DH5LIGKXHUWU5036G4L2R" id="F85DC124-A905-366D-B4CF-853F70D30A5F">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CANDIDATE_SKILL_PK" id="5354A74E-D2B1-D91C-D477-F98D681C2505">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<segment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<indexSegment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

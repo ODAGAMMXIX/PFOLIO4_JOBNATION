@@ -28,9 +28,9 @@ public class ApplyController {
     @PostMapping
     public ResponseEntity saveNew(@RequestBody final ApplyDTO applyDTO) {
         try {
-            Apply apply = service.save(dtoToApplyConverter.convert(applyDTO), Operation.INSERT);
+            Apply apply = service.saveNewApply(dtoToApplyConverter.convert(applyDTO), Operation.INSERT);
             return ResponseEntity.status(HttpStatus.CREATED).body(applyToDtoConverter.convert(apply));
-        } catch (RuntimeException ex) {
+        } catch (Exception ex) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST).body(ex.getMessage());
         }
     }

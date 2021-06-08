@@ -1,0 +1,104 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="CBF18BC6-F791-CDC5-9D8E-8F7F8C796FF4" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="COMPANY">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>COMPANY</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CPY_ID" id="E6045CCF-8ED8-55C3-9237-D72952C2637A">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>COMPANY</sourceObjSchema>
+<sourceObjName>CPY_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPY_CNPJ" id="2D69A49D-6AD4-B58E-D238-13291BC28BFB">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>COMPANY</sourceObjSchema>
+<sourceObjName>CPY_CNPJ</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="CPY_NAME" id="D1E75631-A62C-2DC8-2F06-5E587DE12387">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>COMPANY</sourceObjSchema>
+<sourceObjName>CPY_NAME</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS_ADR_ID" id="E65A511D-52B5-AA6D-C98E-9E27F27458A3">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>COMPANY</sourceObjSchema>
+<sourceObjName>ADDRESS_ADR_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="425FD567-76B0-9234-35DD-FA88F8A9CBC0" referredColumn="317D68E9-D3E3-F578-951E-6D8B66C64750"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="05349119-9A86-739D-3DE4-50D9D02EA080" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="COMPANY_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013310</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E6045CCF-8ED8-55C3-9237-D72952C2637A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="3B2F42F1-0186-A78F-6FFF-E06AA6BF20E2" name="FKDGXQEFTVTX8G9JLGQ8URQDM40">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E65A511D-52B5-AA6D-C98E-9E27F27458A3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

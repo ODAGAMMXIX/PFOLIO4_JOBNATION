@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="CANDIDATE_PROFILE" directorySegmentName="seg_0" id="FDD3ABE7-9B47-0F5F-8FFC-5EE25388E6B7">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6C1A7D26-156B-DF8B-83BA-127B9624EC68</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ADDRESS_ADR_ID" id="064EAB5B-BA2E-292A-1571-970F33BD7B86">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_MARITAL" id="2D8D1C08-12FA-4D47-FF8F-9C4A118608AB">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_CPF" id="5085C957-0812-493A-2062-E30FE00FF396">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_DT_BIRTH" id="5132BDA6-32D7-65BF-4C05-8B50A9B4ADC0">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_MOBILE" id="749E2662-9080-8239-B765-0EE5EF7D9B36">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_JOINED" id="8DC1790B-B963-A672-E8E3-844A543328D3">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_EMAIL" id="8DF79CCE-8BD5-0285-676C-1F7CD250DEDA">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_ID" id="A8C44B72-526A-AE72-4035-C9E0E37D6017">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_GENDER" id="ADEE0977-1273-54CE-AC4F-84CD6A796602">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_SURNAME" id="CADA8C36-CF08-16D1-D98D-805359D900AE">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_MIDDLE_NAME" id="E0E5BF16-14DB-D0AE-F37F-699FEBFC374D">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_PHONE" id="E515F98D-1B30-EF34-C3BE-DC226624112B">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CDT_FIRST_NAME" id="F900B60B-E7BE-6183-D54D-1E70D4E8800C">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FKA3I9CYNXH0LYN7C02PDX5VD7M" id="38B8CB9A-0299-43F0-1CB0-586FA74671F2">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CANDIDATE_PROFILE_PK" id="59B79872-C8D8-A32E-EBD7-C4D765FAA894">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<segment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<indexSegment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

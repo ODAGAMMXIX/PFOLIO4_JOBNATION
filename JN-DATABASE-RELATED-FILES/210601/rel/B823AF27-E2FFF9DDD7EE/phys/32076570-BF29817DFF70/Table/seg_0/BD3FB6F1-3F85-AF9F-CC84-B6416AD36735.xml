@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev11g class="oracle.dbtools.crest.model.design.storage.oracle.v11g.TableProxyOraclev11g" name="VACANCY_BENEFITS" directorySegmentName="seg_0" id="BD3FB6F1-3F85-AF9F-CC84-B6416AD36735">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>6C1A7D26-156B-DF8B-83BA-127B9624EC68</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BEN_ID" id="04AAA8E0-25A2-0B4B-A214-BBD6EDFFB6DA">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="VCY_ID" id="C8587363-01C9-D3CB-DD19-A01D5A754EA2">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK3W1GK34QYW5QGMMSWGDH03UGQ" id="7503790C-22DD-E01B-257C-40FCC8005D5C">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="FK5TRCQJ1LOICHJW96IMLVVOH4V" id="7F1E1EBC-D26F-D97A-60DF-7A2EBBE2C2CD">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="VACANCY_BENEFITS_PK" id="350D34EC-B2C5-0A1A-6DDF-AC5442046D12">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+<segment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</segment>
+<tableSpace>32805D0F-F5E3-30C6-AEA6-35F061B29AD5</tableSpace>
+<indexSegment>E85ABD3D-98BD-7ABC-117E-23ED5880B969</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev11g>

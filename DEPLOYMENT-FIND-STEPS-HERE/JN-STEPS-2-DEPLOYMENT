@@ -1,0 +1,78 @@
+PASSO 01 - Selecione uma pasta de sua preferência, através do comando "cd Pasta Escolhida";
+
+PASSO 02 - Abra o terminal clicando dentro de uma pasta com o botão direito e selecione a opção git bash here
+
+PASSO 03 - Utilize a função git clone https://gitlab.com/gabsmomilli/tecnocode para instalar os arquivos no seu computador;
+
+PASSO 04 - Abra o SQL DEVELOPER (com Oracle 11g instalado);
+
+PASSO 05 - Execute o SCRIPT no worksheet:
+
+
+|-------------------------|
+|CREATE TABLESPACE  tecnocode|
+|DATAFILE  'C:\BD\tecnocode.dbf' SIZE 1M|
+|AUTOEXTEND ON;|
+|------------------
+|----CRIA USUÁRIO --|
+|------------------
+|CREATE USER tecnocode|
+|IDENTIFIED BY tecnocode|
+|DEFAULT TABLESPACE tecnocode|
+|TEMPORARY TABLESPACE TEMP|
+|QUOTA UNLIMITED ON tecnocode;|
+|-----------------
+|----PRIVILÉGIOS --|
+|-----------------
+|GRANT DBA TO tecnocode WITH ADMIN OPTION;|
+
+PASSO 06 - Na sua IDE, importe o projeto Tecnocode ou baixe o arquivo .JAR;
+
+PASSO 07 - Abra o arquivo "application.properties" e confirme/altere a primeira linha "spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe";
+
+PASSO 08 - Abra o INSOMNIA e utilize qualquer uma das rotas das clases "controller", com os dados ali exigidos e envie a requisição:
+
+Para perquisa por múltiplos critérios:
+
+http://localhost:8082/candidate/
+
+Exemplo de BODY:
+{
+ "addressId": 1,
+
+  "experiences": [2], 
+
+  "qualifications": [2],
+
+  "skills": [2],
+
+  "languages": [2],
+
+  "cpf": "11122233344",
+
+  "firstName": "ZE",
+
+  "middleName": "SILVA",
+
+  "surname": "CARIOCA",
+
+  "gender": "MASCULINO",
+
+   "marital": "SOLTEIRO",
+
+    "birth":"1962-01-01",
+
+    "joined": "",
+
+    "email": "ZECARIOCA@GMAIL.COM",
+
+    "mobile": 999999999
+    
+}
+
+
+Thatś all folks!
+
+
+
+

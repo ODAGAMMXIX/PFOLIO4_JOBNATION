@@ -30,4 +30,49 @@ public class Apply {
 
     @Column(name = "apply_at")
     private LocalDateTime applyAt;
+
+    @Column(name = "vtn_apply")
+    private Integer vtn;
+
+    public Long getId() {
+        return id;
+    }
+
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public Vacancy getVacancy() {
+        return vacancy;
+    }
+
+    public void setVacancy(Vacancy vacancy) {
+        this.vacancy = vacancy;
+    }
+
+    public Candidate getCandidate() {
+        return candidate;
+    }
+
+    public void setCandidate(Candidate candidate) {
+        this.candidate = candidate;
+    }
+
+    public LocalDateTime getApplyAt() {
+        return applyAt;
+    }
+
+    public void setApplyAt(LocalDateTime applyAt) {
+        this.applyAt = applyAt;
+    }
+
+    public Integer getVtn() {
+        return vtn;
+    }
+
+    public void setVtn(Integer vtn) {
+        this.vtn = vtn;
+    }
+
+
 }

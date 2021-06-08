@@ -1,0 +1,165 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="37BD76F0-C235-3D16-BBEC-63EF789A8CE8" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="QUALIFICATION">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>QUALIFICATION</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="QUA_ID" id="2499599C-D7EB-71A2-F15F-9C9351E4EC0E">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_COURSE_PRG" id="DA74B29E-375A-8D3A-A45A-4DEB5B01F0A7">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_COURSE_PRG</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_END" id="FBB4022F-BF83-BE5C-C6B5-41226A66F933">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_END</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_INSTITUTION" id="66973A3B-6100-0755-1B3A-B4C9EA2BB550">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_INSTITUTION</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_LEVEL_DEGR" id="D0A1506F-F4CE-05F8-DCBE-68F2A5768B3B">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_LEVEL_DEGR</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_NAME" id="8A85066E-8C66-766F-03D8-00D2FAE20AA0">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_NAME</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_START" id="96C8F9EA-732E-DBEE-9673-5F50C0E13731">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_START</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_STATUS" id="D5EC3957-C886-8C82-03A0-5975DA0BBCF8">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_STATUS</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="QUA_CORSE_PRG" id="B6BB90F2-30F4-E9EF-6CD7-2DA677135D56">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_CORSE_PRG</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>255 CHAR</dataTypeSize>
+<ownDataTypeParameters>255 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="677B45D3-778D-8405-A40A-560EBF5B03E1" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="QUALIFICATION_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013316</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2499599C-D7EB-71A2-F15F-9C9351E4EC0E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,368 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A578765C-B5D8-2249-40FC-9FBC1200B3DA" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="VACANCY">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>VACANCY</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="VCY_ID" id="413F5402-4882-1737-2DD7-8D866A998DCB">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_CLOSIN" id="AF945CE6-1D7B-8649-C030-EBE5C2DB9854">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_CLOSIN</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_CONTRACT" id="143BD7E6-1DFA-CD55-D013-472830B63B8E">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_CONTRACT</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_DESCRIPTION" id="5A47693E-0DBD-CD9A-5AFE-E52A2A69832B">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_DESCRIPTION</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>400 BYTE</dataTypeSize>
+<ownDataTypeParameters>400 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_SAL_MAX" id="874638B5-66FC-311E-AB21-545AF1EE9C04">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_SAL_MAX</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_SAL_MIN" id="4E3F3BE0-8B19-54A2-B381-96990BBF96A7">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_SAL_MIN</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_OPENN" id="651AF860-16AD-2E96-99CA-6933D10590B1">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_OPENN</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_TITLE" id="3B489BBF-43C4-F042-040B-69D54D083370">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_TITLE</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>200 BYTE</dataTypeSize>
+<ownDataTypeParameters>200 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS_ADR_ID" id="29E32046-C5E6-876D-C368-F16FB0F5AE8A">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>ADDRESS_ADR_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="875ADE97-352E-A655-D3E5-F656DCF0513B" referredColumn="317D68E9-D3E3-F578-951E-6D8B66C64750"/>
+</associations>
+</Column>
+<Column name="COMPANY_CPY_ID" id="4F221B8B-A0E5-E77E-9A8F-4B40055DA23C">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>COMPANY_CPY_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="BE07B3B5-F50C-7047-5D4C-9D1392E00E7A" referredColumn="E6045CCF-8ED8-55C3-9237-D72952C2637A"/>
+</associations>
+</Column>
+<Column name="ID_USER" id="22496A68-375E-E0B2-5874-C4FC8A052719">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>ID_USER</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="02D3F8E9-5A28-A9E2-095A-3DB40490E78C" referredColumn="EC130C6B-966C-7663-EA46-2989AC6750B9"/>
+</associations>
+</Column>
+<Column name="VCY_EXPTITLE" id="85F38856-252C-B11D-7EE7-ECBD5020A198">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_EXPTITLE</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_QLEVELD" id="3BB3F7AC-EFD9-FEA2-0BA9-BF2B7A47AB02">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_QLEVELD</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_SKI_L" id="DE791B14-3D3C-41C6-C0D0-74B835CB4244">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_SKI_L</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_SKI_N" id="2D92CFE5-59DD-774D-2D07-5CBE6C3E2C05">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_SKI_N</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_LAN_L" id="588E0C06-242C-B3BC-96BA-2C2185F87EC2">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_LAN_L</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_LAN_N" id="AE413107-3C30-3380-3A4C-85E775EF34AE">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_LAN_N</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY_DIST" id="E5D669A1-216F-8F7D-2D31-0EEEBECF7FD3">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY_DIST</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 BYTE</dataTypeSize>
+<ownDataTypeParameters>50 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="VCY__SAL_MAX" id="20F518CA-2408-EBF0-095A-2F4880ED9757">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>VACANCY</sourceObjSchema>
+<sourceObjName>VCY__SAL_MAX</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT021</logicalDatatype>
+<dataTypePrecision>126</dataTypePrecision>
+<ownDataTypeParameters>,126,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9E77FFF9-67B8-389E-A0BE-41BD61FD0F4D" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="VACANCY_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013322</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="413F5402-4882-1737-2DD7-8D866A998DCB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="0C679139-9303-DF3F-98AE-047783E02B23" name="FKET8QT1K3IXLKFTA3M8VMQ2BB3">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22496A68-375E-E0B2-5874-C4FC8A052719"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9C8133F1-DEF6-F6D7-FA30-D25E635598AE" name="FKOFQRQRT7PJHPGYXESOM85Y33R">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="29E32046-C5E6-876D-C368-F16FB0F5AE8A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="532E4BB1-5F61-A2CC-81D0-6B7E09D8B312" name="FK4X37M17FST4FYMQRU1QYWYGL2">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="22496A68-375E-E0B2-5874-C4FC8A052719"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="DBBD2526-94F6-CB3C-88C2-51281802CBCC" name="FK6L2M370XI9PB9COU2YPEHPGHI">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4F221B8B-A0E5-E77E-9A8F-4B40055DA23C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

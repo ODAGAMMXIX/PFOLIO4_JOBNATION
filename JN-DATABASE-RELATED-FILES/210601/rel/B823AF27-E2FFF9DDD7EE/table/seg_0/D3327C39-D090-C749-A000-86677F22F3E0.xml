@@ -1,0 +1,87 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="D3327C39-D090-C749-A000-86677F22F3E0" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="CANDIDATE_QUALIFICATION">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>CANDIDATE_QUALIFICATION</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CDT_ID" id="60974F6C-B4F3-54A6-0177-A107AE33BE4F">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>CANDIDATE_QUALIFICATION</sourceObjSchema>
+<sourceObjName>CDT_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="623C2097-34D2-5425-2026-BDBEBA4CFD13" referredColumn="A8C44B72-526A-AE72-4035-C9E0E37D6017"/>
+</associations>
+</Column>
+<Column name="QUA_ID" id="7D1C64D3-8E43-C72C-5803-8CEE5A5E4AD7">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>CANDIDATE_QUALIFICATION</sourceObjSchema>
+<sourceObjName>QUA_ID</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:06 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="8D05F68C-F917-74D2-5193-792F1F0101B6" referredColumn="2499599C-D7EB-71A2-F15F-9C9351E4EC0E"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="B02CEB8D-755F-4367-40CA-42B1515902BD" schemaObject="4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1" name="CANDIDATE_QUALIFICATION_PK">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjSchema>TECNOCODE</sourceObjSchema>
+<sourceObjName>SYS_C0013305</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60974F6C-B4F3-54A6-0177-A107AE33BE4F"/>
+<colUsage columnID="7D1C64D3-8E43-C72C-5803-8CEE5A5E4AD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B08A76BA-C1B0-3FB1-D825-CA5A6AED79DC" name="FKN2SHYWAJ1G2TM3FQ5D6CCUX3R">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7D1C64D3-8E43-C72C-5803-8CEE5A5E4AD7"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9DDCF84E-792E-96F0-9DC6-A8496BE191DE" name="FK7QQSQK546HGX1LK1LJGH793MI">
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:07:07 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="60974F6C-B4F3-54A6-0177-A107AE33BE4F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

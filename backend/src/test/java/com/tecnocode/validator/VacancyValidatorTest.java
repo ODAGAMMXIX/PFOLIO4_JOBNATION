@@ -3,13 +3,14 @@ package com.tecnocode.validator;
 import com.tecnocode.model.Address;
 import com.tecnocode.model.Company;
 import com.tecnocode.model.Vacancy;
+import org.junit.Ignore;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 import static org.junit.jupiter.api.Assertions.assertThrows;
-
+@Ignore
 @SpringBootTest
 public class VacancyValidatorTest {
     @Autowired

@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="TECNOCODE" directorySegmentName="seg_0" id="F894581E-A0F0-3286-7C4C-400B59432021">
+<sourceConnName>210327-tecnocode</sourceConnName>
+<sourceObjName>TECNOCODE</sourceObjName>
+<createdBy>root</createdBy>
+<createdTime>2021-06-02 02:06:57 UTC</createdTime>
+<ownerDesignName>210601</ownerDesignName>
+<schemaObject>4AB42F89-8747-B6E7-16A0-0CAB86D9A2C1</schemaObject>
+</UserOraclev10g>
