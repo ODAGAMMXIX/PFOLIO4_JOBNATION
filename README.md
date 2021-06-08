@@ -261,7 +261,7 @@ Atividades de cada sprint, com prioridade.
 
 #### Fabio Odaguiri LL.M. (Scrum master e database developer)
 * [Git Lab](https://gitlab.com/ODAGAMMXIX)
-* [Linkedin](www.linkedin.com/in/fabioodaguiri)
+* [Linkedin](https://www.linkedin.com/in/fabioodaguiri/)
 * RA: 1460281923008
 
 #### Felipe Santos Carvalho (Product owner e database developer)
@@ -281,7 +281,7 @@ Atividades de cada sprint, com prioridade.
 
 #### Wilson Amore Vieira Filho (Java back-end developer)
 * [Git Lab](https://gitlab.com/ZVIEWIL)
-* [Linkedin](www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
+* [Linkedin](https://www.linkedin.com/in/wilson-amore-vieira-filho-7a4420183)
 * RA: 1460281923041
 
 ## Running it up
