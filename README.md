@@ -2,6 +2,17 @@
 
 <h1 align="center">JOBNATION</h1>
 
+### Resumo do Projeto 
+
+### Tecnologias adotadas na solução 
+
+### Contribuições individuais/pessoais 
+
+### Aprendizados Efetivos 
+
+### Contribuições individuais/pessoais. 
+
+
 ## Proposta comercial
 
 Desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, buscando uma contração veloz e assertiva. Dentre os critérios, deverão ser destaques a segurança e o desempenho da aplicação.
