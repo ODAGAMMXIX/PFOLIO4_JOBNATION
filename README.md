@@ -1,3 +1,9 @@
+
+https://github.com/ODAGAMMXIX/PFOLIO1_DANZO
+https://github.com/ODAGAMMXIX/PFOLIO2_GANTT
+https://github.com/ODAGAMMXIX/PFOLIO3_VALCODE
+https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION
+
 ![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
 
 <h1 align="center">JOBNATION</h1>
