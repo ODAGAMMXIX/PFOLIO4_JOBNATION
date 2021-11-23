@@ -8,6 +8,8 @@ https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION
 
 <h1 align="center">JOBNATION</h1>
 
+valorizar Padrões de Projeto = Strategy: "Street Fighter";
+
 ### Resumo do Projeto 
 
 ### Tecnologias adotadas na solução 
