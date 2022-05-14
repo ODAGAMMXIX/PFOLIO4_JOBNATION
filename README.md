@@ -14,7 +14,7 @@
 
 ***
 
-<h1 align="center">[Java-Oracle API - Recrutamento por Geolocalização *et al*.]</h1>
+<h1 align="center">[Java-Oracle API - Recrutamento por Geolocalização e Outros Critérios.]</h1>
 
 
 ![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
