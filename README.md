@@ -1,8 +1,21 @@
+## PORTFOLIO ACADÊMICO - PROJETOS INTEGRADORES:
 
-https://github.com/ODAGAMMXIX/PFOLIO1_DANZO
-https://github.com/ODAGAMMXIX/PFOLIO2_GANTT
-https://github.com/ODAGAMMXIX/PFOLIO3_VALCODE
-https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION
+[SEMESTRE-01-2019.2 - *Python-Sqlite3 Web Scrapper - Monitor de Segurança Pública*](https://github.com/ODAGAMMXIX/PFOLIO1_DANZO) 
+
+[SEMESTRE-02-2020.1 - *Java-MySQL Stand Alone App - Gráfico de GANTT para Gestores*](https://github.com/ODAGAMMXIX/PFOLIO2_GANTT)
+
+[SEMESTRE-03-2020.2 - *Java-Oracle - Cadastro Positivo e Desbancarizados*](https://github.com/ODAGAMMXIX/PFOLIO3_VALCODE)
+
+## [SEMESTRE-04-2021.1 - *Java-Oracle API - Recrutamento por Geolocalização et al.*](https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION)
+
+[SEMESTRE-05-2021.2 - *Java-Pentaho-My(SQL)Server-MongoDB - Engajamento Estudantil*](https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION)
+
+[SEMESTRE-06-2022.1 - *Python-MongoDB-LGPD opt-in opt-out ou Análise de Dados Eleitorais*](https://github.com/ODAGAMMXIX/PFOLIO4_JOBNATION)
+
+***
+
+<h1 align="center">[Java-Oracle API - Recrutamento por Geolocalização *et al*.]</h1>
+
 
 ![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
 
