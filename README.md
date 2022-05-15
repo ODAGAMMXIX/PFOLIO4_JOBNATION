@@ -101,7 +101,7 @@ https://youtu.be/Nd3y7Bh1Ii8
 <h5 align="center">((Oracle Instance Viewer)</h5>
 
 
-
+https://youtu.be/sdIkBLKfvh0
 
 # II - TECNOLOGIAS ADOTADAS NA SOLUÇÃO 
 
