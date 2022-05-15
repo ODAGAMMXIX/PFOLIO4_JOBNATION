@@ -62,15 +62,9 @@ Empresa parceira JetSoft figurou como cliente.
 
 [![Watch the video](https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png)](https://www.youtube.com/watch?v=61kPu1F-87I)
 
-***
-[<img src="https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
-***
-<p align="center">
-<iframe width="560" height="315" src="https://www.youtube.com/embed/61kPu1F-87I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-</p>
-
-<h4 align="center">(Com origem,destino = número de conduções, itinerário compelto, tempo etc.)</h4>
+<h4 align="center">(Com origem,destino = número de conduções, itinerário completo, tempo etc.)</h4>
+<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
 
 #### 2) CONTROLLER 02 - APPLY & MATCH​ - BACK-END JAVA​.
 
@@ -88,11 +82,12 @@ Empresa parceira JetSoft figurou como cliente.
 
 <h5 align="center">(Busca: até 05 Vales-Transportes - MATCH by VTn)</h5>
 
-![Screenshot from 2022-05-15 17-57-22](https://user-images.githubusercontent.com/54047352/168495827-dab61186-fbfb-42f5-8236-9ec59b9e38b0.png)
+[![Watch the video](https://user-images.githubusercontent.com/54047352/168495827-dab61186-fbfb-42f5-8236-9ec59b9e38b0.png)](https://youtu.be/zzFnECMKS2E87I) 
 
 <h5 align="center">(Com 03 VT: apenas o candidato "Joao Santo" - MATCH by VTn)</h5>
+<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
 
-(https://youtu.be/zzFnECMKS2E)
+
 
 
 #### 3) FUNÇÃO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.
@@ -112,13 +107,12 @@ Empresa parceira JetSoft figurou como cliente.
  </p>
 
 
-<p align="center">
-<img src="https://user-images.githubusercontent.com/54047352/168495991-ebdcb868-1ad6-4193-9e16-74aff633ade1.png">
- </p>
+[![Watch the video](https://user-images.githubusercontent.com/54047352/168495991-ebdcb868-1ad6-4193-9e16-74aff633ade1.png)](https://youtu.be/Nd3y7Bh1Ii8)
+
 
 <h5 align="center">(Busca é feita pelo Oracle!!!)</h5>
+<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
 
-(https://youtu.be/Nd3y7Bh1Ii8)
 
 
 #### 4) PERFORMANCE  TEST​ 5.000 REGITROS.
@@ -136,14 +130,12 @@ Empresa parceira JetSoft figurou como cliente.
 
 <h5 align="center">((200 SELECTS X 5 sessões concorrentes)</h5>
 
-
-![Screenshot from 2022-05-15 18-14-37](https://user-images.githubusercontent.com/54047352/168496045-8ca1fb10-3c43-435a-a84a-46dd21da62f7.png)
  
+[![Watch the video](https://user-images.githubusercontent.com/54047352/168496045-8ca1fb10-3c43-435a-a84a-46dd21da62f7.png)](https://youtu.be/sdIkBLKfvh0)
 
 <h5 align="center">((Oracle Instance Viewer)</h5>
+<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
 
-
-https://youtu.be/sdIkBLKfvh0
 
 # II - TECNOLOGIAS ADOTADAS NA SOLUÇÃO 
 
