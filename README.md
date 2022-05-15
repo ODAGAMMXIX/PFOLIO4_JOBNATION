@@ -62,6 +62,8 @@ Empresa parceira JetSoft figurou como cliente.
 
 [![Watch the video](https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png)](https://www.youtube.com/watch?v=61kPu1F-87I)
 
+***
+[<img src="https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png" width="50%">](https://www.youtube.com/watch?v=Hc79sDi3f0U "Now in Android: 55")
 
 <h4 align="center">(Com origem,destino = número de conduções, itinerário compelto, tempo etc.)</h4>
 
