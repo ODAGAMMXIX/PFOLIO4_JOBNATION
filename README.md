@@ -133,14 +133,9 @@ https://youtu.be/sdIkBLKfvh0
 <h5 align="center">((Controller 01)</h5> 
 
 
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/61089745/141664849-ddac0cb9-7e06-4526-8e5a-562b2aee8463.PNG">
- </p>
  
 :wrench:  ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)  idem.
 
-![image](https://user-images.githubusercontent.com/61089745/141985664-81df10dc-fd1d-44d1-b65f-06f8eb0ce5e4.png)
 
 :orange_circle: **Data Grip:** IDE de banco de dados que detecta bugs no código e sugere correções.
 
