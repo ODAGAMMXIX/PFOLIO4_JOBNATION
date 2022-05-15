@@ -17,44 +17,48 @@
 <h1 align="center">[Java-Oracle API - Recrutamento por Geolocalização e Outros Critérios.]</h1>
 
 
-![image](/uploads/a731dea501986315250e1d9ab33fe996/image.png)
-
 <h1 align="center">JOBNATION</h1>
 
 
 
 # I - RESUMO DO PROJETO 
 
-Objetivndo vencer os desafios do recrutamento em massa, desenvolver uma API que possibilita a busca de candidatos a partir de uma vaga, possibilitando  contração veloz e assertiva, com segurança e desempenho.
+Objetivando vencer os desafios do ***recrutamento em massa***, desenvolveu-se uma API que possibilita a busca de candidatos a partir de critérios de uma determinada vaga, possibilitando  contração veloz e assertiva, com segurança e desempenho.
 
  Nossa proposta:
  
-- Busca por geolocalização, para saber o número de conduções do itinerário.
+- Busca por geolocalização ![Google](https://img.shields.io/badge/google-4285F4?style=for-the-badge&logo=google&logoColor=white) , para saber o número de conduções do itinerário.
 
-- Busca por diferentes critérios: a aplicação varrerá  currículos já cadastrados e identificará candidato(s)  mais adequados à vaga.
+- Busca por função no ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white), por diferentes critérios: a aplicação varrerá  currículos já cadastrados e identificará candidato(s)  mais adequados à vaga.
 
 Empresa parceira JetSoft figurou como cliente.
 
-<h4 align="center">Arquitetura da Aplicação</h4>
+<h3 align="center">Arquitetura da Aplicação</h3>
 
 
 ![Screenshot from 2022-05-15 17-20-11](https://user-images.githubusercontent.com/54047352/168492368-15f3ef36-b057-4b68-9026-8ebdbd1a7994.png)
 
-![Screenshot from 2022-05-15 17-20-20](https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
+ </p>
+
 
 <h5 align="center">(!!!---DOIS CONTROLLERS---!!!)</h5>
 
 
-
-![Screenshot from 2022-05-15 17-19-12](https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
+ </p>
 
 <h5 align="center">API para API (sem usuário humano)</h5>
 
 
 #### 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.
 
-![Screenshot from 2022-05-15 17-42-18](https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png">
+ </p>
+ 
 ![Screenshot from 2022-05-15 17-45-49](https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png)
 
 (https://youtu.be/61kPu1F-87I)
@@ -93,12 +97,16 @@ Empresa parceira JetSoft figurou como cliente.
 
 ![Screenshot from 2022-05-15 18-04-53](https://user-images.githubusercontent.com/54047352/168495951-ed487a38-0644-4849-b93a-10f7364c1df8.png)
 
-<h5 align="center">(e.g. critério "gender" no Java, passa apenas parâmetros)</h5>
+<h5 align="center">(e.g. critério "gender" no Java, passa apenas parâmetros ao Oracle)</h5> 
 
-![Screenshot from 2022-05-15 18-05-32](https://user-images.githubusercontent.com/54047352/168495982-52bfcc57-bd3a-4bd3-97d4-7bfafd8571c9.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168495982-52bfcc57-bd3a-4bd3-97d4-7bfafd8571c9.png">
+ </p>
 
 
-![Screenshot from 2022-05-15 18-06-20](https://user-images.githubusercontent.com/54047352/168495991-ebdcb868-1ad6-4193-9e16-74aff633ade1.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168495991-ebdcb868-1ad6-4193-9e16-74aff633ade1.png">
+ </p>
 
 <h5 align="center">(Busca é feita pelo Oracle!!!)</h5>
 
@@ -107,7 +115,10 @@ Empresa parceira JetSoft figurou como cliente.
 
 #### 4) PERFORMANCE  TEST​ 5.000 REGITROS.
 
-![Screenshot from 2022-05-15 18-11-53](https://user-images.githubusercontent.com/54047352/168496013-9658afeb-b4a4-4ce3-8b94-c00e97c2747a.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168496013-9658afeb-b4a4-4ce3-8b94-c00e97c2747a.png">
+ </p>
+ 
 
 <h5 align="center">((5.000 registros; home laptop)</h5>
 
@@ -141,8 +152,9 @@ https://youtu.be/sdIkBLKfvh0
 
 :wrench:  linguagem: ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
 
-![Screenshot from 2022-05-15 18-30-18](https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png)
-
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
+ </p>
 
 
 <h5 align="center">((Backend Java e Controller 02)</h5> 
