@@ -90,8 +90,9 @@ Empresa parceira JetSoft figurou como cliente.
 
 #### 3) FUNÇÃO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.
 
-
-![Screenshot from 2022-05-15 18-04-17](https://user-images.githubusercontent.com/54047352/168495926-26f04dc1-4f8e-4c07-95bb-3794eaff3582.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168495926-26f04dc1-4f8e-4c07-95bb-3794eaff3582.png">
+ </p>
 
 <h5 align="center">(Ativando FUNCTION do Oracle)</h5>
 
@@ -121,8 +122,10 @@ Empresa parceira JetSoft figurou como cliente.
  
 
 <h5 align="center">((5.000 registros; home laptop)</h5>
-
-![Screenshot from 2022-05-15 18-13-49](https://user-images.githubusercontent.com/54047352/168496028-9c8491d4-e011-44cb-8e26-769ca0bea382.png)
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168496028-9c8491d4-e011-44cb-8e26-769ca0bea382.png">
+ </p>
+ 
 
 <h5 align="center">((200 SELECTS X 5 sessões concorrentes)</h5>
 
@@ -240,6 +243,6 @@ Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 The End.
 :arrow_up: 
-[`Go Back Up`](#java-oracle---cadastro-positivo-e-desbancarizados).
+[`Go Back Up`](#java-oracle-api---recrutamento-por-geolocaliza%C3%A7%C3%A3o-e-outros-crit%C3%A9rios).
 
 
