@@ -59,9 +59,9 @@ Empresa parceira JetSoft figurou como cliente.
 <img src="https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png">
  </p>
  
-![Screenshot from 2022-05-15 17-45-49](https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png)
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/61kPu1F-87I" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+[![Watch the video](https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png)](https://www.youtube.com/watch?v=61kPu1F-87I)
+
 
 <h4 align="center">(Com origem,destino = número de conduções, itinerário compelto, tempo etc.)</h4>
 
