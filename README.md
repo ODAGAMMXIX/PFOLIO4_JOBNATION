@@ -142,59 +142,32 @@ https://youtu.be/sdIkBLKfvh0
 
 :wrench:  **Banco de Dados** ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
 
-:orange_circle: **DIAGRAMA ENTIDADE-RELACIONAMENTO **
-
-![Screenshot from 2022-05-15 18-23-44](https://user-images.githubusercontent.com/54047352/168496064-d2daee94-5d0f-482d-80af-6659a14cbadb.png)
-
-<h5 align="center">((Diagrama Entidade-Relacionamento)</h5>
-
-![Screenshot from 2022-05-15 18-24-04](https://user-images.githubusercontent.com/54047352/168496081-311df7d2-7398-4249-aa3f-ea6f50465a35.png)
-
-<h5 align="center">((Diagrama Lógico)</h5> 
-
 
 :wrench:  linguagem: ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
-
-<p align="center">
-<img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
- </p>
 
 
 <h5 align="center">((Backend Java e Controller 02)</h5> 
 
 
-:wrench:  JavaScript.
-:wrench:  NodeJS.
+:wrench:  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-}
+:wrench:  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white).
+
 
 <h5 align="center">((Controller 01)</h5> 
 
 
  
-:wrench:  ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)  idem.
+:wrench:  ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
 
 
-:orange_circle: **Data Grip:** IDE de banco de dados que detecta bugs no código e sugere correções.
+:wrench: SQL DEVELOPER.
 
 :wrench:  IDE: ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white).
 
 :wrench:  Metodologia *Scrum* e Ágil;
 
-Estudamos e deixamos de implementar:
-
-:wrench:  ![TensorFlow](https://img.shields.io/badge/TensorFlow-%23FF6F00.svg?style=for-the-badge&logo=TensorFlow&logoColor=white)  *Machine Learning* através de **redes neurais**;
-
-![image](imgs/MicrosoftTeams-image4.png)
-
-💻
-
-- Oracle 11g (Sql developer)
-- Java (IntelliJ / Eclipse))
-- Javascript )Node-JS)
-- React (Insomnia/POSTMAN)
-- Git (GitLab)
-- OBS Studio / Kdenlive
+:wrench: OBS Studio / Kdenlive
 
 # III - CONTRIBUIÇÕES INDIVIDUAS/PESSOAIS
 
@@ -214,31 +187,38 @@ Estudamos e deixamos de implementar:
  
 # IV - APRENDIZADOS EFETIVOS
 
-:heavy_check_mark: Aprofundei nas ferramentas do SQL DEVELOPER (Instance Viewer): ____.
+:heavy_check_mark: Aprofundei na programação de banco de dados com o SQL DEVELOPER [Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white), por meio de *Functions*, trazendo o processamento e regras de negócio do backend para o banco de dados.
 
-:heavy_check_mark: Aprofundei na programação do Oracle (*Functions*): Trazendo o processamento e regras de negócio do backend para o banco de dados.
 
-:heavy_check_mark: Meu primeiro trabalho com **mútiplass linguagens de programação numa única aplicação:** ______.
+:orange_circle: **DIAGRAMAS DO BANCO DE DADOS **
 
-:heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): .
+![Screenshot from 2022-05-15 18-23-44](https://user-images.githubusercontent.com/54047352/168496064-d2daee94-5d0f-482d-80af-6659a14cbadb.png)
+
+<h5 align="center">((Diagrama Entidade-Relacionamento)</h5>
+
+![Screenshot from 2022-05-15 18-24-04](https://user-images.githubusercontent.com/54047352/168496081-311df7d2-7398-4249-aa3f-ea6f50465a35.png)
+
+<h5 align="center">((Diagrama Lógico)</h5> 
+
+:heavy_check_mark: Aprofundei nas ferramentas de adminitração do Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) SQL DEVELOPER (Instance Viewer).
+
+:heavy_check_mark: Meu primeiro trabalho com **mútiplass linguagens de programação numa única aplicação:** [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) + [Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white).
+
+
+<p align="center">
+<img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
+ </p>
+
+{**************inserir tela do repo RAFAEL**************}
+
+:heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): ______________.
 
 
 ![image](imgs/MicrosoftTeams-image5.png)
 
-:heavy_check_mark:![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-
-:heavy_check_mark: ![Insomnia](https://img.shields.io/badge/Insomnia-black?style=for-the-badge&logo=insomnia&logoColor=5849BE)
-
-:heavy_check_mark: ![Postman](https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=postman&logoColor=white)
-
-:heavy_check_mark: ![Visual Studio Code](https://img.shields.io/badge/Visual%20Studio%20Code-0078d7.svg?style=for-the-badge&logo=visual-studio-code&logoColor=white)
-
-
 
 ## Running it up
-Deployment
-No seu dispositivo
-Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
+Deployment (No seu dispositivo): Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
 
 The End.
