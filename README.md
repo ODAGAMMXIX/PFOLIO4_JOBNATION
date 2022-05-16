@@ -23,7 +23,7 @@
 
 # I - RESUMO DO PROJETO 
 
-Objetivando vencer os desafios do ***recrutamento em massa***, desenvolveu-se uma API que possibilita a busca de candidatos a partir de critérios de uma determinada vaga, possibilitando  contração veloz e assertiva, com segurança e desempenho.
+Objetivando vencer os desafios do ***recrutamento em massa***, desenvolveu-se uma *Application Programming Interface* que possibilita a busca de candidatos a partir de critérios de uma determinada vaga, possibilitando  contração veloz e assertiva, com segurança e desempenho.
 
  Nossa proposta:
  
@@ -133,7 +133,7 @@ Empresa parceira JetSoft figurou como cliente.
  
 [![Watch the video](https://user-images.githubusercontent.com/54047352/168496045-8ca1fb10-3c43-435a-a84a-46dd21da62f7.png)](https://youtu.be/sdIkBLKfvh0)
 
-<h5 align="center">((Oracle Instance Viewer)</h5>
+<h5 align="center">(Oracle Instance Viewer)</h5>
 <h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
 
 
@@ -164,9 +164,9 @@ Empresa parceira JetSoft figurou como cliente.
 
 # III - CONTRIBUIÇÕES INDIVIDUAS/PESSOAIS
 
-:axe: Atuei como *Product Owner* e **desenvolvi toda a linha de negócios da plafaforma**, especialmente a possibillidade de contratação por qualquer empresa de recrutamento e seleção em seus próprios bancos de dados, por meio da nossa API.
+:axe: Atuei como *Product Owner* e **desenvolvi toda a linha de negócios da plafaforma**, especialmente a possibillidade de contratação por qualquer empresa de recrutamento e seleção em seus próprios bancos de dados, por meio da nossa API que permite:
 
-:small_blue_diamond: API de qualquer site de recrutamento poderia otimizar suas buscas, mais econômicas e velozes,  conectar-se à nossa API, que funciona como um motor.
+:small_blue_diamond: à *Application Programming Interface* de qualquer site de recrutamento poderia otimizar suas buscas, mais econômicas e velozes,  conectar-se à nossa API, que funciona como um motor.
 
 :small_blue_diamond: **"FLASH-RECRUITMENT"**: Ideal para recrutamento de massa, ex: obra com milhares de colaboradores, por tempo determinado;
 
