@@ -64,7 +64,7 @@ Empresa parceira JetSoft figurou como cliente.
 
 
 <h4 align="center">(Com origem,destino = número de conduções, itinerário completo, tempo etc.)</h4>
-<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
+<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
 
 #### 2) CONTROLLER 02 - APPLY & MATCH​ - BACK-END JAVA​.
 
@@ -85,7 +85,7 @@ Empresa parceira JetSoft figurou como cliente.
 [![Watch the video](https://user-images.githubusercontent.com/54047352/168495827-dab61186-fbfb-42f5-8236-9ec59b9e38b0.png)](https://youtu.be/zzFnECMKS2E87I) 
 
 <h5 align="center">(Com 03 VT: apenas o candidato "Joao Santo" - MATCH by VTn)</h5>
-<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
+<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
 
 
 
@@ -111,7 +111,7 @@ Empresa parceira JetSoft figurou como cliente.
 
 
 <h5 align="center">(Busca é feita pelo Oracle!!!)</h5>
-<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
+<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
 
 
 
@@ -134,7 +134,7 @@ Empresa parceira JetSoft figurou como cliente.
 [![Watch the video](https://user-images.githubusercontent.com/54047352/168496045-8ca1fb10-3c43-435a-a84a-46dd21da62f7.png)](https://youtu.be/sdIkBLKfvh0)
 
 <h5 align="center">((Oracle Instance Viewer)</h5>
-<h6 align="center">(Clique na figura para assistir ao vídeo)</h6>
+<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
 
 
 # II - TECNOLOGIAS ADOTADAS NA SOLUÇÃO 
@@ -142,18 +142,12 @@ Empresa parceira JetSoft figurou como cliente.
 :wrench:  **Banco de Dados** ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
 
 
-:wrench:  linguagem: ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white)
+:wrench:  linguagem: ![Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white): Controller 02.
 
 
-<h5 align="center">((Backend Java e Controller 02)</h5> 
-
-
-:wrench:  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+:wrench:  ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E): Controller 01.
 
 :wrench:  ![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white).
-
-
-<h5 align="center">((Controller 01)</h5> 
 
 
  
@@ -170,24 +164,23 @@ Empresa parceira JetSoft figurou como cliente.
 
 # III - CONTRIBUIÇÕES INDIVIDUAS/PESSOAIS
 
-:axe: Atuei como *Product Owner*.
+:axe: Atuei como *Product Owner* e **desenvolvi toda a linha de negócios da plafaforma**, especialmente a possibillidade de contratação por qualquer empresa de recrutamento e seleção em seus próprios bancos de dados, por meio da nossa API.
 
-:axe::axe: **Desenvolvi toda a linha de negócios da plafaforma**, ______:
+:small_blue_diamond: API de qualquer site de recrutamento poderia otimizar suas buscas, mais econômicas e velozes,  conectar-se à nossa API, que funciona como um motor.
 
-:small_blue_diamond: API de qq site de recrutamento pode conectar-se à nossa API para disponibilizar seus canditados e e otimizar suas buscas;
+:small_blue_diamond: **"FLASH-RECRUITMENT"**: Ideal para recrutamento de massa, ex: obra com milhares de colaboradores, por tempo determinado;
 
-:small_blue_diamond: "FLASH-RECRUITMENT": Ideal para recrutamento de massa, ex: obra com milhares de colaboradores, por tempo determinado;
+:axe::axe: **Fui o Data Analyst do projeto**, para entender o nível de relevâcia dos tipos de dados do ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white), trabalhando com os desenvolvedores para etender o que o Google Maps poderia oferecer de dado externo e atualizado.
 
-:axe::axe::axe::axe: **Fui o Data Analyst do projeto**, para entender o nível de relevâcia dos tipos de dados do ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
+:earth_africa: Dados de itinerário, tempo, com a busca de qualquer dado, tanto no campo *destino* como o campo *origem*, tornaram-se o **diferencial exclusivo** da plataforma.
 
-:axe::axe::axe::axe: **Fui o Data Modeler do projeto**, para desenhar a modelagem segundo as possibilidades e capacidades dos desenvolvedores ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
+:axe::axe::axe: **Fui o Data Modeler do projeto**, para desenhar a modelagem segundo as funcionalidades **busca por geolocalização*** e *busca por qualquer critério*, alinhando com as possibilidades e capacidades dos nossos  desenvolvedores ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
 
-:axe::axe::axe::axe: **Fui o DataBase Administrator do projeto**, para testar performance do nosso banco no ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white).
+:axe::axe::axe::axe: **Fui o DataBase Administrator do projeto**, para testar performance do nosso banco no ![Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white), segundo o requisito funcional de **performance**.
  
 # IV - APRENDIZADOS EFETIVOS
 
 :heavy_check_mark: Aprofundei na programação de banco de dados com o SQL DEVELOPER [Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white), por meio de *Functions*, trazendo o processamento e regras de negócio do backend para o banco de dados.
-
 
 :orange_circle: **DIAGRAMAS DO BANCO DE DADOS **
 
@@ -201,7 +194,7 @@ Empresa parceira JetSoft figurou como cliente.
 
 :heavy_check_mark: Aprofundei nas ferramentas de adminitração do Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) SQL DEVELOPER (Instance Viewer).
 
-:heavy_check_mark: Meu primeiro trabalho com **mútiplass linguagens de programação numa única aplicação:** [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) + [Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white).
+:heavy_check_mark: Meu primeiro trabalho com **mútiplas linguagens de programação numa única aplicação:** [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) + [Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white).
 
 
 <p align="center">
