@@ -179,7 +179,7 @@
 
 :heavy_check_mark: Meu primeiro trabalho com **mútiplas linguagens de programação numa única aplicação:** [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) + [Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white).
 
-{**************inserir tela do repo RAFAEL**************}
+{**************inserir tela do repo da GABRIELA**************}
 
 :heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): um *Bevavioural Design Pattern* .
 
