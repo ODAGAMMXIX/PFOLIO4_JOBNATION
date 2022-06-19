@@ -45,14 +45,7 @@
  <p align="center"> 
  </details>
  
- <h3 align="center">Casos de Uso.</h3>
- <details><summary> API para API (sem usuário humano).</summary>
-<p align="center">
- <img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
-</p>
- </details>
-
-<details><summary> 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.</summary>
+ <details><summary> 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png">
 <h4 align="center">(Com origem,destino = número de conduções, itinerário completo, tempo etc.)</h4>
@@ -118,6 +111,12 @@
 </p>
 </details>
 
+<h3 align="center">Casos de Uso.</h3>
+ <details><summary> API para API (sem usuário humano).</summary>
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
+</p>
+ </details>
 
 # II - TECNOLOGIAS ADOTADAS NA SOLUÇÃO 
 
@@ -182,12 +181,19 @@
 
 {**************inserir tela do repo RAFAEL**************}
 
-:heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): ______________.
+:heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): um *Bevavioural Design Pattern* .
+
+https://refactoring.guru/pt-br/design-patterns/strategy
+
+http://olivieraubert.net/download/koalaplop01.pdf
+
+
 <details><summary>Strategy:</summary>
 <p align="center">
-<img src="imgs/MicrosoftTeams-image5.png">
+<img src="">
 </p>
 </detais>
+
 
 ## Running it up
 Deployment (No seu dispositivo): Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
