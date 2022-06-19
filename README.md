@@ -188,13 +188,6 @@ https://refactoring.guru/pt-br/design-patterns/strategy
 http://olivieraubert.net/download/koalaplop01.pdf
 
 
-<details><summary>Strategy:</summary>
-<p align="center">
-<img src="">
-</p>
-</detais>
-
-
 ## Running it up
 Deployment (No seu dispositivo): Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 
