@@ -33,9 +33,13 @@
 <h3 align="center">Arquitetura da Aplicação</h3>
 <img src="https://user-images.githubusercontent.com/54047352/168492368-15f3ef36-b057-4b68-9026-8ebdbd1a7994.png">
 
+<details><summary> As 08 camadas.</summary>
+<img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
+<p align="center"> 
+ </details>
+ 
 <details><summary> Destaque: 02 CONTROLLERS, 02 Linguagens.</summary>
 <p align="center"> 
- <img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
  <img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
  <h5 align="center">(!!!---DOIS CONTROLLERS---!!!)</h5>
  <p align="center"> 
@@ -176,12 +180,6 @@
 
 :heavy_check_mark: Meu primeiro trabalho com **mútiplas linguagens de programação numa única aplicação:** [JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) + [Java](https://img.shields.io/badge/java-%23ED8B00.svg?style=for-the-badge&logo=java&logoColor=white).
 
-<details><summary> Mútiplas linguagens:</summary>
-<p align="center">
-<img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
-</p>
-</detais>
-
 {**************inserir tela do repo RAFAEL**************}
 
 :heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): ______________.
@@ -197,21 +195,3 @@ Deployment (No seu dispositivo): Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
 The End.
 :arrow_up: 
 [`Go Back Up`](#java-oracle-api---recrutamento-por-geolocaliza%C3%A7%C3%A3o-e-outros-crit%C3%A9rios).
-
-{**************inserir tela do repo RAFAEL**************}
-
-:heavy_check_mark: Implementação de novos padrões de projeto (*Strategy*): ______________.
-
-
-![image](imgs/MicrosoftTeams-image5.png)
-
-
-## Running it up
-Deployment (No seu dispositivo): Vide Pasta "DEPLOYMENT-FIND-STEPS-HERE" acima)
-
-
-The End.
-:arrow_up: 
-[`Go Back Up`](#java-oracle-api---recrutamento-por-geolocaliza%C3%A7%C3%A3o-e-outros-crit%C3%A9rios).
-
-
