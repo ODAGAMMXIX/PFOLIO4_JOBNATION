@@ -52,7 +52,8 @@
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png">
 <h4 align="center">(Com origem,destino = número de conduções, itinerário completo, tempo etc.)</h4>
- <img src="https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png">(https://www.youtube.com/watch?v=61kPu1F-87I)
+ <img src="https://user-images.githubusercontent.com/54047352/168495647-69e687a7-ae71-44c6-b667-db7c130d0d3a.png">
+ <h6 align="center">(https://www.youtube.com/watch?v=61kPu1F-87I)</h6>
 <h6 align="center">(assista ao vídeo)</h6>
  </p>
 </details> 
