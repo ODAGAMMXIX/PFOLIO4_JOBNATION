@@ -33,18 +33,20 @@
 <h3 align="center">Arquitetura da Aplicação</h3>
 <img src="https://user-images.githubusercontent.com/54047352/168492368-15f3ef36-b057-4b68-9026-8ebdbd1a7994.png">
 
-<details><summary> Arquitetura:</summary>
-<p align="center">
- 
+<details><summary> Destaque: 02 CONTROLLERS, 02 Linguagens.</summary>
+<p align="center"> 
  <img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
  <img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
  <h5 align="center">(!!!---DOIS CONTROLLERS---!!!)</h5>
- <p align="center">
- <img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
- <h5 align="center">API para API (sem usuário humano)</h5>
-</p>
+ <p align="center"> 
  </details>
  
+ <h3 align="center">Casos de Uso.</h3>
+ <details><summary> API para API (sem usuário humano).</summary>
+<p align="center">
+ <img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
+</p>
+ </details>
 
 <details><summary> 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.</summary>
 <p align="center">
