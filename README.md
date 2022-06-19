@@ -71,29 +71,28 @@
  <h5 align="center">(Busca: até 05 Vales-Transportes - MATCH by VTn)</h5>
  <p align="center">
  <img src="https://user-images.githubusercontent.com/54047352/168495827-dab61186-fbfb-42f5-8236-9ec59b9e38b0.png">(https://youtu.be/zzFnECMKS2E87I) 
-<h5 align="center">(Com 03 VT: apenas o candidato "Joao Santo" - MATCH by VTn)</h5>
-<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
- 
+<h5 align="center">(Com 03 VT: apenas um candidato, *i.e.* "Joao Santo" - MATCH by VTn)</h5>
+<h6 align="center">(Assista ao vídeo)</h6> 
 </p>
- </details>
+</details>
 
 
-
-<details><summary> 3) FUNÇÃO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.</summary>
+<details><summary> 3) FUNÇÃO NO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495926-26f04dc1-4f8e-4c07-95bb-3794eaff3582.png">
-<h5 align="center">(Ativando FUNCTION do Oracle)</h5>
+<h5 align="center">(Ativando FUNCTION do Oracle - veja "Parameters")</h5>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495951-ed487a38-0644-4849-b93a-10f7364c1df8.png">
-<h5 align="center">(e.g. critério "gender" no Java, passa apenas parâmetros ao Oracle)</h5> 
+<h5 align="center">(e.g. critério "gender" no Java, passa apenas parâmetros ao Oracle!)</h5> 
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495982-52bfcc57-bd3a-4bd3-97d4-7bfafd8571c9.png">
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495991-ebdcb868-1ad6-4193-9e16-74aff633ade1.png">
 <p align="center">
-(https://youtu.be/Nd3y7Bh1Ii8)
 <h5 align="center">(Busca é feita pelo Oracle!!!)</h5>
-<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
+<h6 align="center"> (https://youtu.be/Nd3y7Bh1Ii8)</h6>
+
+<h6 align="center">(Assista ao vídeo)</h6>
 </p>
 </details>
 
