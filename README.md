@@ -97,21 +97,20 @@
 </details>
 
 
-
-
 <details><summary> 4) PERFORMANCE  TEST​ 5.000 REGITROS.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168496013-9658afeb-b4a4-4ce3-8b94-c00e97c2747a.png">
-<h5 align="center">((5.000 registros; home laptop)</h5>
+<h5 align="center">((5.000 registros; teste feito em um laptop doméstico, sem servidor)</h5>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168496028-9c8491d4-e011-44cb-8e26-769ca0bea382.png">
 <h5 align="center">((200 SELECTS X 5 sessões concorrentes)</h5>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168496045-8ca1fb10-3c43-435a-a84a-46dd21da62f7.png">
-<p align="center">
-(https://youtu.be/sdIkBLKfvh0)
 <h5 align="center">(Oracle Instance Viewer)</h5>
-<h6 align="center">(Clique na figura acima para assistir ao vídeo)</h6>
+ <p align="center">
+(https://youtu.be/sdIkBLKfvh0)
+
+<h6 align="center">(Assista ao vídeo)</h6>
 </p>
 </details>
 
