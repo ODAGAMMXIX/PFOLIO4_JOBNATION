@@ -33,19 +33,19 @@
 <h3 align="center">Arquitetura da Aplicação</h3>
 <img src="https://user-images.githubusercontent.com/54047352/168492368-15f3ef36-b057-4b68-9026-8ebdbd1a7994.png">
 
-<details><summary> As 08 camadas.</summary>
+<details open><summary> As 08 camadas.</summary>
 <img src="https://user-images.githubusercontent.com/54047352/168496089-a6b1081c-4416-4144-8933-970728bfc6ac.png">
 <p align="center"> 
- </details>
+ </details open>
  
-<details><summary> Destaque: 02 CONTROLLERS, 02 Linguagens.</summary>
+<details open><summary> Destaque: 02 CONTROLLERS, 02 Linguagens.</summary>
 <p align="center"> 
  <img src="https://user-images.githubusercontent.com/54047352/168492370-04046bc7-4c06-424e-b8b7-e47418df0374.png">
  <h5 align="center">(!!!---DOIS CONTROLLERS---!!!)</h5>
  <p align="center"> 
- </details>
+ </details open>
  
- <details><summary> 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.</summary>
+ <details open><summary> 1) CONTROLLER 01​ NODEJS ​& ​ GOOGLE MAPS API.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495627-6af7c575-284c-4139-993a-0e79d0b51729.png">
 <h4 align="center">(Com origem,destino = número de conduções, itinerário completo, tempo etc.)</h4>
@@ -53,10 +53,10 @@
  <h6 align="center">(https://www.youtube.com/watch?v=61kPu1F-87I)</h6>
 <h6 align="center">(assista ao vídeo)</h6>
  </p>
-</details> 
+</details open> 
 
 
-<details><summary> 2) CONTROLLER 02 - APPLY & MATCH​ - BACK-END JAVA​.</summary>
+<details open><summary> 2) CONTROLLER 02 - APPLY & MATCH​ - BACK-END JAVA​.</summary>
 <p align="center">
  <img src="https://user-images.githubusercontent.com/54047352/168495710-11abeb3f-2b51-4b3b-b8a8-5262d9606b9a.png">
  <h5 align="center">(Pessoa "5" candidata-se à vaga "8" - APPLY)</h5>
@@ -71,10 +71,10 @@
 <h5 align="center">(Com 03 VT: apenas um candidato, *i.e.* "Joao Santo" - MATCH by VTn)</h5>
 <h6 align="center">(Assista ao vídeo)</h6> 
 </p>
-</details>
+</details open>
 
 
-<details><summary> 3) FUNÇÃO NO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.</summary>
+<details open><summary> 3) FUNÇÃO NO ORACLE​ BUSCA POR MÚLTIPLOS CRITÉRIOS​.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168495926-26f04dc1-4f8e-4c07-95bb-3794eaff3582.png">
 <h5 align="center">(Ativando FUNCTION do Oracle - veja "Parameters")</h5>
@@ -91,10 +91,10 @@
 
 <h6 align="center">(Assista ao vídeo)</h6>
 </p>
-</details>
+</details open>
 
 
-<details><summary> 4) PERFORMANCE  TEST​ 5.000 REGITROS.</summary>
+<details open><summary> 4) PERFORMANCE  TEST​ 5.000 REGITROS.</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168496013-9658afeb-b4a4-4ce3-8b94-c00e97c2747a.png">
 <h5 align="center">((5.000 registros; teste feito em um laptop doméstico, sem servidor)</h5>
@@ -109,14 +109,14 @@
 
 <h6 align="center">(Assista ao vídeo)</h6>
 </p>
-</details>
+</details open>
 
 <h3 align="center">Casos de Uso.</h3>
- <details><summary> API para API (sem usuário humano).</summary>
+ <details open><summary> API para API (sem usuário humano).</summary>
 <p align="center">
  <img src="https://user-images.githubusercontent.com/54047352/168492361-9d1803d4-6bf7-45cb-80ec-a70784c50e0c.png">
 </p>
- </details>
+ </details open>
 
 # II - TECNOLOGIAS ADOTADAS NA SOLUÇÃO 
 
@@ -165,7 +165,7 @@
 
 :orange_circle: **DIAGRAMAS DO BANCO DE DADOS **
 
-<details><summary> Diagramas:</summary>
+<details open><summary> Diagramas:</summary>
 <p align="center">
 <img src="https://user-images.githubusercontent.com/54047352/168496064-d2daee94-5d0f-482d-80af-6659a14cbadb.png">
 <h5 align="center">((Diagrama Entidade-Relacionamento)</h5>
@@ -173,7 +173,7 @@
 <img src="https://user-images.githubusercontent.com/54047352/168496081-311df7d2-7398-4249-aa3f-ea6f50465a35.png">
 <h5 align="center">((Diagrama Lógico)</h5> 
 </p>
-</details>
+</details open>
 
 :heavy_check_mark: Aprofundei nas ferramentas de adminitração do Oracle](https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=oracle&logoColor=white) SQL DEVELOPER (Instance Viewer).
 
